@@ -37,6 +37,22 @@ Once you've made your working copy of the site repo, from the repo root folder, 
 hugo server
 ```
 
+## Building the website 
+
+To build run hugo, it will generate the public/ directory of files to copy to a static webiste hosting service such as AWS S3 bucket setup for static hosting.
+
+```
+hugo
+```
+
+## Deploy to AWS S3
+
+There is an AWS S3 bucket setup on config.toml to deploy to S3, but needs AWS credentials to work. 
+
+```
+hugo deploy
+```
+
 ## Troubleshooting
 
 As you run the website locally, you may run into the following error:
