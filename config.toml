@@ -9,8 +9,8 @@ cloudFrontDistributionID = "E2AWJV8PC20KOR"
 
 # Language settings
 contentDir = "content"
-#defaultContentLanguage = "en"
-#defaultContentLanguageInSubdir = false
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 # Useful when translating.
 #enableMissingTranslationPlaceholders = true
 
@@ -72,12 +72,12 @@ id = "UA-00000000-0"
 # Language configuration
 
 #[languages]
-#[languages.en]
-#title = "Arm Software Developers"
-#description = "Great Arm software developer content"
-#languageName ="English"
+[languages.en]
+title = "Arm Software Developers"
+description = "Great Arm software developer content"
+languageName ="English"
 # Weight used for sorting.
-#weight = 1
+weight = 1
 #[languages.no]
 #title = "Arm Software Developers"
 #description = "Docsy er operativsystem for skyen"
@@ -136,7 +136,7 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/jasonrandrews/arm-software-developers"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/google/docsy"
 
