@@ -1,7 +1,7 @@
 
 ---
-title: "Documentation"
-linkTitle: "Documentation"
+title: "Developer Content"
+linkTitle: "Developer Content"
 weight: 20
 menu:
   main:
@@ -13,7 +13,11 @@ This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+{{< card header="**Learning Topic**" title="Linux Info" >}}
+Imagine there's no heaven, It's easy if you try<br/>
+No hell below us, above us only sky<br/>
+Imagine all the people living for today…
+{{< /card >}}
 
 For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section. 
 

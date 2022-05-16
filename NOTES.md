@@ -71,5 +71,7 @@ navbar_translucent_over_cover_disable = true
 
 Changes in config.toml to remove some of the links
 
+### Search
 
+Use config.toml to change search engines as shows in the docsy documentation
 
