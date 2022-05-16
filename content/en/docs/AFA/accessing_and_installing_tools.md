@@ -3,10 +3,8 @@ title: "Accessing and installing the Development Tools supplied with Arm Flexibl
 linkTitle: "Installing Development Tools"
 date: 2022-05-16
 description: >
-   Arm Development Tools are provided as **Arm Success Kits**. This article will help you download and install the appropriate components, and set up your tools license.
+   Arm Development Tools are provided as Arm Success Kits. This article will help you download and install the appropriate components, and set up your tools license.
 ---
-# Accessing and installing the Development Tools supplied with Arm Flexible Access
-
 ## Arm Success Kits {#intro}
 
 Arm Flexible Access (AFA) provides development tools packaged as [Arm Success Kits](https://www.arm.com/products/development-tools/success-kits). These come in two forms:
@@ -74,5 +72,3 @@ In some cases you may have access to a cloud based UBL server, which you can ena
 Users who do not yet have access to UBL licenses will have FlexLM licenses. You should set the environment variable `ARMLMD_LICENSE_FILE` to map to the location of your license server. Contact your AFA adminstration team for information on your internal license server. Arm expects all FlexLM licenses to be removed from AFA programs by end of 2023.
 
 `export ARMLMD_LICENSE_FILE port@hostname`
-
-*Was this article helpful? Please let us know with feedback*
