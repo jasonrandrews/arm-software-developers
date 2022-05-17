@@ -4,7 +4,7 @@ title = "Arm Software Developers"
 [deployment] 
 [[deployment.targets]]
 name = "aws"
-URL = "s3://armsoftwaredev.tk"
+URL = "s3://armsoftwaredev.tk?region=us-east-1"
 cloudFrontDistributionID = "E2AWJV8PC20KOR"
 
 # Language settings
