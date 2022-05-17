@@ -3,8 +3,6 @@ title: "Tarmac Trace Utilities"
 linkTitle: "Tarmac Trace Utilities"
 description: >
     Info about an open-source code base for analyzing and browsing trace files in Tarmac trace format.
-resources:
-- src: "**.png"
 ---
 
 ## What is a Tarmac trace?

@@ -3,8 +3,8 @@ title: "Markdown Cheat Sheet"
 linkTitle: "Markdown Cheat Sheet"
 date: 2022-01-01
 description: >
-    This is a useful guide for markdown formatting:
-    [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+    Temporary. Using this to see how browser formats various things.
+    https://www.markdownguide.org/cheat-sheet/
 ---
 # Markdown Cheat Sheet
 
