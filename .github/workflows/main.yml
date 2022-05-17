@@ -24,6 +24,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo Themes
+          fetch-depth: 0 
 
       # Sets Up Hugo
       - name: Setup Hugo
