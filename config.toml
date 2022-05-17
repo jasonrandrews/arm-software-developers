@@ -204,6 +204,16 @@ enable = false
   icon = "fab fa-twitter"
   desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
+  name = "YouTube! Channel"
+  url = "https://www.youtube.com/c/ArmSoftwareDevelopers"
+  icon = "fab fa-youtube"
+  desc = "Arm YouTube! videos"
+[[params.links.user]]
+  name = "Discord"
+  url = "https://discord.gg/armsoftwaredev"
+  icon = "fab fa-discord"
+  desc = "Arm Discord Server"
+[[params.links.user]]
   name = "Stack Overflow"
   url = "https://stackoverflow.com/questions/tagged/arm"
   icon = "fab fa-stack-overflow"
