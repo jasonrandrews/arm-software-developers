@@ -34,6 +34,10 @@ jobs:
         with:
             hugo-version: '0.98.0'
             extended: true
+            
+      # Post-CSS install
+      - name: Install Post-CSS
+        run: npm install postcss-cli
 
       # Builds arm-software-developer repo
       - name: Build
