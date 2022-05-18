@@ -5,7 +5,7 @@ date: 2022-05-16
 description: >
    Arm Development Tools are provided as Arm Success Kits. This article will help you download and install the appropriate components, and set up your tools license.
 ---
-## Arm Success Kits {#intro}
+## Arm Success Kits
 
 Arm Flexible Access (AFA) provides development tools packaged as [Arm Success Kits](https://www.arm.com/products/development-tools/success-kits). These come in two forms:
 
@@ -14,23 +14,12 @@ Arm Flexible Access (AFA) provides development tools packaged as [Arm Success Ki
 
 The exact number of licenses for each Success Kit you will have will depend on your AFA program membership. Please contact your AFA administration team or Arm account manager if you need confirmation.
 
-Software Success Kits contain all of the tools Arm provides for developing and running code for your target
+Software Success Kits contain all of the tools Arm provides for developing and running code for your target.\
+Hardware Success Kits are a super-set of Software Success Kits, adding tools for enabling architecture exploration, IP configuration, and system debug.
 
-- Arm Development Studio
-  + includes Arm Compiler for Embedded and Arm Compiler for Embedded FuSa
-- Keil Microcontroller Development Kit
-- Fast Models run-time license
-- Arm Mobile Studio Professional Edition
-- Arm Allinea Studio
+For more information on the contents of these kits see [this link](/docs/afa/which_tools)
 
-Hardware Success Kits are a super-set of Software Success Kits, adding tools for enabling architecture exploration, IP configuration, and system debug
-
-- Socrates
-- AMBA Viz
-- Arm Fast Models
-- All SSK Components
-
-**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered in a seperate article.**
+**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered in a separate article.**
 
 ## Downloading Success Kit components {#download}
 
@@ -63,9 +52,9 @@ You now have access to all components within the success kit you have enabled. I
 
 ### Cloud based UBL server
 
-In some cases you may have access to a cloud based UBL server, which you can enable with a supplied code. Contact your AFA adminstration team or Arm account manager if you are unsure what this code is.
+In some cases you may have access to a cloud based UBL server, which you can enable with a supplied code. Contact your AFA adminstration team or Arm account manager if you are unsure what your code is.
 
-`armlm activate --code 12345678-1234-1234-1234-12345678`
+`armlm activate --code xxxxxxxx-xxxx-xxxx-xxxxxxxx`
 
 ## Legacy FlexLM license setup
 

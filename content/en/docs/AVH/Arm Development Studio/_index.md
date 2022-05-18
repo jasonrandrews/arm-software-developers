@@ -1,6 +1,6 @@
 ---
 title: "Debugging Arm Virtual Hardware with Arm Development Studio"
-linkTitle: "Debugging Arm Virtual Hardware with Arm Development Studio"
+linkTitle: "Debug with Arm Development Studio"
 description: >
     How to debug Arm Virtual Hardware running on AWS in the cloud.
 ---

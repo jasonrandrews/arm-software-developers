@@ -3,7 +3,7 @@ title: "Arm Virtual Hardware"
 linkTitle: "Arm Virtual Hardware"
 weight: 6
 description: >
-    Here is some content to help you get started with Arm Virtual Hardware
+    Learn about Arm Virtual Hardware
 ---
 {{% pageinfo %}}
 [Arm Virtual Hardware](https://avh.arm.com/) (AVH) provides a step change in the evolution of Arm’s modeling technology. Arm Virtual Hardware delivers test platforms for developers to verify and validate embedded and IoT applications during the complete software design cycle. Multiple modeling technologies are provided that remove the complexity of building and configuring board farms. This enables modern, agile, cloud native software development practices, such as continuous integration and continuous development CI/CD (DevOps) and MLOps workflows.
