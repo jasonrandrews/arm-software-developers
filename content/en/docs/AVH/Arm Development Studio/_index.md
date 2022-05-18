@@ -60,20 +60,18 @@ Clone the latest image and sources from your cloud instance to your local machin
 
 Arm Development Studio provides ready-to-use debug configurations for Arm Virtual Hardware Targets. We can use this to connect to an already launched target. From the debugger point of view, due to SSH tunneling, the debug server appears to be on `localhost`.
 
-<span style="color:red"> **????? WHY WON'T IMAGES RENDER ?????** </span>.
-
-![Debug Configurations pane](./debug_config1.png "Specify debug port address")
+![Debug Configurations pane](debug_config1.png "Specify debug port address")
 
 In the File tab, load the debug symbols for the image running on the target from your local repository.
 
-![Debug Configurations pane](./debug_config2b.png "Load debug symbols")
+![Debug Configurations pane](debug_config2b.png "Load debug symbols")
 
 You can now start your debug session. The debugger connects to the remote target and stops execution.
 
 The debugger attempts to locate and display the source code. The system paths (from the cloud instance) will likely not match your local machine. If so, you are prompted to create a path substitution. You can do this just for the base directory, and subfolders will also get populated. You will also need to do a substitution for your CMSIS Pack directory.
 
-![Set path substitution](./path-substitution2.png "Path substitution")
+![Set path substitution](path-substitution2.png "Path substitution")
 
 These substitutions are stored by this debug connection, and so subsequent debug sessions will automatically find the relevant sources. You should now have a fully featured debug environment for your application development.
 
-![Arm Debugger](./debug_session.png "Debug of Arm Virtual Hardware")
+![Arm Debugger](debug_session.png "Debug of Arm Virtual Hardware")

@@ -125,3 +125,10 @@ H~2~O
 ### Superscript
 
 X^2^
+
+
+### Others (Ronan)
+
+Colors:
+
+<span style="color:red"> This will be in red </span>.
