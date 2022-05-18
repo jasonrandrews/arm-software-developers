@@ -2,7 +2,7 @@
 ---
 title: "Arm SystemReady"
 linkTitle: "Arm SystemReady"
-weight: 3
+weight: 5
 description: >
     Learn about Arm SystemReady
 ---

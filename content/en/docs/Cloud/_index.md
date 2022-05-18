@@ -2,7 +2,7 @@
 ---
 title: "Build the Cloud on Arm"
 linkTitle: "Build the Cloud on Arm"
-weight: 1
+weight: 3
 description: >
     Great stuff about the Cloud on Arm, primarily Arm servers
 ---

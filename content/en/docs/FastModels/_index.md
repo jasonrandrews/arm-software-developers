@@ -2,7 +2,7 @@
 ---
 title: "Arm Fast Models"
 linkTitle: "Arm Fast Models"
-weight: 4
+weight: 6
 description: >
     Quick start for Arm Fast Models
 ---

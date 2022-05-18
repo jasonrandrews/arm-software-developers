@@ -2,9 +2,9 @@
 ---
 title: "Arm Flexible Access"
 linkTitle: "Arm Flexible Access"
-weight: 2
+weight: 1
 description: >
-    A New, Transparent Way of Working with Arm
+    A new, transparent way of working with Arm
 ---
 
 {{% pageinfo %}}

@@ -2,15 +2,14 @@
 ---
 title: "Linux on Arm" 
 linkTitle: "Linux on Arm"
-weight: 5
+weight: 2
 description: >
-    General Linux on Arm topics
+    General information about running Linux on Arm
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Linux is used on Arm in a variety of applications. Arm is an active maintainer and contributor to the Linux Kernel project, together with Linaro and a large number of partner companies and independent developers. Numerous Linux distributions are avilable and are used in IoT, embedded, laptop, and server.
 {{% /pageinfo %}}
 
-
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+The information below helps developers get going quickly with Linux on Arm.
 
