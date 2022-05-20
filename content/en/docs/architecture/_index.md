@@ -3,7 +3,7 @@ title: "Arm Architecture"
 linkTitle: "Arm Architecture"
 weight: 7
 description: >
-    Usefule links to [Arm architecture](https://developer.arm.com/architectures#aq=%40navigationhierarchiescategories%3D%3D%22Architecture%20products%22%20AND%20%40navigationhierarchiescontenttype%3D%3D%22Product%20Information%22&numberOfResults=48) documents for software developers and other useful articles about the architecture.
+    Useful links to [Arm architecture](https://developer.arm.com/architectures#aq=%40navigationhierarchiescategories%3D%3D%22Architecture%20products%22%20AND%20%40navigationhierarchiescontenttype%3D%3D%22Product%20Information%22&numberOfResults=48) documents for software developers and other useful articles about the architecture.
 ---
 
 {{% pageinfo %}}
