@@ -1,4 +1,5 @@
 ---
+tags: ["cortex-m"]
 title: "Collect Code Coverage from RTL simulation"
 linkTitle: "Collect Code Coverage from RTL simulation"
 description: >

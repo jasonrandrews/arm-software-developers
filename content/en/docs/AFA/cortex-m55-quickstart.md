@@ -1,4 +1,5 @@
 ---
+tags: ["cortex-m"]
 title: "Cortex-M55 Quick Start"
 linkTitle: "Cortex-M55 Quick Start"
 description: >

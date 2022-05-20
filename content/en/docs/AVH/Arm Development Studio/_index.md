@@ -1,4 +1,5 @@
 ---
+tags: ["software tools"]
 title: "Debugging Arm Virtual Hardware with Arm Development Studio"
 linkTitle: "Debug with Arm Development Studio"
 description: >

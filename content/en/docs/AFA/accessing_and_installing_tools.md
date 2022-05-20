@@ -1,4 +1,5 @@
 ---
+tags: ["software tools"]
 title: "Accessing and installing the Development Tools supplied with Arm Flexible Access"
 linkTitle: "Installing Development Tools"
 date: 2022-05-16

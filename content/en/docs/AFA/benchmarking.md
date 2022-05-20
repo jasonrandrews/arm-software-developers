@@ -1,4 +1,5 @@
 ---
+tags: ["cortex-m"]
 title: "Cortex-M benchmarking on RTL simulation"
 linkTitle: "Cortex-M benchmarking on RTL simulation"
 description: >
