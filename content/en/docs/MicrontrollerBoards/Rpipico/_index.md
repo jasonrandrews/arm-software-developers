@@ -20,6 +20,13 @@ Enable LoRaWAN communications on your Raspberry Pi Pico or any RP2040 based boar
 
 [Get started here](https://github.com/ArmDeveloperEcosystem/lorawan-library-for-pico)
 {{< /card >}}
+
+{{< card header="**[ML Audio Classifier Example for Pico](https://github.com/ArmDeveloperEcosystem/ml-audio-classifier-example-for-pico/blob/main/README.md)**" >}}
+An end-to-end flow for ML audio classification: collecting and capturing data for training, transfer learning, re-training, deploying to a Raspberry Pi Pico or any RP2040 based device using Google Colab.
+
+[Get started here](https://github.com/ArmDeveloperEcosystem/ml-audio-classifier-example-for-pico)
+{{< /card >}}
+
 {{< /cardpane >}}
 
 

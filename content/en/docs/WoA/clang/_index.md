@@ -8,7 +8,7 @@ description: >
 
 ## Overview
 
-This guide introduces the features in [LLVM 12](https://releases.llvm.org/12.0.0/docs/ReleaseNotes.html) and the associated Clang release that help developers for Arm-based devices. In particular, this guide examines how to use the native toolchain to compile for Windows on Arm (WoA). The guide uses the example of compiling the popular open-source PuTTY application for Windows on Arm.
+This guide introduces the features in [LLVM 14](https://releases.llvm.org/14.0.0/docs/ReleaseNotes.html) and the associated Clang release that help developers for Arm-based devices. In particular, this guide examines how to use the native toolchain to compile for Windows on Arm (WoA). The guide uses the example of compiling the popular open-source PuTTY application for Windows on Arm.
 
 The new LLVM toolchain variant for Windows on Arm means that developers can now develop and compile a C/C++ application on a Windows on Arm laptop with a native AArch64 LLVM toolchain. This native toolchain means that you can develop software for an Arm-based device on that device itself, rather than cross-compiling on another host or using emulation to run an x86 build of Clang.
 
@@ -19,17 +19,17 @@ For Windows on Arm devices, using the native toolchain is much faster than runni
 To follow this tutorial, you need the following hardware and software:
 
 - A Windows on Arm device
-- LLVM 12.0.0 or higher, which is available from the [LLVM download page](https://releases.llvm.org/download.html).
-- The pre-built binary for Windows on Arm is [LLVM-12.0.0-woa64.exe](https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.0/LLVM-12.0.0-woa64.exe).
+- LLVM 14.0.0 or higher, which is available from the [LLVM download page](https://releases.llvm.org/download.html).
+- The pre-built binary for Windows on Arm is [LLVM-14.0.0-woa64.exe](https://github.com/llvm/llvm-project/releases/download/llvmorg-14.0.0/LLVM-14.0.0-woa64.zip).
 - Visual Studio, including the Arm build tools and the Desktop development with C++ workload. Follow the Visual Studio installation instructions in [Building libraries for Windows on Arm: Install Visual Studio](https://developer.arm.com/documentation/102528/0100/Install-Visual-Studio).
 - The Microsoft C Runtime Library, version 14.00.24234.1 or later, called vcruntime140.dll. Microsoft distributes this runtime library as part of Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019, available as [vc_redist.arm64.exe](https://aka.ms/vs/16/release/VC_redist.arm64.exe). For more information, see this Microsoft material: The [latest supported Visual C++ downloads](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0).
 - Perl, for example [Strawberry Perl](https://strawberryperl.com/) or similar
-- A file archive utility, for example [-Zip](https://www.7-zip.org/) or similar
+- A file archive utility, for example [7-Zip](https://www.7-zip.org/) or similar
 - A make utility, for example [GnuWin32}(http://gnuwin32.sourceforge.net/) or similar
 
 ## LLVM support for Arm-based devices
 
-LLVM 12 provides improved support for Arm-based devices over previous versions.
+LLVM 14 provides improved support for Arm-based devices over previous versions.
 
 This improved support includes the following features:
 
@@ -47,13 +47,13 @@ Compiling on Windows on Arm devices using native Clang is faster than running an
 
 ## Clang-cl support
 
-As part of the LLVM 12 release, LLVM supports clang-cl, a compatibility layer for Microsoft Visual C++ (MSVC). This means that most developers can use clang-cl to compile their C/C++ applications on Visual Studio/MSBuild on the Windows on Arm device, without needing to change the command line.
+As part of the LLVM 14 release, LLVM supports clang-cl, a compatibility layer for Microsoft Visual C++ (MSVC). This means that most developers can use clang-cl to compile their C/C++ applications on Visual Studio/MSBuild on the Windows on Arm device, without needing to change the command line.
 
 You can use clang-cl.exe as a direct replacement for cl.exe, the MSVC compiler executable. This allows you to easily modify projects that already use MSVC to use native compilation.
 
 ## Arm processor support
 
-LLVM 12 adds support for the following processors:
+LLVM 14 adds support for the following processors:
 
 - Arm Neoverse V1
 - Arm Neoverse N2
@@ -75,7 +75,7 @@ The following table specifies the command-line option for each of the new target
 
 ## SPEC CPU 2017 CPU benchmark improvements
 
-LLVM 12 adds new generic vectorization optimizations that improve performance on the SPEC CPU 2017 Integer 525.x264_r benchmark. On Arm Neoverse N1 hardware, there is a 25% improvement for this individual benchmark, and an overall 2% improvement in the SPEC CPU 2017 INT score.
+LLVM 14 adds new generic vectorization optimizations that improve performance on the SPEC CPU 2017 Integer 525.x264_r benchmark. On Arm Neoverse N1 hardware, there is a 25% improvement for this individual benchmark, and an overall 2% improvement in the SPEC CPU 2017 INT score.
 
 Other optimizations in LLVM 12 that contribute to improved benchmark scores include the following:
 
