@@ -49,17 +49,17 @@ $google_font_family: "Lato:300,300i,400,400i,700,700i";
 
 ### Disable languages
 
-Edit config.toml and move en/ directory to content/ 
+Edit config.toml and set language to Dnglish content/en is the English content.
 
 Delete other language directories
 
 ### Home page
 
-content/_index.html
+content/en/_index.html
 
 ### Front image
 
-content/featured-background.jpg
+content/en/featured-background.jpg
 
 ### Translucent bar on homepage
 
