@@ -2,7 +2,7 @@
 tags : ["software tools"]
 title: "Which development tools are provided with Arm Flexible Access?"
 linkTitle: "Which Tools are Supplied?"
-weight: 50
+weight: 20
 date: 2022-05-16
 description: >
    Arm Development Tools are provided as Arm Success Kits. This article will help understand the components provided therein.

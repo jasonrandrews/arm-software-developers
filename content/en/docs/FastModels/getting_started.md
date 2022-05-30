@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Arm Fast Models"
 linkTitle: "Get Started with Fast Models"
-weight: 100
+weight: 1
 description: >-
      This article describes how to set up Arm Fast Models for standalone use. If using Fast Models within an EDA partner's environment, please contact the relevant vendor for guidance.
 ---

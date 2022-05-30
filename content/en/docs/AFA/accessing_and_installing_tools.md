@@ -2,7 +2,7 @@
 tags: ["software tools"]
 title: "Accessing and installing the Development Tools supplied with Arm Flexible Access"
 linkTitle: "Installing Development Tools"
-weight: 100
+weight: 10
 date: 2022-05-16
 description: >
    Arm Development Tools are provided as Arm Success Kits. This article will help you download and install the appropriate components, and set up your tools license.
