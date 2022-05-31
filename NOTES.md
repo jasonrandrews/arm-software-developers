@@ -75,3 +75,15 @@ Changes in config.toml to remove some of the links
 
 Use config.toml to change search engines as shows in the docsy documentation
 
+### Code or shell highlighting
+
+use three backticks (grave) to wrap code or shell commands.
+```C
+printf("hello world\n);
+```
+
+If you are unsure of language use shell.
+
+Look at [prism language choice](https://prismjs.com/index.html#supported-languages) to see what's possible. 
+
+

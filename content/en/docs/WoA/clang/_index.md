@@ -99,7 +99,7 @@ LLVM 12 introduces the ability to vectorize certain loops using width-agnostic S
 For example, consider the following loop, which is adapted from the set of loops in the updated [Test Suite for Vectorising Compilers, TSVC_2](https://github.com/UoB-HPC/TSVC_2/blob/master/src/tsvc.c):
 
 
-```code
+```C
 void s000(double * __restrict a, double * __restrict b) {
   unsigned LEN_1D = 1024;
 #pragma clang loop vectorize_width(2, scalable) interleave(disable) unroll(disable)
@@ -134,7 +134,7 @@ To compile PuTTY on a Windows on Arm device:
 1. Start a Windows command prompt with Start < cmd.
 2. Create a folder to use for the build, for example C:\putty, and move into that folder:
 
-```code
+```shell
 mkdir C:\putty
 cd C:\putty
 ```
@@ -148,7 +148,7 @@ cd C:\putty
 
 5. Run the Perl script mkfiles.pl to automatically generate the makefiles and folders used by the build process:
 
-```code
+```shell
 perl mkfiles.pl
 ```
 
@@ -156,18 +156,18 @@ The script generates makefiles for several different compilers. The makefile tha
 
 6. Run the Visual Studio batch file to configure Command Prompt for Developers, to automatically configure your environment to compile for Arm-based targets:
 
-```code
+```shell
 cmd /k ""C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat"" x64_arm64
 ```
 
 7. Move to the windows subdirectory in the build folder:
 
-```code
+```shell
 cd windows
 ```
 
 8. Use the GnuWin32 make utility, or similar, to build the PuTTY application, as shown by the following command:
-```console
+```shell
 C:\GnuWin32\bin\make.exe Platform=arm64  -f  Makefile.clangcl all
 ```
 
