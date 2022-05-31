@@ -1,7 +1,8 @@
 ---
 title: "Arm Virtual Hardware"
 linkTitle: "Arm Virtual Hardware"
-weight: 30
+type: docs
+weight: 100
 description: >
     Learn about Arm Virtual Hardware
 ---

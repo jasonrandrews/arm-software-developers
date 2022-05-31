@@ -1,11 +1,15 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
-#weight: 1000
-#menu:
-#  main:
-#    weight: 1000
+title: "Example projects"
+linkTitle: "Examples"
+type: docs
+description: >
+    This section provides links to example projects to kickstart your Arm development.
+    See the Getting Started section to help you get set up with the right tools.
+weight: 20
+menu:
+  main:
+    weight: 20
 ---
 
 {{% pageinfo %}}

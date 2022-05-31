@@ -1,11 +1,15 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
-#weight: 1000
-#menu:
-#  main:
-#    weight: 1000
+title: "Getting Started with Arm Tools"
+linkTitle: "Getting Started"
+type: docs
+description: >
+    This section is for new users of Arm tools.
+    It will help you select and install the appropriate tooling for your task(s)
+weight: 10
+menu:
+  main:
+    weight: 10
 ---
 
 {{% pageinfo %}}
@@ -15,3 +19,4 @@ Our goal is to help developers find and use the platforms, tools, software and t
 
 We welcome community participation to continuously improve software development for the Arm architecture.
 {{% /pageinfo %}}
+

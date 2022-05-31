@@ -1,11 +1,14 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
-#weight: 1000
-#menu:
-#  main:
-#    weight: 1000
+title: "Development Operations"
+linkTitle: "DevOps"
+type: docs
+description: >
+    This section is for DevOps and MLOps tasks, such as cloud based development and how to integrate CI/CD development flows
+weight: 40
+menu:
+  main:
+    weight: 40
 ---
 
 {{% pageinfo %}}

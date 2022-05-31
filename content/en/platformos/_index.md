@@ -1,11 +1,14 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
-#weight: 1000
-#menu:
-#  main:
-#    weight: 1000
+title: "Platform OS Developers"
+linkTitle: "Linux/WoA"
+type: docs
+description: >
+    This section is for developers using Linux and Windows on Arm
+weight: 30
+menu:
+  main:
+    weight: 30
 ---
 
 {{% pageinfo %}}

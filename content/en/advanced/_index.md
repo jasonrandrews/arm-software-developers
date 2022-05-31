@@ -1,11 +1,14 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
-#weight: 1000
-#menu:
-#  main:
-#    weight: 1000
+title: "Programming techniques on Arm"
+linkTitle: "Advanced"
+type: docs
+description: >
+    This section introduces advanced programming techniques to accelerate your Arm based design.
+    weight: 15
+menu:
+  main:
+    weight: 15
 ---
 
 {{% pageinfo %}}
@@ -15,3 +18,4 @@ Our goal is to help developers find and use the platforms, tools, software and t
 
 We welcome community participation to continuously improve software development for the Arm architecture.
 {{% /pageinfo %}}
+

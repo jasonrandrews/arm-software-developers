@@ -2,7 +2,8 @@
 tags: ["software tools"]
 title: "Accessing and installing the Development Tools supplied with Arm Flexible Access"
 linkTitle: "Installing Development Tools"
-weight: 20
+type: docs
+weight: 30
 description: >
    Arm Development Tools are provided as Arm Success Kits. This article will help you download and install the appropriate components, and set up your tools license.
 ---
@@ -20,7 +21,7 @@ Hardware Success Kits are a super-set of Software Success Kits, adding tools for
 
 For more information on the contents of these kits see [this link](/docs/afa/which_tools)
 
-**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered in elsewhere.**
+**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered elsewhere.**
 
 ## Downloading Success Kit components {#download}
 
