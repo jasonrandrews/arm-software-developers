@@ -9,13 +9,13 @@ description: >-
 
 ## Introduction
 
-[Arm Instruction Emulator](https://developer.arm.com/Tools%20and%20Software/Arm%20Instruction%20Emulator) is a software tool that runs on 64-bit Arm platforms and emulates [Scalable Vector Extension(SVE)] (https://developer.arm.com/documentation/102476/latest/instructions). This tool allows you to run your compiled SVE application binaries on hardware that is not SVE-enabled.
+[Arm Instruction Emulator](https://developer.arm.com/Tools%20and%20Software/Arm%20Instruction%20Emulator) is a software tool that runs on 64-bit Arm platforms and emulates [Scalable Vector Extension(SVE)](https://developer.arm.com/documentation/102476/latest/instructions). This tool allows you to run your compiled SVE application binaries on hardware that is not SVE-enabled.
 
 
 ## Pre-requisites
 
-Arm InstructionEmulator is an executable that runs on your Linux host. It runs on RHEL, SLES, and Ubuntu Linux distributions.
-You must ensure that either [Environment Modules] (https://modules.readthedocs.io/en/latest/index.html) or the [Lmod Environment Module System] (https://lmod.readthedocs.io/en/latest/) are installed on your host Linux machine.
+Arm Instruction Emulator is an executable that runs on your Linux host. It runs on RHEL, SLES, and Ubuntu Linux distributions.
+You must ensure that either [Environment Modules](https://modules.readthedocs.io/en/latest/index.html) or the [Lmod Environment Module System](https://lmod.readthedocs.io/en/latest/) are installed on your host Linux machine.
 
 On the supported Linux hosts, use gcc 7.1.0 or higher
 
