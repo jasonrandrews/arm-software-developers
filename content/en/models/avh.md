@@ -32,7 +32,8 @@ At least t2.micro instance type is required to run AVH AMI, while t3.medium is a
 ## Setting up product license {#license}
 
 The license is pre-installed on the AVH AMI for all the tools that are license managed. The .bash_rc file in the AVH AMI setups up the enviroment variable for the license file. 
-export ARMLMD_LICENSE_FILE=/opt/data.dat
+
+`export ARMLMD_LICENSE_FILE=/opt/data.dat`
 
 ## Get started {#start}
 
