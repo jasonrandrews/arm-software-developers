@@ -1,7 +1,11 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "IoT Software"
+Title: "IoT Software"
+type: docs
+description: >
+    Learn about IoT software.
+weight: 10
 ---
 
 {{% pageinfo %}}
@@ -11,3 +15,4 @@ Our goal is to help developers find and use the platforms, tools, software and t
 
 We welcome community participation to continuously improve software development for the Arm architecture.
 {{% /pageinfo %}}
+

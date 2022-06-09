@@ -1,7 +1,10 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "Performance analysis"
+type: docs
+description: >
+    This section covers Performance Analysis tools
+weight: 30
 ---
 
 {{% pageinfo %}}
@@ -11,3 +14,5 @@ Our goal is to help developers find and use the platforms, tools, software and t
 
 We welcome community participation to continuously improve software development for the Arm architecture.
 {{% /pageinfo %}}
+
+

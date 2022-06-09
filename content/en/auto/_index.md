@@ -1,7 +1,10 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "Automotive computing"
+type: docs
+description: >
+    This section covers automotive.
+weight: 30
 ---
 
 {{% pageinfo %}}

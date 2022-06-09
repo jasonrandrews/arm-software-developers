@@ -1,7 +1,10 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "Hardware Tools"
+type: docs
+description: >
+    Sometimes software developers need to know hardware tools
+weight: 30
 ---
 
 {{% pageinfo %}}

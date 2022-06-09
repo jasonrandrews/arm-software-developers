@@ -1,9 +1,9 @@
 ---
 title: "Docsy Blog"
 linkTitle: "Blog"
-#menu:
-#  main:
-#    weight: 2000
+menu:
+  main:
+    weight: 50
 ---
 
 

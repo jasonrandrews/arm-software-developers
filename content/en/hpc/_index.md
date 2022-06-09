@@ -1,7 +1,10 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "High performance computing"
+type: docs
+description: >
+    This section high performance computing on Arm.
+weight: 30
 ---
 
 {{% pageinfo %}}

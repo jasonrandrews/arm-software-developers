@@ -1,7 +1,10 @@
 
 ---
-title: "Developer Content"
-linkTitle: "Developer Content"
+title: "IDE and debuggers"
+type: docs
+description: >
+    This section covered Integrated Development Environments and Debuggers
+weight: 30
 ---
 
 {{% pageinfo %}}
