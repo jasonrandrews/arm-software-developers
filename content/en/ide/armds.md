@@ -15,12 +15,12 @@ description: >-
 
 Arm Development Studio supports the following host platforms:
 
-Windows 7 SP1 Professional Edition
-Windows 7 SP1 Enterprise Edition
-Windows 10
-Red Hat Enterprise Linux 7 Workstation
-Ubuntu Desktop Edition 16.04 LTS
-Ubuntu Desktop Edition 18.04 LTS
+  * Windows 7 SP1 Professional Edition
+  * Windows 7 SP1 Enterprise Edition
+  * Windows 10
+  * Red Hat Enterprise Linux 7 Workstation
+  * Ubuntu Desktop Edition 16.04 LTS
+  * Ubuntu Desktop Edition 18.04 LTS
 
 ## Download installer packages {#download}
 
