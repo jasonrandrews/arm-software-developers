@@ -39,6 +39,6 @@ sudo apt install linux-tools-common linux-tools-generic linux-tools-`uname -r`
 {{< /card >}}
 
 
-{{< /card >}}
+{{< /cardpane >}}
 
 
