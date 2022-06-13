@@ -33,11 +33,11 @@ Install Arm Development Studio using the instructions in the [Arm Development St
 
 ## Setting up product license {#license}
 
-** Streamline for Android Performance Analysis: **
+**Streamline for Android Performance Analysis:**
 
 [Arm Mobile Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Mobile%20Studio) includes a free starter edition license, making Android performance analysis freely accessible to all.
 
-** Streamline for Linux and bare-metal Performance Analysis: **
+**Streamline for Linux and bare-metal Performance Analysis:**
 
 Arm® Streamline contains license-managed features for Linux and bare-metal Performance Analysis. These license features are only accessible when they are enabled by the commercial license for Arm Development Studio included in [Success Kits](https://www.arm.com/products/development-tools/success-kits). 
 Refer to the [licensing section](https://www.armsoftwaredev.tk/ide/armds/#license) for Arm Development Studio for complete details. 
