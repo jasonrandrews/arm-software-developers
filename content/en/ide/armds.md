@@ -32,7 +32,7 @@ For Windows hosts, follow the installation instructions provided [here](https://
 
 ## Setting up product license {#license}
 
-All Arm Fast Models are license managed, and are enabled by a [Success Kit](https://www.arm.com/products/development-tools/success-kits).
+Arm Development Studio is license managed. The licenses are enabled by a [Success Kit](https://www.arm.com/products/development-tools/success-kits).
 
 Since Arm Development Studio version 2022.0 and 2022.a, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the `armlm inspect` command. If a license is reported, then you are ready to use Arm Development Studio (and other Arm tools).
 
