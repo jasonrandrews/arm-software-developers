@@ -65,12 +65,15 @@ Host machine support includes:
 {{< /card >}}
 
 {{< card header="**[Arm Compiler for Linux](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Linux)**" >}}
-Arm Compiler for Linux is a commercial, native compiler for Linux HPC applications on 64-bit Armv8-A processors such as Neoverse-N1. 
+Arm Compiler for Linux is a commercial, native compiler for Linux HPC applications on 64-bit Armv8-A processors such as Neoverse-N1. it consists of:
+- Arm C/C++ Compiler
+- Arm Fortran Compiler
+- Arm Performance Libraries
 
 Host machine support includes:
 - Linux (AArch64)
 
-It run on a variety of Linux distributions.
+It can run on a variety of Linux distributions.
 
 {{< /card >}}
 

@@ -49,3 +49,6 @@ Depending on your type of application, choose the appropriate guide below to get
   * [Profile your Linux Application](https://developer.arm.com/documentation/101816/0800/Getting-started-with-Streamline/Profile-your-Linux-application?lang=en)
   * [Profile your bare-metal Application](https://developer.arm.com/documentation/101816/0800/Getting-started-with-Streamline/Profile-your-bare-metal-application?lang=en)
 
+## Further reading {#further}
+
+  * [Introduction to Statistical Profiling Support in Streamline](https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog/posts/introduction-to-statistical-profiling-support-in-streamline)
