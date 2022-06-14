@@ -3,6 +3,8 @@ tags : ["neoverse"]
 title: "Large System Extenstions (LSE)"
 linkTitle: "Large System Extenstions (LSE)"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     Large System Extensions (LSE) improve the performance of atomic operations in systems with many processors. Understanding LSE helps developers port software applications to Arm Neoverse processors.
 ---
