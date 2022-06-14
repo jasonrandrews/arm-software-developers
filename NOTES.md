@@ -86,4 +86,9 @@ If you are unsure of language use shell.
 
 Look at [prism language choice](https://prismjs.com/index.html#supported-languages) to see what's possible. 
 
+### Remove article from left side menu or bottom listing of a page
+Hides from left list:
+toc_hide: true
 
+Hides from bottom list:
+hide_summary: true

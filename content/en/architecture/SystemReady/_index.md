@@ -3,6 +3,7 @@
 title: "Arm SystemReady"
 type: docs
 linkTitle: "Arm SystemReady"
+hide_summary: true
 weight: 5
 description: >
     Learn about Arm SystemReady

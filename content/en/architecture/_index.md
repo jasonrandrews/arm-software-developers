@@ -8,9 +8,17 @@ description: >
 ---
 
 {{% pageinfo %}}
-Software developers may need to look up Arm architecture information for programming tasks. Architecture covers system programming as well as application programming. Examples include vector extensions, firmware standards, and dsp extensions. 
+Software developers may need to look up Arm architecture information for programming tasks. Architecture covers system programming as well as application programming. Examples include vector extensions, firmware standards, and dsp extensions. <br>
+<div class="col text-center">
+        <a href="/ml" class="btn btn-primary">Learn More</a>
+        </div>
 {{% /pageinfo %}}
 
+{{% blocks/lead color="primary" height="auto" %}}
+Architecture Reference Information
+{{% /blocks/lead %}}
+
+<br>
 {{< cardpane >}}
 
 {{< card header="**[Arm A-Profile architecture](https://https://developer.arm.com/Architectures/A-Profile%20Architecture)**" >}}
@@ -52,3 +60,4 @@ Arm Neon technology is an advanced Single Instruction Multiple Data (SIMD) archi
 Arm Helium technology is for the Arm Cortex-M processor series and is also known as the M-Profile Vector Extension (MVE). Helium is an optional extension in the Armv8.1-M architecture and delivers a significant performance uplift for machine learning (ML) and digital signal processing (DSP) applications for small, low power embedded devices.
 
 {{< /cardpane >}}
+
