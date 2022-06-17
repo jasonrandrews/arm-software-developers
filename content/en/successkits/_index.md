@@ -1,7 +1,7 @@
 ---
 tags : ["software tools"]
-title: "Which development tools are provided with Arm Flexible Access?"
-linkTitle: "Which Tools are Supplied?"
+title: "Which development tools are provided with Arm Success Kits?"
+linkTitle: "Arm Success Kits"
 type: docs
 weight: 10
 description: >
@@ -9,16 +9,11 @@ description: >
 ---
 ## Arm Success Kits
 
-Arm Flexible Access (AFA) provides development tools packaged as [Arm Success Kits](https://www.arm.com/products/development-tools/success-kits). These come in two forms:
-
-- Software Success Kits (SSK)
-- Hardware Success Kits (HSK)
-
-The exact number of licenses for each Success Kit you will have will depend on your AFA program membership. Please contact your AFA administration team or Arm account manager if you need confirmation.
+[Arm Success Kits](https://www.arm.com/products/development-tools/success-kits) simplify deployment of Arm tools to your organization, enabling users to have unlimited access to the component tools provided. They are available as Software Success Kits (SSK) and Hardware Success Kits (HSK).
 
 Software Success Kits contain all of the tools Arm provides for developing and running code for your target
 
-- [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) Gold Edition
+- [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio)
   + includes [Arm Compiler for Embedded](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) and [Arm Compiler for Embedded FuSa](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded%20FuSa)
 - [Keil Microcontroller Development Kit](https://developer.arm.com/Tools%20and%20Software/Keil%20MDK) Professional Edition
 - [Arm Fast Models](https://developer.arm.com/Tools%20and%20Software/Fast%20Models) run-time license
@@ -30,9 +25,7 @@ Hardware Success Kits are a super-set of Software Success Kits, adding tools for
 - [Socrates](https://developer.arm.com/Tools%20and%20Software/Socrates)
 - [AMBA Viz](https://developer.arm.com/Architectures/AMBA#Tools-and-Software)
 - [Arm Fast Models](https://developer.arm.com/Tools%20and%20Software/Fast%20Models)
-- Plus all SSK Components
-
-**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered in a separate article.**
+- Plus all SSK components
 
 ## Software development tools {#SDT}
 

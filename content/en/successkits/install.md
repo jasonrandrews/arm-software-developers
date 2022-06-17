@@ -1,7 +1,7 @@
 ---
 tags: ["software tools"]
-title: "Accessing and installing the Development Tools supplied with Arm Flexible Access"
-linkTitle: "Installing Development Tools"
+title: "Accessing and installing Success Kit components"
+linkTitle: "Success Kit setup"
 type: docs
 weight: 30
 description: >
@@ -14,18 +14,11 @@ Arm Flexible Access (AFA) provides development tools packaged as [Arm Success Ki
 - Software Success Kits (SSK)
 - Hardware Success Kits (HSK)
 
-The exact number of licenses for each Success Kit you will have will depend on your AFA program membership. Please contact your AFA administration team or Arm account manager if you need confirmation.
-
-Software Success Kits contain all of the tools Arm provides for developing and running code for your target.\
-Hardware Success Kits are a super-set of Software Success Kits, adding tools for enabling architecture exploration, IP configuration, and system debug.
-
-For more information on the contents of these kits see [this link](/docs/afa/which_tools)
-
-**Note that as an AFA menber, you are also entitled to make use of [Arm IP Explorer](https://www.arm.com/products/ip-explorer). This is covered elsewhere.**
+For more information on the contents of these kits see [this link](/successkits)
 
 ## Downloading Success Kit components {#download}
 
-All AFA downloads are provided via the [Arm Product Download Hub](https://developer.arm.com/downloads). You will need to set up an account for this system to be able to download. It may be that only certain contacts within your organization have such access. If you are unsure, please contact your Arm account manager for assistance.
+All downloads are provided via the [Arm Product Download Hub](https://developer.arm.com/downloads). You will need to set up an account for this system to be able to download. It may be that only certain contacts within your organization have such access. If you are unsure, please contact your Arm account manager for assistance.
 
 You can download individual components, or the complete success kits. Bundles are provided for Windows, Linux, or Mac OS. Note however that not all components are supported on all hosts.
 
@@ -37,9 +30,11 @@ Once downloaded, you can untar the bundles, and install the necessary components
 
 All Arm tools are license managed. Arm is migrating all tools to a User Based Licensing (UBL) system which greatly simplifies license configuration. With a UBL license you have unlimited access to all components within the success kit you have enabled. The license is cached locally for up to 30 days, enabling remote or traveling users to have access to tools without connecting to their internal network. Using any component whilst connected to the network will renew the 30 days of license (this check is performed once per day upon the first use of the tools that day).
 
+Documentation link [internal only for now](https://developer.arm.com/documentation-preview/102516/)
+
 ### Internal UBL server
 
-The most common deployment method is to provide your AFA administration team with licenses to set up a UBL server for your organization. Contact your AFA administration team if you are unsure of the URL of the server.
+The most common deployment method is to set up a UBL server for your organization.
 
 Once this is running, to enable usage of the tools, go to the bin directory of any success kit component you have installed, and enter a command of the form:
 
@@ -50,7 +45,10 @@ To confirm you have enabled the license, enter the command:
 
 `armlm inspect`
 
-You now have access to all components within the success kit you have enabled. If you only require access to the components of SSK, it is strongly recommended that you only use an SSK license.
+You now have access to all components within the success kit you have enabled. Note that HSK is a super-set of SSK. If you only require access to the components of SSK, it is strongly recommended that you only use an SSK license.
+
+Full license server setup and administation documentation is available [here internal only for now](https://developer.arm.com/documentation-preview/107573)
+
 
 ### Cloud based UBL server
 

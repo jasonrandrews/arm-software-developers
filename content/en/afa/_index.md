@@ -31,6 +31,20 @@ Information about Arm Approved Design Partners who can help is also found in Arm
 
 {{< /card >}}
 
+{{< card header="**[Arm Success Kits](https://www.arm.com/products/development-tools/success-kits)**" >}}
+Arm Success Kits are a smart way to access licensed tools and models for both hardware and software development. Each user has unlimited access to all the licensed tools and models they need for maximum productivity.
+
+Success Kits are available as
+
+  - **Software Success Kits (SSK)**, enabling all the tools Arm provides for software development on Arm.
+  - **Hardware Success Kits (HSK)**, a super-set of SSK, also enabling tooling for IP configuration and evaluation.
+
+Arm Flexible Access provides a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
+
+For more information on Success Kits click [here](/successkits).
+
+{{< /card >}}
+
 {{< card header="**[Arm IP Download](https://developer.arm.com/downloads/search#Arm%20Flexible%20Access)**" >}}
 Download the IP, software, and tools from the [Arm Product Download Hub](https://developer.arm.com/downloads/)
 
