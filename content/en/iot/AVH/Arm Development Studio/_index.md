@@ -10,7 +10,15 @@ description: >
 
 As you adapt these code bases for your own needs, there is a requirement for additional debug capabilities. The [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) debugger fully supports the necessary debug interfaces required to connect to the virtual target running on the cloud from your local desktop. This article explains the necessary steps, using the [microspeech](https://github.com/ARM-software/AVH-TFLmicrospeech) reference example for Corstone-300.
 
-## Run in the cloud {#runinthecloud}
+## Prerequisites
+
+Tools: [Arm Development Studio](https://www.armsoftwaredev.tk/ide/armds/)
+
+Code Repository: [Microspeech reference example for Corstone-300](https://github.com/ARM-software/AVH-TFLmicrospeech)  
+
+## Detailed Steps
+
+### Run in the cloud {#runinthecloud}
 
 The example is provided with a `run_example.sh` script that contains the necessary command options to launch the virtual hardware target with the built code image, and execute. We can concatenate additional options to this script to enable debug functionality to the model. The relevant options are:
 
@@ -52,11 +60,11 @@ Running the example with these options result in output similar to:
 > **Heard yes (146) @1000ms**\
 > **Heard no (145) @5600ms**
 
-## Provide SSH tunnel {#sshtunnel}
+### Provide SSH tunnel {#sshtunnel}
 
 Accessing the cloud instance from a remote machine generally requires the use of a key pair. To work around this, you can use port forwarding to tunnel accesses from a given port to your local machine (`7100` in this example).
 
-## Debug from desktop {#debug}
+### Debug from desktop {#debug}
 
 Clone the latest image and sources from your cloud instance to your local machine.
 
