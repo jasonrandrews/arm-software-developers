@@ -6,6 +6,9 @@ type: docs
 description: >
     How to debug Arm Virtual Hardware running on AWS in the cloud.
 ---
+
+## Overview
+
 [Arm Virtual Hardware](https://avh.arm.com/) is a simple and scalable way to remove dependency from hardware and unlock cloud-based development. Virtual Hardware is provided as an Amazon Machine Image (AMI) on AWS, and is the default platform for Arm Total Solutions for IoT. The software provided allows you to build and run a number of pre-configured software stacks, enabling an automated CI/CD infrastructure to be built up around these virtual hardware targets.
 
 As you adapt these code bases for your own needs, there is a requirement for additional debug capabilities. The [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) debugger fully supports the necessary debug interfaces required to connect to the virtual target running on the cloud from your local desktop. This article explains the necessary steps, using the [microspeech](https://github.com/ARM-software/AVH-TFLmicrospeech) reference example for Corstone-300.
