@@ -1,5 +1,6 @@
 ---
-tags: ["software tools"]
+tools: ["Arm DS"]
+softwares: ["bare-metal"]
 title: "Debugging Arm Virtual Hardware with Arm Development Studio"
 linkTitle: "Debug with Arm Development Studio"
 type: docs

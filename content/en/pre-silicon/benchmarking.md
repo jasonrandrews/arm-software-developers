@@ -1,5 +1,7 @@
 ---
-tags: ["cortex-m"]
+processors: ["Cortex-M"]
+tools: ["Tarmac-trace"]
+softwares: ["bare-metal"]
 title: "Cortex-M benchmarking on RTL simulation"
 linkTitle: "Cortex-M benchmarking on RTL simulation"
 type: docs

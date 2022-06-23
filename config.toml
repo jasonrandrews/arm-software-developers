@@ -24,18 +24,19 @@ enableGitInfo = true
 
 # You can add your own taxonomies
 [taxonomies]
-tag = "tags"
-category = "categories"
+processor = "processors"
+tool = "tools"
+software = "softwares"
 
 [params.taxonomy]
 # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories"] 
+taxonomyCloud = ["processors", "tools", "softwares"] 
 
 # If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["Tags", "Categories"] 
+taxonomyCloudTitle = ["Arm IP", "Tools", "Software"] 
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories"] 
+taxonomyPageHeader = ["processors", "tools", "softwares"] 
 
 
 # Highlighting config

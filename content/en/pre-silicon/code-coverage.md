@@ -1,5 +1,8 @@
 ---
-tags: ["cortex-m"]
+processors: ["Cortex-M"]
+softwares: ["bare-metal"]
+tools: ["RTL-simulator"]
+
 title: "Collect Code Coverage from RTL simulation"
 linkTitle: "Collect Code Coverage from RTL simulation"
 type: docs
