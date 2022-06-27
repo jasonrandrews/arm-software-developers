@@ -51,11 +51,11 @@ Arm Allinea Studio is a suite of tools for developing server and HPC application
 
 Fast Models are accurate, flexible programmer's view models of Arm IP, allowing you to develop software such as drivers, firmware, OS and applications prior to silicon availability. Arm provides a selection of pre-built systems (Fixed Virtual Platforms (FVP)), as well as tooling (System Canvas) to enable you to build your own virtual platform, enabling software development prior to hardware availability.
 
-The SSK license provides run-time licenses for Fast Models, enabling users with such a license to use the FVP or your own platform. The HSK license provides this capability as well as the ability to design and build your own platform.
+The **SSK** license provides run-time licenses for Fast Models, enabling users with such a license to use the FVP or your own platform. The **HSK** license provides this capability as well as the ability to design and build your own platform.
 
 ## Hardware development tools {#HDT}
 
-In addition to all the above SSK components, the HSK provides additional tooling for IP configuration and debug
+In addition to all the above, the HSK provides tooling for IP configuration and debug.
 
 ### Socrates
 

@@ -58,11 +58,13 @@ Once you have your desired components installed, you are ready to get started. W
 
 ### Arm Development Studio
 
-Get started with [Arm Development Studio](/getstarted/armds)
+Get started with [Arm Development Studio (build and debug)](/getstarted/armds)\
+Get started with [Arm Streamline Performance Analyzer](/getstarted/streamline)
 
 ### Arm Fast Models
 
-To get started with Arm Fast Models, see [this article](/models/getting_started). A tutorial is also provided as part of the [documentation](https://developer.arm.com/documentation/100965/latest/System-Canvas-Tutorial).
+To get started with Arm Fast Models, see [this article](/models/getting_started).\
+A tutorial is also provided as part of the [documentation](https://developer.arm.com/documentation/100965/latest/System-Canvas-Tutorial).
 
 ### Keil MDK
 
@@ -81,7 +83,8 @@ Full documentation and other material is available on [Arm Developer](https://de
 See the [Get started on Arm Guide](https://developer.arm.com/documentation/102841).
 
 ### Socrates
-To get started with Socrates, see this set of [tutorial videos](https://www.youtube.com/playlist?list=PLgyFKd2HIZlbeWqUiv3-kJ7BJUBwsSO1A). Full [documentation](https://developer.arm.com/documentation/101399) is also available.
+To get started with Socrates, see this set of [tutorial videos](https://www.youtube.com/playlist?list=PLgyFKd2HIZlbeWqUiv3-kJ7BJUBwsSO1A).\
+Full [documentation](https://developer.arm.com/documentation/101399) is also available.
 
 ### AMBA Viz
 
