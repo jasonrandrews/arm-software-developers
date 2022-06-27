@@ -6,6 +6,8 @@ tools: ["RTL-simulator"]
 title: "Collect Code Coverage from RTL simulation"
 linkTitle: "Collect Code Coverage from RTL simulation"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     This is a tutorial about collecting code coverage.
 ---

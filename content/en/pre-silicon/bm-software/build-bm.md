@@ -5,6 +5,8 @@ softwares: ["bare-metal"]
 title: "Building and running your first bare-metal embedded program"
 linkTitle: "Build and run your first embedded image"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     This article shows you how to write, compile, and run a simple program for an embedded system on an Arm Fixed Virtual Platform.
 ---

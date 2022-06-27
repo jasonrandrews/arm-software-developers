@@ -5,6 +5,8 @@ softwares: ["bare-metal"]
 title: "Modifying your first bare-metal embedded program to use the UART as the output mechanism"
 linkTitle: "Modify your first embedded image to use the UART for printf output"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     This guide shows you how to modify the output mechanism to use the UART capability of the target system.
 ---

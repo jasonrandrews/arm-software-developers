@@ -5,6 +5,8 @@ softwares: ["bare-metal"]
 title: "Cortex-M benchmarking on RTL simulation"
 linkTitle: "Cortex-M benchmarking on RTL simulation"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     This is a tutorial to create a benchmark to measure performance on a Cortex-M CPU runnning RTL simulation
 ---

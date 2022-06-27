@@ -3,6 +3,8 @@ tags: ["tarmac"]
 title: "Tarmac Trace Utilities"
 linkTitle: "Tarmac Trace Utilities"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     Info about an open-source code base for analyzing and browsing trace files in Tarmac trace format.
 ---

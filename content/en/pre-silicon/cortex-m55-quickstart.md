@@ -5,6 +5,8 @@ softwares: ["bare-metal"]
 title: "Cortex-M55 Quick Start"
 linkTitle: "Cortex-M55 Quick Start"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     This is a tutorial to download and run a simulation on the [Cortex-M55](https://developer.arm.com/Processors/Cortex-M55)
 ---
