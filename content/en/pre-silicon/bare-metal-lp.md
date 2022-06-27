@@ -2,7 +2,6 @@
 ---
 title: "Developing bare-metal software for Arm devices without hardware" 
 type: docs
-hide_summary: true
 weight: 2
 description: >
     Learning path for software developers new to Arm and developing bare-metal software for Arm devices. 
