@@ -37,7 +37,7 @@ Common tasks include:
     </p>
     <a href="/pre-silicon/bare-metal-lp" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">2 days ago</div>
+  <div class="card-footer text-muted">Updated June 27th, 2022</div>
 </div>
 
 <div class="card text-center">
@@ -55,7 +55,7 @@ Common tasks include:
     </p>
     <a href="#" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">2 days ago</div>
+  <div class="card-footer text-muted">Updated June 15th, 2022</div>
 </div>
 
 {{< /cardpane >}}
