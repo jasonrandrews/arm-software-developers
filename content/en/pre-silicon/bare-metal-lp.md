@@ -2,6 +2,9 @@
 ---
 title: "Developing bare-metal software for Arm devices without hardware" 
 type: docs
+tools: ["Fastmodels"]
+processors: ["Cortex-A73", "Cortex-A53"]
+softwares: ["bare-metal"]
 weight: 2
 description: >
     Learning path for software developers new to Arm and developing bare-metal software for Arm devices. 
