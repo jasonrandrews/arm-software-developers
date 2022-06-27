@@ -5,6 +5,8 @@ type: docs
 tools: ["Fastmodels"]
 processors: ["Cortex-A73", "Cortex-A53"]
 softwares: ["bare-metal"]
+toc_hide: true
+hide_summary: true
 weight: 2
 description: >
     Learning path for software developers new to Arm and developing bare-metal software for Arm devices. 
