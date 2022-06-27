@@ -1,6 +1,6 @@
 ---
 tools: ["Fastmodels"] 
-ips: ["Cortex-A73", "Cortex-A53"]
+processors: ["Cortex-A73", "Cortex-A53"]
 softwares: ["bare-metal"]
 title: "Building and running your first bare-metal embedded program"
 linkTitle: "Build and run your first embedded image"
