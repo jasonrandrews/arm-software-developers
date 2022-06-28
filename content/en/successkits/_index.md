@@ -1,15 +1,21 @@
 ---
 tags : ["software tools"]
-title: "Which development tools are provided with Arm Success Kits?"
+title: "Arm Success Kits"
 linkTitle: "Arm Success Kits"
 type: docs
 weight: 10
 description: >
-   Arm Development Tools are provided as Arm Success Kits. This article will help understand the components provided therein.
+    Commercial tools sold by Arm are packaged as Arm Success Kits. This article explains the 2 types of Success Kits and the included tools. 
 ---
-## Arm Success Kits
 
-[Arm Success Kits](https://www.arm.com/products/development-tools/success-kits) simplify deployment of Arm tools to your organization, enabling users to have unlimited access to the component tools provided. They are available as Software Success Kits (SSK) and Hardware Success Kits (HSK).
+[Arm Success Kits](https://www.arm.com/products/development-tools/success-kits) are a smart way to access licensed tools and models for both hardware and software development. Each user has unlimited access to all the licensed tools and models they need for maximum productivity. 
+
+Success Kits keep track of the number of users, not individual tool usage. To purchase Arm Success Kits you will need to know how many users will want to use Arm tools.
+
+Success Kits are available as
+
+  - **Software Success Kits (SSK)**: includes all of the software development tools provided by Arm.
+  - **Hardware Success Kits (HSK)**: includes SSK as well as additional tools for IP configuration and evaluation.
 
 Software Success Kits contain all of the tools Arm provides for developing and running code for your target
 
@@ -26,6 +32,8 @@ Hardware Success Kits are a super-set of Software Success Kits, adding tools for
 - [AMBA Viz](https://developer.arm.com/Architectures/AMBA#Tools-and-Software)
 - [Arm Fast Models](https://developer.arm.com/Tools%20and%20Software/Fast%20Models)
 - Plus all SSK components
+
+[Arm Flexible Access](/afa) is another way to obtain Arm Success Kits. AFA provides s a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
 
 ## Software development tools {#SDT}
 
@@ -64,3 +72,14 @@ The Socrates IP Tooling platform is an environment for exploring, configuring, a
 ### AMBA Viz
 
 AMBA Viz is a visualization application for viewing and interacting with hardware events and messages between components within a system, enabling faster, more intuitive debug capability.
+
+&nbsp;
+
+## Next Steps
+
+[Success Kit Setup](install/)
+
+[Get Started with Success Kits](/getstarted/)
+
+&nbsp;
+&nbsp;

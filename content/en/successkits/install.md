@@ -3,6 +3,8 @@ tags: ["software tools"]
 title: "Accessing and installing Success Kit components"
 linkTitle: "Success Kit setup"
 type: docs
+toc_hide: true
+hide_summary: true
 weight: 30
 description: >
    Arm Development Tools are provided as Arm Success Kits. This article will help you download and install the appropriate components, and set up your tools license.
@@ -61,3 +63,12 @@ In some cases you may have access to a cloud based UBL server, which you can ena
 Users who do not yet have access to UBL licenses will have FlexLM licenses. You should set the environment variable `ARMLMD_LICENSE_FILE` to map to the location of your license server. Contact your AFA adminstration team for information on your internal license server. Arm expects all FlexLM licenses to be removed from AFA programs by end of 2023.
 
 `export ARMLMD_LICENSE_FILE port@hostname`
+
+&nbsp;
+
+## Next Steps
+
+[Get Started with Success Kits](/getstarted/)
+
+&nbsp;
+&nbsp;

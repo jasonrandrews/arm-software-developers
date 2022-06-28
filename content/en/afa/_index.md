@@ -15,38 +15,14 @@ Review the [FAQ](https://www.arm.com/products/flexible-access/faqs) for an overv
 
 [Training videos](https://developer.arm.com/Training/Arm%20On-demand%20Training%20-%20Flexible%20Access#Technical-Specifications) are also available.
 
+In addition to the ability to download Arm IP, Arm Flexible Access provides tools included in Arm Success Kits and as well as access to Arm IP Explorer. 
+
 {{% /pageinfo %}}
 
 {{< cardpane >}}
-{{< card header="**[Arm IP Explorer](https://ipexplorer.arm.com)**" >}}
-SoC architects use Arm IP Explorer to search, configure, and simulate Arm IP in a browser. Use your Arm account to access Arm IP Explorer. If you have an Arm account but have not yet accessed IP Explorer you will be presented with a button to request access. 
 
-It can be used to create block diagrams and collaborate with colleages. It's a new tool for IP selection and helpful Arm Flexbile Access subscribers.
-
-Software developers use Arm IP Explorer to execute custom software and benchmarks to contribute to IP selection. 
-
-Source code for sample benchmarks are provided as well as a template to create custom benchmarks, complete with startup code and a [build environment](https://github.com/jasonrandrews/ipx-custom-software).
-
-Information about Arm Approved Design Partners who can help is also found in Arm Ip Explorer.
-
-{{< /card >}}
-
-{{< card header="**[Arm Success Kits](https://www.arm.com/products/development-tools/success-kits)**" >}}
-Arm Success Kits are a smart way to access licensed tools and models for both hardware and software development. Each user has unlimited access to all the licensed tools and models they need for maximum productivity.
-
-Success Kits are available as
-
-  - **Software Success Kits (SSK)**, enabling all the tools Arm provides for software development on Arm.
-  - **Hardware Success Kits (HSK)**, a super-set of SSK, also enabling tooling for IP configuration and evaluation.
-
-Arm Flexible Access provides a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
-
-For more information on Success Kits click [here](/successkits).
-
-{{< /card >}}
-
-{{< card header="**[Arm IP Download](https://developer.arm.com/downloads/search#Arm%20Flexible%20Access)**" >}}
-Download the IP, software, and tools from the [Arm Product Download Hub](https://developer.arm.com/downloads/)
+{{< card header="**Download Arm IP**" >}}
+Download the Arm IP, software, and tools from the Arm Product Download Hub.
 
 The Product Download Hub allows you to search, browse and download from Arm's product catalogue.
 
@@ -54,8 +30,33 @@ It's easy to search and navigate to find Arm products and download them. The ser
 
 Login using your Arm account to access the Product Download Hub.
 
+Visit the [Arm Product Download Hub](https://developer.arm.com/downloads/)
 
 {{< /card >}}
+
+{{< card header="**Arm IP Explorer**" >}}
+SoC architects use Arm IP Explorer to search, configure, and simulate Arm IP in a browser. Use your Arm account to access Arm IP Explorer. If you have an Arm account but have not yet accessed IP Explorer you will be presented with a button to request access. 
+
+Software developers use Arm IP Explorer to execute custom software and benchmarks to contribute to IP selection. 
+
+Source code for sample benchmarks are provided as well as a template to create custom benchmarks, complete with startup code and a build environment.
+
+For more information visit [IP Explorer](/ipx).
+
+{{< /card >}}
+
+{{< card header="**Arm Success Kits**" >}}
+Arm Flexible Access provides a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
+
+Success Kits are available as
+
+  - **Software Success Kits (SSK)**, enabling all the tools Arm provides for software development on Arm.
+  - **Hardware Success Kits (HSK)**, a super-set of SSK, also enabling tooling for IP configuration and evaluation.
+
+For more information visit [Success Kits](/successkits).
+
+{{< /card >}}
+
 {{< /cardpane >}}
 
 The documentation below provides important information for software engineers working on Arm SoC design projects. 
