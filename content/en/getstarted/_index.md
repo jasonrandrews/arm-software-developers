@@ -4,7 +4,7 @@ linkTitle: "Get Started with Arm Success Kits"
 type: docs
 weight: 20
 description: >
-    Get started with Arm Success Kits. !!!WORK IN PROGRESS!!!
+    Get started with Arm Success Kits.
 ---
 
 Arm Success Kits provide users with full access to a wide range of Arm Development Tools. If you are unfamiliar with the products, it may seem overwhewlming at first. This guide is to help you select the right tool for your needs.
@@ -72,10 +72,15 @@ A thorough [Getting Started with MDK](https://www.keil.com/support/man/docs/mdk_
 
 ### Arm Mobile Studio
 
-To get started with Arm Mobile Studio, you may wish to see the below videos and webinars:
+To get started with Arm Mobile Studio, you may wish to see the introductory videos:
  - [Introducing Arm Mobile Studio](https://www.youtube.com/watch?v=gcxIuwBZyic)
- - [Arm Mali GPU Training Series (Episode 3)](https://www.youtube.com/watch?v=tnR4mExVClY&list=PLKjl7IFAwc4QUTejaX2vpIwXstbgf8Ik7)
+ - [Android graphics tracing with Graphics Analyzer](https://www.youtube.com/watch?v=6j68rtcTYRc)
+ - [Performance Reporting with Arm Mobile Studio](https://www.youtube.com/watch?v=v6gzULNlr6U)
 
+See also this webinar:
+ - [Performance Analysis (Optimizing Android Graphics)](https://www.brighttalk.com/webcast/17792/475602)
+ 
+ 
 Full documentation and other material is available on [Arm Developer](https://developer.arm.com/Tools%20and%20Software/Arm%20Mobile%20Studio)
 
 ### Arm Allinea Studio
