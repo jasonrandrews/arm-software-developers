@@ -32,7 +32,9 @@ Once downloaded, you can untar the bundles, and install the necessary components
 
 All Arm tools are license managed. Arm is migrating all tools to a User Based Licensing (UBL) system which greatly simplifies license configuration. With a UBL license you have unlimited access to all components within the success kit you have enabled. The license is cached locally for up to 30 days, enabling remote or traveling users to have access to tools without connecting to their internal network. Using any component whilst connected to the network will renew the 30 days of license (this check is performed once per day upon the first use of the tools that day).
 
-Documentation link [internal only for now](https://developer.arm.com/documentation-preview/102516/)
+Full documentation is available for:
+ - [License administration](https://developer.arm.com/documentation/107573)
+ - [End user configuration](https://developer.arm.com/documentation/102516)
 
 ### Internal UBL server
 
