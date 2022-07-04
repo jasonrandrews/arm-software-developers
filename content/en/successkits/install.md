@@ -28,6 +28,8 @@ The Product Download Hub uses [IBM Aspera Connect](https://www.ibm.com/aspera/co
 
 Once downloaded, you can untar the bundles, and install the necessary components.
 
+For more information, see the [Getting Started Guide](https://developer.arm.com/documentation/107572).
+
 ## User Based License setup {#license}
 
 All Arm tools are license managed. Arm is migrating all tools to a User Based Licensing (UBL) system which greatly simplifies license configuration. With a UBL license you have unlimited access to all components within the success kit you have enabled. The license is cached locally for up to 30 days, enabling remote or traveling users to have access to tools without connecting to their internal network. Using any component whilst connected to the network will renew the 30 days of license (this check is performed once per day upon the first use of the tools that day).
@@ -51,7 +53,9 @@ To confirm you have enabled the license, enter the command:
 
 You now have access to all components within the success kit you have enabled. Note that HSK is a super-set of SSK. If you only require access to the components of SSK, it is strongly recommended that you only use an SSK license.
 
-Full license server setup and administation documentation is available [here internal only for now](https://developer.arm.com/documentation-preview/107573)
+Full license server setup and administation documentation is available below:
+ - [Administrator](https://developer.arm.com/documentation/107573)
+ - [End user](https://developer.arm.com/documentation/102516)
 
 
 ### Cloud based UBL server
