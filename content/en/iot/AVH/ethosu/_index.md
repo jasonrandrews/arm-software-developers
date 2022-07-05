@@ -8,7 +8,7 @@ description: >
 ---
 Developers have access to an easy to use platform to develop powerful embedded and IoT applications, making use of the latest Machine Learning (ML) technology from Arm. [Arm Virtual Hardware](https://www.arm.com/en/products/development-tools/simulation/virtual-hardware) provides a growing number of platforms to get started with software development. In parallel, Arm has developed the [Ethos-U Evaluation Kit](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit), which includes ready-to-use ML applications. These allow you to investigate the embedded software stack and evaluate performance of the networks running on the Cortex-M55 and Ethos-U55 processors.
 
-The Virtual Hardware is also a digital twin of the [MPS3](https://developer.arm.com/en/dev2/Tools%20and%20Software/MPS3%20FPGA%20Prototyping%20Board) FPGA image ([Application Note 547](https://developer.arm.com/downloads/-/download-fpga-images)). This enables easy code migration from a virtual to a physical platform, allowing for real-world trials of your application.
+The Virtual Hardware is also a digital twin of the [MPS3](https://www.arm.com/products/development-tools/development-boards/mps3) FPGA image ([Application Note 547](https://developer.arm.com/downloads/-/download-fpga-images)). This enables easy code migration from a virtual to a physical platform, allowing for real-world trials of your application.
 
 ## Get Started
 
