@@ -36,7 +36,7 @@ Using your AWS Account, launch and Arm 64-bit EC2 instance running either Ubuntu
 
 Then run through [these steps](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/) on your chosen EC2 instance.
 
-### Install and Run MongoDB Red Hat
+### Install and Run MongoDB on Red Hat
 
 Using your AWS Account, launch and Arm 64-bit EC2 instance running RHEL8.
 
