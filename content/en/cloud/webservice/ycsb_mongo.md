@@ -14,16 +14,16 @@ description: >
 
 * MongoDB installed and running on your 64-bit Arm Linux machine or AWS EC2 instance. Follow the steps outlined [here](/cloud/webservice/mongodb).
 * Java 1.8 or newer installed on your 64-bit Arm Linux machine or AWS EC2 instance.
-* Maven 3 installed on your 64-bit Arm Linux machine or AWS EC2 instance.
+* Maven 3 installed on your 64-bit Arm Linux machine or AWS EC2 instance. Run the following commands to install Maven 3
 ```
-wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
-sudo tar xzf apache-maven-*-bin.tar.gz -C /usr/local
-cd /usr/local
-sudo ln -s apache-maven-* maven
-sudo vi /etc/profile.d/maven.sh
-export M2_HOME=/usr/local/maven
-export PATH=${M2_HOME}/bin:${PATH}
-bash 
+   wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+   sudo tar xzf apache-maven-*-bin.tar.gz -C /usr/local
+   cd /usr/local
+   sudo ln -s apache-maven-* maven
+   sudo vi /etc/profile.d/maven.sh
+   export M2_HOME=/usr/local/maven
+   export PATH=${M2_HOME}/bin:${PATH}
+   bash 
 
 ```
 
@@ -52,7 +52,7 @@ bin/ycsb
 ```
 
 
-### Load/Insert Test on MongoDiB
+### Load/Insert Test on MongoDB
 
 To test the performance of loading data(INSERT) into default database `ycsb` at `localhost:27017` where MongoDB is running using the asynchronous driver run the following command:
 
