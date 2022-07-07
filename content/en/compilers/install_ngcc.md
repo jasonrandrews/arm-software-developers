@@ -28,7 +28,7 @@ The Linux package manager will download the required files so there are no speci
 
 ## Installation {#install}
 
-* Installing on Debian based distributions such as Ubuntu
+### Installing on Debian based distributions such as Ubuntu
 
 Use the `apt` command to install software packages on any Debian based Linux distribution.
 
@@ -43,7 +43,7 @@ Another meta-package on Ubuntu is ``build-essential``. This will install the mos
 sudo apt install build-essential
 ```
 
-* Installing on Red Hat / Fedora / Amazon Linux
+### Installing on Red Hat / Fedora / Amazon Linux
 
 These Linux distributions use `yum` as the package manager. 
 

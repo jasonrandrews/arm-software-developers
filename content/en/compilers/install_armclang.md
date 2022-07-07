@@ -75,13 +75,13 @@ Further installation instructions are given in the [documentation](https://devel
 
 Arm Compiler for Embedded and Arm Compiler for Embedded FuSa are license managed. They can be enabled by a [Success Kit](https://www.arm.com/products/development-tools/success-kits), Arm Development Studio (Gold Edition for FuSa), or a standalone license. If you are unsure what you have access to, please contact your Arm representative. Subscribers to programs such as [Arm Flexible Access](https://www.arm.com/products/flexible-access) have success kit licenses available.
 
-Since Arm Compiler for Embedded 6.18, and Arm Compiler for Embedded FuSa 6.16.2, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the
+Since Arm Compiler for Embedded 6.18, and Arm Compiler for Embedded FuSa 6.16.2, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the command:
 ```console
 armlm inspect
 ```
-command. If a license is reported, then you are ready to use the compiler (and other Arm tools).
+If a license is reported, then you are ready to use the compiler (and other Arm tools).
 
-If no license is listed, you must [activate](https://developer.arm.com/documentation/102516/latest/Using-user-based-licensing) your license appropriately.
+If no license is reported, you must [activate](https://developer.arm.com/documentation/102516/latest/Using-user-based-licensing) your license appropriately.
 
 If using earlier compiler versions standalone or if no UBL license is available, you will need to set the environment variable `ARM_PRODUCT_DEF` to the `\\sw\mappings\product.elmap` file of your compiler installation, and ensure the environment variable `ARMLMD_LICENSE_FILE` is set to an appropriate license file or server.
 

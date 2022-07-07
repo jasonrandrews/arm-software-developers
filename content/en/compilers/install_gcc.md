@@ -33,9 +33,10 @@ Download the correct toolchain variant for your development needs from the [Arm 
 
 ### Installing executables on Linux
 
-Unpack the tarball to the install directory:
+Unpack the tarball to the install directory, and add the `bin` directory to `PATH`
 ```console
 cd ${install_dir} && tar xjf gcc-arm-none-eabi-_version_-linux.tar.bz2
+export PATH=${install_dir}/bin:$PATH
 ```
 If you want to use `gdb python build` (`arm-none-eabi-gdb-py`), then
 install `python2.7`.
@@ -44,9 +45,13 @@ For some Ubuntu releases, the toolchain can also be installed via
 [Launchpad PPA](https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa).
 
 ### Installing executables on Mac OS X
-Unpack the tarball to the install directory, like this:
+Unpack the tarball to the install directory
 ```console
 cd ${install_dir} && tar xjf gcc-arm-none-eabi-_version_-mac.tar.bz2
+```
+Add `bin` directory to `$PATH` by editing the `/etc/paths` file with an appropriate editor, for example:
+```console
+sudo nano /etc/paths
 ```
 
 ### Installing executables on Windows
@@ -55,10 +60,10 @@ Double-click on the installer (e.g. `gcc-arm-_version_--mingw-w64-i686-arm-none-
 The installer can also be run on the command line. When run on
 the command-line, the following options can be set:
   - `/S` Run in silent mode
-  - `/P` Adds the installation bin directory to the system PATH
+  - `/P` Adds the installation `bin` directory to the system `PATH`
   - `/R` Adds Install Folder registry entry for the install.
 
-For example, to install the tools silently, amend users PATH and add registry entry:
+For example, to install the tools silently, amend users `PATH` and add registry entry:
 ```console
 gcc-arm-_version_--mingw-w64-i686-arm-none-eabi.exe /S /P /R
 ```
