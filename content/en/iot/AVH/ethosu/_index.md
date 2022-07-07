@@ -14,45 +14,65 @@ The Virtual Hardware is also a digital twin of the [MPS3](https://www.arm.com/pr
 
 To get started, launch an Arm Virtual Hardware [session](https://avh.arm.com) on AWS. This invokes a cloud based instance of Ubuntu Linux with all necessary Arm toolc pre-installed. Alternatively you can use your own local environment. For tooling installation instructions, see [Getting Started](/successkits/install)
 
-Clone the Evaluation kit repo
+Clone the Evaluation kit repository:
+```console
+git clone "https://review.mlplatform.org/ml/ethos-u/ml-embedded-evaluation-kit"
+cd ml-embedded-evaluation-kit
+```
 
-`git clone "https://review.mlplatform.org/ml/ethos-u/ml-embedded-evaluation-kit"`\
-`cd ml-embedded-evaluation-kit`
+Resolve external dependencies and prepare build environment:
+```console
+git submodule update --init
+sudo apt install python3.8-venv
+```
 
-Resolve external dependencies and prepare build environment
+Build the example applications with [Arm Compiler for Embedded](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) or `GNU Toolchain`. This will take a few minutes to complete:
 
-`git submodule update --init`\
-`sudo apt install python3.8-venv`
-
-Build the example applications with [Arm Compiler for Embedded](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded). Note that this will take a few minutes to complete.
-
-`./build_default.py --toolchain arm`
+{{< tabpane code=true >}}
+  {{< tab header="Arm Compiler for Embedded" >}}
+./build_default.py --toolchain arm
+{{< /tab >}}
+  {{< tab header="GCC" >}}
+./build_default.py
+{{< /tab >}}
+{{< /tabpane >}}
 
 When complete, you will find the example images (`.axf` files) in the `cmake/bin` directory, likely:
-
-`/ml-embedded-evaluation-kit/cmake-build-mps3-sse-300-ethos-u55-128-arm/bin`
+```console
+/ml-embedded-evaluation-kit/cmake-build-mps3-sse-300-ethos-u55-128-arm/bin
+```
 
 To run an example, launch the Virtual hardware with one of the images, for example:
-
-`VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf`
-
-Note that the virtual hardware takes some time (approx 1 minute) to initialize.
+```console
+VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf
+```
+Note that the virtual hardware takes some time (approx 1 minute) to initialize the NPU. Be patient.
 
 Full instructions are provided in the [documentation](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit/+/HEAD/docs/quick_start.md)
 
 ## Setting model parameters
 
 Some additonal parameters can be specified to Arm Virtual Hardware to configure certain aspects of how it executes. For a full list of the available parameters, launch the executable with the `--list-params` option, for example:
+```console
+VHT_Corstone_SSE-300_Ethos-U55 --list-params > parameters.txt
+```
 
-`VHT_Corstone_SSE-300_Ethos-U55 --list-params > parameters.txt`
+Parameters can be set with the `-C` option along with the parameter setting.\
+For example, to put the Ethos-U component into fast execution mode:
+```console
+VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf -C ethosu.extra_args="--fast"
+```
 
-Parameters can be set with the `-C` option along with the parameter setting. For example, to put the Ethos-U component into fast execution mode:
-
-`VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf -C ethosu.extra_args="--fast"`
-
-If you wish to set many parameters, you may find it easier to list them in a test file (without `-C`) and use `-f` to specify that file.
-
-`VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf -f options.txt`
+If you wish to set many parameters, you may find it easier to list them in a test file (without `-C`) and use `-f` to specify that file.\
+For example, create an `options.txt` containing:
+```console
+mps3_board.visualisation.disable-visualisation=1
+ethosu.extra_args="--fast"
+```
+and specify with:
+```console
+VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf -f options.txt
+```
 
 ## Next Steps
 

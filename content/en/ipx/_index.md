@@ -26,6 +26,8 @@ Use the Access IP Explorer link below and use your Arm account to login. If your
 
 {{< /cardpane >}}
 
+[Get started with Arm IP Explorer](/hw-tools/ipexplorer/)
+
 ## Next Steps
 
 [Access Arm IP Explorer](https://ipexplorer.arm.com)

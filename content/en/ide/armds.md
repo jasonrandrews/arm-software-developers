@@ -35,10 +35,13 @@ For Linux hosts, follow the installation instructions provided [here](https://de
 
 Arm Development Studio is license managed. The licenses are enabled by a [Success Kit](https://www.arm.com/products/development-tools/success-kits).
 
-Since Arm Development Studio version 2022.0 and 2022.a, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the `armlm inspect` command. If a license is reported, then you are ready to use Arm Development Studio (and other Arm tools).
+Since Arm Development Studio version 2022.0 and 2022.a, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the
+```console
+armlm inspect
+```
+command. If a license is reported, then you are ready to use Arm Development Studio (and other Arm tools).
 
-If no license is listed, you must [activate](https://developer.arm.com/documentation/102516/latest/Using-user-based-licensing) your license appropriately.\
-If no license is listed, you must [activate(internal link)](https://developer.arm.com/documentation-preview/102516/latest/Using-user-based-licensing) your license appropriately.
+If no license is listed, you must [activate](https://developer.arm.com/documentation/102516/latest/Using-user-based-licensing) your license appropriately.
 
 If using earlier versions or if no UBL license is available, you will need to set the environment variable `ARMLMD_LICENSE_FILE` is set to an appropriate license server.
 

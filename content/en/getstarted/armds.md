@@ -36,13 +36,13 @@ Subsequent debug sessions can be launched directly from the `Debug Control` pane
 
 Cortex-M users can also import projects from the library of CMSIS Packs. Note it is generally recommended to use Keil MDK for such projects, which has more robust support for such packs.
 
-Additional information coming soon. Remove?
+For more information, see the Development Studio [documentation](https://developer.arm.com/documentation/101469/latest/Migrating-from-DS-5-to-Arm-Development-Studio/CMSIS-Packs).
 
 ## Use a different compiler version than the default
 
 Development Studio installs with the latest [Arm Compiler for Embedded](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded) version available at the time of its release. It may be that you need to use a specific compiler version for your project (particularly common if the [Arm Compiler for Embedded FuSa](https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded%20FuSa) is needed).
 
-Download and install instructions are given [here](/compilers/install_armclang). You must then register that compiler install with Arm Development Studio, by navigating to `Window > Preferences > Arm DS > Toolchains`, then click the `Add...` button, and browse to the install directory. Full details are given in the [documentation](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain).
+Full download and install instructions are given [here](/compilers/install_armclang). You must then register that compiler install with Arm Development Studio, by navigating to `Window > Preferences > Arm DS > Toolchains`, then click the `Add...` button, and browse to the install directory. Full details are given in the [documentation](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain).
 
 To change the compiler version used for a project, right-click on the project, and select `Properties` (or from the menu, select `Project > Properties`), then `C/C++ Build > Tool Chain Editor`, and select the appropriate compiler version from the `Current toolchain` pulldown. Click `Apply and Close`, and rebuild the project.
 
@@ -50,15 +50,28 @@ To change the compiler version used for a project, right-click on the project, a
 
 Projects and code-bases can also be build directly from the command line, either via directly invoking the build tools, or by using make tools. Windows users will find an `Arm DS <version> Command Prompt` in their installation. Linux users can use the supplied `suite_exec` script to set up the appropriate compiler pathing. See the documentation for [Windows](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain/Configure-a-compiler-toolchain-for-the-Arm-DS-command-prompt/Configure-a-compiler-toolchain-for-the-Arm-DS-command-prompt-on-Windows) and [Linux](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain/Configure-a-compiler-toolchain-for-the-Arm-DS-command-prompt/Configure-a-compiler-toolchain-for-the-Arm-DS-command-prompt-on-Linux) as appropriate.
 
-Enter `armclang --version` to ensure the appropriate compiler is selected.
-
-To build the above imported example project, navigate to workspace directory, and then to the imported project folder. Enter `make` to invoke the supplied makefile, and rebuild the project.
+To ensure the appropriate compiler is selected, enter:
+```console
+armclang --version
+```
+To build the above imported example project, navigate to workspace directory, and then to the imported project folder. Enter
+```console
+make
+```
+to invoke the supplied makefile, and rebuild the project.
 
 ### Compiler options
 
-If invoking the compiler directly, a minimal set of compiler options are needed, specifying whether or not you are compiling for AArch32 (`--target=arm-arm-none-eabi`) or AArch64 (`--target=arm64-arm-none-eabi`) targets. You must also specify a specific Arm Architecture (`-march=<arch>`) or processor (`-mcpu=<cpu>`).
+If invoking the compiler directly, a minimal set of compiler options are needed, specifying whether or not you are compiling for
+* AArch32 (`--target=arm-arm-none-eabi`) or
+* AArch64 (`--target=arm64-arm-none-eabi`) targets.
 
-Use the list option (`-march=list` or `-mcpu=list`) to see all valid arguments for these options.
+You must also specify a specific Arm Architecture (`-march`) or processor (`-mcpu`).
+
+Use the list option (`-march=list` or `-mcpu=list`) to see all valid arguments for these options. For example:
+```console
+armclang --target=arm-arm-none-eabi -mcpu=list
+```
 
 Full details of available command line options are given in the [documentation](https://developer.arm.com/documentation/101754).
 

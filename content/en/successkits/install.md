@@ -44,12 +44,19 @@ The most common deployment method is to set up a UBL server for your organizatio
 
 Once this is running, to enable usage of the tools, go to the bin directory of any success kit component you have installed, and enter a command of the form:
 
-- HSK: `armlm activate --server https://internal.ubl.server --product HWSKT-xxxx`
-- SSK: `armlm activate --server https://internal.ubl.server --product SWSKT-xxxx`
+- HSK:
+```console
+armlm activate --server https://internal.ubl.server --product HWSKT-STD0
+```
+- SSK:
+```console
+armlm activate --server https://internal.ubl.server --product SWSKT-STD0
+```
 
 To confirm you have enabled the license, enter the command:
-
-`armlm inspect`
+```console
+armlm inspect
+```
 
 You now have access to all components within the success kit you have enabled. Note that HSK is a super-set of SSK. If you only require access to the components of SSK, it is strongly recommended that you only use an SSK license.
 
@@ -61,20 +68,27 @@ Full license server setup and administation documentation is available below:
 ### Cloud based UBL server
 
 In some cases you may have access to a cloud based UBL server, which you can enable with a supplied code. Contact your AFA adminstration team or Arm account manager if you are unsure what your code is.
-
-`armlm activate --code xxxxxxxx-xxxx-xxxx-xxxxxxxx`
+```console
+armlm activate --code xxxxxxxx-xxxx-xxxx-xxxxxxxx
+```
+To confirm you have enabled the license, enter the command:
+```console
+armlm inspect
+```
 
 ## Legacy FlexLM license setup
 
 Users who do not yet have access to UBL licenses will have FlexLM licenses. You should set the environment variable `ARMLMD_LICENSE_FILE` to map to the location of your license server. Contact your AFA adminstration team for information on your internal license server. Arm expects all FlexLM licenses to be removed from AFA programs by end of 2023.
 
-`export ARMLMD_LICENSE_FILE port@hostname`
-
-&nbsp;
+{{< tabpane code=true >}}
+  {{< tab header="Windows" >}}
+set ARMLMD_LICENSE_FILE=port@server
+{{< /tab >}}
+  {{< tab header="Linux" >}}
+export ARMLMD_LICENSE_FILE=port@server
+{{< /tab >}}
+{{< /tabpane >}}
 
 ## Next Steps
 
 [Get Started with Success Kits](/getstarted/)
-
-&nbsp;
-&nbsp;

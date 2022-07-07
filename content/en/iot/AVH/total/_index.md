@@ -15,34 +15,41 @@ The [Arm Open-IoT-SDK](https://github.com/ARM-software/open-iot-sdk) provides a 
 To get started, launch an Arm Virtual Hardware [session](https://avh.arm.com) on AWS. This invokes a cloud based instance of Ubuntu Linux with all necessary Arm toolc pre-installed. Alternatively you can use your own local environment. For tooling installation instructions, see [Getting Started](/successkits/install)
 
 Clone the Open-IoT-SDK repository, and navigate to the examples directory
-
-`git clone https://github.com/ARM-software/open-iot-sdk`\
-`cd open-iot-sdk/examples`
+```console
+git clone https://github.com/ARM-software/open-iot-sdk
+cd open-iot-sdk/examples
+```
 
 Navigate to the desired example folder (`ats-keyword` in used here):
+```console
+cd ats-keyword
+```
 
-`cd ats-keyword`
-
-and you will find `ats.sh` script to build and run the examples. YOu should first synchronize git submodules, and apply required patches, which you can do with:
-
-`./ats.sh bootstrap`
+and you will find `ats.sh` script to build and run the examples. You should first synchronize git submodules, and apply required patches, which you can do with:
+```console
+./ats.sh bootstrap
+```
 
 Then install additional python dependencies required to run tests and sign binaries:
-
-`sudo apt install python3.8-venv`\
-`python3.8 -m pip install imgtool cbor2`\
-`python3.9 -m pip install imgtool cffi intelhex cbor2 cbor pytest click`
+```console
+sudo apt install python3.8-venv
+python3.8 -m pip install imgtool cbor2
+python3.9 -m pip install imgtool cffi intelhex cbor2 cbor pytest click
+```
 
 To make python user packages visible in the shell:
+```console
+export PATH=$PATH:/home/ubuntu/.local/bin
+```
 
-`export PATH=$PATH:/home/ubuntu/.local/bin`
+You are now ready to build the examples. To build the `blinky` example:
+```console
+./ats.sh build blinky
+```
 
-You are now ready to biuld the examples. To build the `blinky` example:
+To then run the built example on the supplied `Arm Virtual Hardware for Corstone-300`:
+```console
+./ats.sh run blinky
+```
 
-`./ats.sh build blinky`
-
-To then run the built example on the supplied Arm Virtual Hardware for Corstone-300:
-
-`./ats.sh run blinky`
-
-Full details are given in the supplied readme for the example.
+Full details are given in the supplied `readme` for the example.

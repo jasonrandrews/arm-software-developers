@@ -13,10 +13,11 @@ There are many versions of the [Arm Compiler for Embedded](https://developer.arm
 
 ## Using the compiler supplied with Arm Development Studio {#armds}
 
-The easiest way to access and setup the compiler is to use the version provided with [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio). The particular Development Studio version will contain the latest compiler version available at the time of release of that version, and is generally up to date with the stand alone compiler.
+The easiest way to access and setup the compiler is to use the version provided with [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio). A given Development Studio version will contain the latest compiler version available at the time of release, and is generally up to date.
 
-Note: Arm Compiler for Embedded FuSa is NOT installed as part of Arm Development Studio.\
-Note: Cortex-M users can also use the compiler as provided with [Keil MDK](https://www2.keil.com/mdk5).
+Notes
+- Arm Compiler for Embedded FuSa is not _installed_ as part of Arm Development Studio, and must be downloaded seperately.
+- Cortex-M users can also use the compiler as provided with [Keil MDK](https://www2.keil.com/mdk5).
 
 ## Download standalone compiler packages {#download}
 
@@ -27,7 +28,12 @@ Individual compiler packages can be downloaded from the Product Downloads sectio
 
 These can either be used standalone (note license setup below) or with your Arm Development Studio installation. For the latter, you must first [register](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain) your new compiler installation with Development Studio, before then [configuring](https://developer.arm.com/documentation/101469/latest/Installing-and-configuring-Arm-Development-Studio/Register-a-compiler-toolchain/Configure-a-compiler-toolchain-for-the-Arm-DS-command-prompt) the environment to use that version.
 
-Automate installation of a standalone compiler package on Linux which has been downloaded in the current directory. 
+To install on Windows, unzip the downloaded package, launch the installer, and follow on-screen prompts.
+```console
+win-x86_64\setup.exe
+```
+
+To automate installation of a standalone compiler package on Linux which has been downloaded in the current directory:
 
 {{< tabpane code=true >}}
   {{< tab header="x86_64" >}}
@@ -46,16 +52,13 @@ tar xvfz ARMCompiler6.18_standalone_linux-aarch64.tar.gz
 {{< /tab >}}
 {{< /tabpane >}}
 
-
-
 Remove the install data when complete.
 
 ```console
 cd ..
 rm -r tmp
 ```
-
-Add the bin/ directory of the installation to the PATH and confirm armclang can be invoked.
+Add the `bin` directory of the installation to the `PATH` and confirm `armclang` can be invoked.
 
 {{< tabpane code=true >}}
   {{< tab header="bash" >}}
@@ -66,15 +69,35 @@ set path=(/home/$USER/ArmCompilerforEmbedded6.18/bin $path)
 {{< /tab >}}
 {{< /tabpane >}}
 
+Further installation instructions are given in the [documentation](https://developer.arm.com/documentation/100748/latest/Getting-Started/Installing-Arm-Compiler-for-Embedded).
+
 ## Setting up product license {#license}
 
 Arm Compiler for Embedded and Arm Compiler for Embedded FuSa are license managed. They can be enabled by a [Success Kit](https://www.arm.com/products/development-tools/success-kits), Arm Development Studio (Gold Edition for FuSa), or a standalone license. If you are unsure what you have access to, please contact your Arm representative. Subscribers to programs such as [Arm Flexible Access](https://www.arm.com/products/flexible-access) have success kit licenses available.
 
-Since Arm Compiler for Embedded 6.18, and Arm Compiler for Embedded FuSa 6.16.2, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the `armlm inspect` command. If a license is reported, then you are ready to use Arm Compiler (and other Arm tools).
+Since Arm Compiler for Embedded 6.18, and Arm Compiler for Embedded FuSa 6.16.2, Arm User-based licensing (UBL) is supported. To check if you have such a license enabled, use the
+```console
+armlm inspect
+```
+command. If a license is reported, then you are ready to use the compiler (and other Arm tools).
 
 If no license is listed, you must [activate](https://developer.arm.com/documentation/102516/latest/Using-user-based-licensing) your license appropriately.
 
-If using earlier compiler versions standalone or if no UBL license is available, you will need to set the environment variable `ARM_PRODUCT_DEF` to the `\\sw\mappings\product.elmap` file of your compiler installation, and ensure the environment variable `ARMLMD_LICENSE_FILE` is set to an appropriate license server. See [this article](https://developer.arm.com/documentation/ka004977/latest) for more details.
+If using earlier compiler versions standalone or if no UBL license is available, you will need to set the environment variable `ARM_PRODUCT_DEF` to the `\\sw\mappings\product.elmap` file of your compiler installation, and ensure the environment variable `ARMLMD_LICENSE_FILE` is set to an appropriate license file or server.
+
+{{< tabpane code=true >}}
+  {{< tab header="Windows" >}}
+set ARM_PRODUCT_DEF=<Compiler_Install_Dir>\sw\mappings\product.elmap
+set ARMLMD_LICENSE_FILE=port@server
+{{< /tab >}}
+  {{< tab header="Linux" >}}
+export ARM_PRODUCT_DEF=<Compiler_Install_Dir>/sw/mappings/product.elmap
+export ARMLMD_LICENSE_FILE=port@server
+{{< /tab >}}
+{{< /tabpane >}}
+
+
+See [this article](https://developer.arm.com/documentation/ka004977/latest) for more details.
 
 ## Get started {#start}
 
@@ -84,4 +107,17 @@ To check that the correct compiler version is being used:
 armclang --version
 ```
 
-To verify everything is working OK, you can build a simple `Hello World` example by following the instructions [here](https://developer.arm.com/documentation/100748/latest/Getting-Started/Compiling-a-Hello-World-example).
+To verify everything is working OK, you can build a simple `Hello World` example as described [here](https://developer.arm.com/documentation/100748/latest/Getting-Started/Compiling-a-Hello-World-example).
+
+```C
+// Hello.c
+
+#include <stdio.h>
+int main() {
+  printf("Hello World\n");
+  return 0;
+}
+```
+```console
+armclang --target=aarch64-arm-none-eabi hello.c
+```

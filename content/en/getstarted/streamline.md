@@ -9,12 +9,14 @@ description: >
 
 Arm Streamline is a performance visualization tool, helping you to locate critical hotspots in your application to focus optimization effort as necessary.
 
-Though the visualization is somewhat common, the setup stages differ depending on use case. Follow the appropriate link for instructions:
+To configure your target and/or application for Streamline, follow the appropriate instructions below depending on your use case:
  - [Android](https://developer.arm.com/documentation/101813)
  - [Linux](https://developer.arm.com/documentation/101814)
  - [Bare-metal (and RTOS)](https://developer.arm.com/documentation/101815)
 
- For Android games developers, the same functionality is also available as part of [Arm Mobile Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Mobile%20Studio)
+Once configured, you can [capture](https://developer.arm.com/documentation/101816/latest/Capture-a-Streamline-profile) your Streamline profile, and [analyze](https://developer.arm.com/documentation/101816/latest/Analyze-your-capture) the result.
+
+ For Android games developers, Streamline is also available as part of [Arm Mobile Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Mobile%20Studio).
 
 ## Learning resources
 
