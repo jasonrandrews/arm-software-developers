@@ -2,7 +2,8 @@
 title: "Download and install Arm GNU Toolchain"
 linkTitle: "Installing the Arm GNU Toolchain"
 type: docs
-weight: 1
+weight: 2
+hide_summary: true
 description: >-
      This article describes how to download and install appropriate versions of the GNU Toolchain for the Arm Architecure.
 ---

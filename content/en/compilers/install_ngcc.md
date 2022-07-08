@@ -2,7 +2,8 @@
 title: "Installing GCC on Linux"
 linkTitle: "Installing GCC on Linux"
 type: docs
-weight: 1
+weight: 5
+hide_summary: true
 description: >-
      This article describes how to download and install GCC for various Linux distributions.
 ---

@@ -2,7 +2,8 @@
 title: "Installing GCC as a cross compiler on Linux"
 linkTitle: "Installing GCC as a cross compiler on Linux"
 type: docs
-weight: 1
+weight: 3
+hide_summary: true
 description: >-
      This article describes how to install GCC as a cross compiler on Linux.
 ---

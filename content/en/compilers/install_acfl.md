@@ -2,7 +2,8 @@
 title: "Download and install Arm Compiler for Linux"
 linkTitle: "Installing the Arm Compiler for Linux"
 type: docs
-weight: 1
+hide_summary: true
+weight: 4
 description: >-
      This article describes how to download and install appropriate versions of the Arm Compiler for Linux
 ---
