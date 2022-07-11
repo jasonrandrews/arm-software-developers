@@ -37,7 +37,7 @@ To measure the performance of MongoDB running on Arm, we will run the [Yahoo Clo
 
 On your 64-bit Arm Linux EC2 Instance that is running MongoDB, download the latest released YCSB zip file and uncompress
 
-```
+```console
 curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.17.0/ycsb-0.17.0.tar.gz
 tar xfvz ycsb-0.17.0.tar.gz
 
@@ -45,7 +45,7 @@ tar xfvz ycsb-0.17.0.tar.gz
 
 Now cd into project folder and run the executable to print a description of how to use the benchmark
 
-```
+```console
 cd ycsb-0.17.0
 bin/ycsb
 
@@ -56,7 +56,7 @@ bin/ycsb
 
 To test the performance of loading data(INSERT) into default database `ycsb` at `localhost:27017` where MongoDB is running using the asynchronous driver run the following command:
 
-```
+```console
 ./bin/ycsb load mongodb-async -s -P workloads/workloada -p mongodb.url=mongodb://localhost:27017/ycsb?w=0 -threads 10
 
 ```
@@ -65,7 +65,7 @@ The "-P" parameter is used to load property files. In this example, we used it l
 
 To load/insert data using the synchronous driver instead run the following command:
 
-```
+```console
 ./bin/ycsb load mongodb -s -P workloads/workloada -p mongodb.url=mongodb://localhost:27017/ycsb?w=0 -threads 10
 ```
 
@@ -75,7 +75,7 @@ To load/insert data using the synchronous driver instead run the following comma
 
 To test the performance of executing a workload which includes running UPDATE, Read Modify Write(RMW) and/or READ operations on the data using 10 threads for example, use the following command:
 
-```
+```console
 ./bin/ycsb load mongodb -s -P workloads/workloada -p mongodb.url=mongodb://localhost:27017/ycsb?w=0
 ```
 

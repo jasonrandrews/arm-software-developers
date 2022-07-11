@@ -25,14 +25,14 @@ This is an open sourced java application that tests the MongoDB performance, suc
 
 On your 64-bit Arm Linux EC2 Instance that is running MongoDB, clone the project
 
-```
+```console
 git clone https://github.com/idealo/mongodb-performance-test.git
 
 ```
 
 Now cd into project folder and execute the jar file
 
-```
+```console
 cd mongodb-performance-test
 java -jar ./latest-version/mongodb-performance-test.jar
 
@@ -44,7 +44,7 @@ This will print a description of how to use the java application
 
 To insert 1 million documents on localhost:27017 (default) where MongoDB is running by 10 threads into database `test`, collection `perf` run the following commands:
 
-```
+```console
 jarfile=./latest-version/mongodb-performance-test.jar
 
 java -jar $jarfile -m insert -o 1000000 -t 10 -db test -c perf
@@ -56,7 +56,7 @@ java -jar $jarfile -m insert -o 1000000 -t 10 -db test -c perf
 
 To test the performance of updating one document per query using 10, 20 and finally 30 threads for 1 hour each run (3 hours in total) run the following command:
 
-```
+```console
 java -jar $jarfile -m update_one -d 3600 -t 10 20 30 -db test -c perf
 ```
 

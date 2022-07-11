@@ -1,5 +1,5 @@
 ---
-processors : ["neoverse"]
+processors : ["Neoverse-N1"]
 tools : ["docker"]
 title: "Build and share Docker images using AWS CodeBuild and Graviton2"
 linkTitle: "Build and share Docker images using AWS CodeBuild and Graviton2"
