@@ -63,7 +63,7 @@ Get started with [Arm Streamline Performance Analyzer](/getstarted/streamline)
 
 ### Arm Fast Models
 
-To get started with Arm Fast Models, see [this article](/models/getting_started).\
+To get started with Arm Fast Models, see [this article](/models/start_fm).\
 A tutorial is also provided as part of the [documentation](https://developer.arm.com/documentation/100965/latest/System-Canvas-Tutorial).
 
 ### Keil MDK

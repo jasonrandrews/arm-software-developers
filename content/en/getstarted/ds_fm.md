@@ -15,8 +15,9 @@ You can connect the [Arm Development Studio](https://developer.arm.com/Tools%20a
 
 ## Pre-requisites
 
-It is assumed that you have Arm Development Studio and Fast Models installed and setup.\
-See also [Fast Models Getting Started]({{< relref "getting_started.md" >}})
+It is assumed that you have Arm Development Studio and Fast Models installed and setup.
+- [Get Started with Fast Models]({{< relref "models/start_fm.md" >}})
+- [Get Started with Arm Development Studio]({{< relref "getstarted/armds.md" >}})
 
 In this example we shall use the supplied `FVP_MPS2_Cortex-M3` Fast Models example, along with the `startup_Cortex-M3_AC6` software example as supplied with Arm Development Studio.
 

@@ -21,7 +21,7 @@ Architecture Reference Information
 <br>
 {{< cardpane >}}
 
-{{< card header="**[Arm A-Profile architecture](https://https://developer.arm.com/Architectures/A-Profile%20Architecture)**" >}}
+{{< card header="**[Arm A-Profile architecture](https://developer.arm.com/Architectures/A-Profile%20Architecture)**" >}}
 
 The Arm Application-profile (A-profile) architecture targets high performance markets, such as PC, mobile, gaming, and servers.
 
