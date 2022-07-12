@@ -1,6 +1,7 @@
 ---
 title: "Knowledge Check" 
 type: docs
+toc_hide: true
 hide_summary: true
 weight: 2
 description: >
