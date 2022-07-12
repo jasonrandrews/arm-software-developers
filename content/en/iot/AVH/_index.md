@@ -1,26 +1,45 @@
 ---
-title: "Arm Virtual Hardware"
-linkTitle: "Arm Virtual Hardware"
+title: "Getting started with Arm Virtual Hardware" 
 type: docs
-weight: 100
+toc_hide: true
+hide_summary: true
+weight: 2
 description: >
-    Learn about Arm Virtual Hardware
+    Learning path for software developers new to Arm Virtual Hardware
 ---
-{{% pageinfo %}}
-[Arm Virtual Hardware](https://avh.arm.com/) (AVH) provides a step change in the evolution of Arm’s modeling technology. Arm Virtual Hardware delivers test platforms for developers to verify and validate embedded and IoT applications during the complete software design cycle. Multiple modeling technologies are provided that remove the complexity of building and configuring board farms. This enables modern, agile, cloud native software development practices, such as continuous integration and continuous development CI/CD (DevOps) and MLOps workflows.
-{{% /pageinfo %}}
+## Learning Objectives 
 
-{{< cardpane >}}
-{{< card header="**[Arm Total Solutions for IoT](https://www.arm.com/solutions/iot/total-solutions-iot)**" >}}
-Arm has been at the center of the IoT revolution for decades and now with our partners we’re going to unleash the potential of the internet of things. Together, we can fuel an IoT economy that rivals the shape, speed, and size of the smartphone industry’s app economy. Achieving this will facilitate new ways to improve human productivity, drive economic growth, and create opportunities that solve some of the world’s toughest problems.
-{{< /card >}}
-{{< card header="**[Open-IoT-SDK](https://github.com/ARM-software/open-iot-sdk)**" >}}
-Arm's Open-IoT-SDKgives you have access to a wide variety of IoT targeted software applications and components ready to run on Arm based platforms. This software framework accelerates intelligent, connected IoT product design by allowing developers to focus on what really matters – innovation and differentiation.
-{{< /card >}}
-{{< /cardpane >}}
+By the end of this learning path, you will be able to:
 
-{{< card header="**[Arm Virtual Hardware Lab Series](https://www.arm.com/campaigns/virtual-hardware-lab-series)**" >}}
-These virtual sessions include presentation-based sessions and hands-on labs. All sessions will be delivered live on Arm’s webinar platform, BrightTalk for Q&A opportunities. The sessions will be recorded and available on-demand minutes after the live session is complete.
-{{< /card >}}
+* Launch Arm Virtual Hardware instance in the cloud
+* Build and run example project
+* Run debug session with remote target
 
-Other content related to Arm Virtual Hardware
+
+## Pre-requisites
+
+* An appropriate cloud service provider account.
+  - Amazon Web Services (AWS) is supported
+* Optional GitHub account if you wish to create your own fork of the example project
+* Remote debug session requires [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio)
+
+## Sections
+
+|          Type | Content       |
+| ---           | ---           |
+| How-To        | [Start Arm Virtual Hardware instance in cloud](/iot/avh/launch) |
+| How-To        | [Build and run an example project](/iot/avh/microspeech) |
+| How-To        | [Debug Virtual Hardware from local machine ](/iot/avh/arm-development-studio) |
+| Check         | [Knowledge check and review](#) |
+
+
+## References and Documentation
+
+| Type          | Content             |
+| ---           | ---                 |
+| Reference     | [Arm Virtual Hardware](https://avh.arm.com)      |
+| Documentation | [Product Overview](https://arm-software.github.io/AVH/main/overview/html/index.html) |
+
+## Next Steps
+
+[Learn about Arm Total Solutions for IoT](/iot/total-solutions)

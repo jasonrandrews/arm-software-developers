@@ -10,15 +10,14 @@ description: >
 
 ## Overview
 
-[Arm Virtual Hardware](https://avh.arm.com/) is a simple and scalable way to remove dependency from hardware and unlock cloud-based development. Virtual Hardware is provided as an Amazon Machine Image (AMI) on AWS, and is the default platform for Arm Total Solutions for IoT. The software provided allows you to build and run a number of pre-configured software stacks, enabling an automated CI/CD infrastructure to be built up around these virtual hardware targets.
-
-As you adapt these code bases for your own needs, there is a requirement for additional debug capabilities. The [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) debugger fully supports the necessary debug interfaces required to connect to the virtual target running on the cloud from your local desktop. This article explains the necessary steps, using the [microspeech](https://github.com/ARM-software/AVH-TFLmicrospeech) reference example for Corstone-300.
+As you adapt code base for your own needs, there is a requirement for additional debug capabilities. The [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) debugger fully supports the necessary debug interfaces required to connect to [Arm Virtual Hardware](https://avh.arm.com/)running on the cloud from your local desktop. This article explains the necessary steps, using the [microspeech](https://github.com/ARM-software/AVH-TFLmicrospeech) reference example for Corstone-300.
 
 ## Prerequisites
 
-Tools: [Arm Development Studio](https://www.armsoftwaredev.tk/ide/armds/)
-
-Code Repository: [Microspeech reference example for Corstone-300](https://github.com/ARM-software/AVH-TFLmicrospeech)  
+* [An Arm Virtual Hardware instance running in the cloud](/iot/aws/launch)\
+* [Imported microspeech example to your Virtual Hardware Instance](/iot/aws/microspeech)\
+* Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) installed on local machine
+  - See [Getting Started with Arm DS](/ide/armds/) for installation instructions if necessary
 
 ## Detailed Steps
 
@@ -73,6 +72,7 @@ To work around this, you can use port forwarding to tunnel accesses from a given
 ```console
 ssh -i <key.pem> -N -L 7100:localhost:7100 ubuntu@<AMI_IP_addr>
 ```
+The `-N` option holds the SSH tunnel connection and does not allow to execute other remote commands. This is useful when only forwarding ports.
 
 ### Debug from desktop {#debug}
 
@@ -95,3 +95,7 @@ The debugger attempts to locate and display the source code. The system paths (f
 These substitutions are stored by this debug connection, and so subsequent debug sessions will automatically find the relevant sources. You should now have a fully featured debug environment for your application development.
 
 ![Arm Debugger](debug_session.png "Debug of Arm Virtual Hardware")
+
+## Next steps
+
+Learn about [Arm Total Solutions for IoT](/iot/total-solutions)

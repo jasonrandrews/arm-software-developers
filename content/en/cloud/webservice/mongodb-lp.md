@@ -1,4 +1,3 @@
-
 ---
 title: "Installing MongoDB on Arm servers and measuring its performance" 
 type: docs
