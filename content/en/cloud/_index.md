@@ -29,7 +29,7 @@ The learning path modules listed below are applicable if you are a software engi
      </ul>
     </div>
     </p>
-    <a href="/cloud/webservice/mongodb-lp" class="btn btn-primary">Learn More</a>
+    <a href="/cloud/mongodb" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated July 11th, 2022</div>
 </div>
