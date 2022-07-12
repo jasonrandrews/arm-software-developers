@@ -28,7 +28,7 @@ By the end of this learning path, you will be able to:
 | How-To        | [Running MongoDB on Arm](/cloud/mongodb/mongodb)       |
 | How-To        | [Measure performance of MongoDB operations on Arm](/cloud/mongodb/perf_mongo) |
 | How-To        | [Benchmark MongoDB on Arm with YCSB](/cloud/mongodb/ycsb_mongo) |
-| Check         | [Knowledge check and review](#)                        |
+| Check         | [Knowledge check and review](/cloud/mongodb/knowledgecheck)                        |
 
 
 ## References and Documentation
