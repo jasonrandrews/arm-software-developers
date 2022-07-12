@@ -1,18 +1,18 @@
 
 ---
-title: "Build the Cloud on Arm" 
+title: "Server and Cloud software development on Arm" 
 type: docs
 weight: 2
 description: >
-    General information and how-to articles to accelerate cloud-native development on Arm servers. 
+    Develop cloud native applications on the Arm architecture for best performance and lowest cost.
 ---
 
 {{% pageinfo %}}
-This section provides important information for software engineers building and running cloud native applications on Arm, particularly Arm servers.
+Learn how to build and run applications on Arm servers and Arm-based cloud services.
 
-The learning path modules listed below are applicable if you are a software engineer building, migrating or deploying applications on Arm servers.
+Utilize Arm-based cloud services for software development.
 
-
+The learning paths below are applicable if you are a software engineer building, migrating or deploying cloud applications on Arm servers.
 {{% /pageinfo %}}
 
 {{< cardpane >}}
@@ -20,12 +20,13 @@ The learning path modules listed below are applicable if you are a software engi
 <div class="card text-center">
   <div class="card-header" style="background-color:#95d600;">Introductory</div>
   <div class="card-body">
-    <h5 class="card-title"> <b> MongoDB on Arm servers </b> </h5>
+    <h5 class="card-title"> <b>Learn about MongoDB on Arm servers</b> </h5>
     <p class="card-text">
     <div style="text-align:left">
      <ul >
-      <li>Install MongoDB on Arm</li>
-      <li>Measure MongoDB performance on Arm</li>
+      <li>Learn how to install MongoDB</li>
+      <li>See how to measure MongoDB performance</li>
+      <li>Use MongoDB benchmarks to further evaluate performance</li>
      </ul>
     </div>
     </p>
@@ -37,12 +38,13 @@ The learning path modules listed below are applicable if you are a software engi
 <div class="card text-center">
   <div class="card-header" style="background-color:#0091bd;">Experienced</div>
   <div class="card-body">
-    <h5 class="card-title"> <b> Docker images on Arm servers using AWS CodeBuild </b> </h5>
+    <h5 class="card-title"> <b>Create Docker images on Arm servers using AWS CodeBuild</b> </h5>
     <p class="card-text">
     <div style="text-align:left">
      <ul>
-      <li>Learn to build and deploy dockers images using AWS Codebuild</li>
-      <li>Use AWS CodeBuild to automate build tasks on Arm </li>
+      <li>Learn how to use AWS Codebuild with AWS Graviton processors </li>
+      <li>Build docker images for Arm from GitHub projects</li>
+      <li>Store docker images in Docker Hub and AWS ECR</li>
    </ul>
    </div>
     </p>
