@@ -91,4 +91,4 @@ The metrics are also output to the `stats-per-second-[mode].csv` which is locate
 
 For instructions on running any other tests or more details on the metrics reported, refer to the [github project for the performance tool](https://github.com/idealo/mongodb-performance-test#readme).
 
-[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#Sections)
+[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#sections)

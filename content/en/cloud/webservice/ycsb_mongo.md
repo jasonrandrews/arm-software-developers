@@ -124,5 +124,5 @@ For instructions on running any other tests or more details on the metrics repor
 
 To view performance results of MongoDB on AWS Graviton2-based Amazon EC2 R6g instance and how it compares to Intel Xeon-based R5 instances read the [blog here](https://community.arm.com/arm-community-blogs/b/operating-systems-blog/posts/mongodb-performance-on-aws-with-the-arm-graviton2).
 
-[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#Sections)
+[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#ections)
 

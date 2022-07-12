@@ -42,7 +42,7 @@ Using your AWS Account, launch and Arm 64-bit EC2 instance running RHEL8.
 
 Then run through [these steps](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-red-hat/) on your chosen EC2 instance.
 
-[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#Sections)
+[<-- Return to Learning Path](/cloud/webservice/mongodb-lp/#sections)
 
 
 
