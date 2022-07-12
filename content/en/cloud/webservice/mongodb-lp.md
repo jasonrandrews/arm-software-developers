@@ -1,7 +1,6 @@
 ---
 title: "Installing MongoDB on Arm servers and measuring its performance" 
 type: docs
-toc_hide: true
 hide_summary: true
 weight: 2
 description: >
@@ -36,8 +35,10 @@ By the end of this learning path, you will be able to:
 
 | Type          | Content             |
 | ---           | ---                 |
-| Reference     | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
+| Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
+| Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
 | Documentation | [MongoDB Manual](https://www.mongodb.com/docs/manual/) |
+| Blog          | [Compare performance of MongoDB on Arm vs Intel](https://community.arm.com/arm-community-blogs/b/operating-systems-blog/posts/mongodb-performance-on-aws-with-the-arm-graviton2).|
 
 ## Next Steps
 
