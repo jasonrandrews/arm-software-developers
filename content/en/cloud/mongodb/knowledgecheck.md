@@ -47,42 +47,37 @@ description: >
     })
 
     // Use logic per Question to determine correct or incorrect show.    
-    showQuestion('Q1','html');
-    showQuestion('Q2','age1');
+    showQuestion('Q1','yes');
+    showQuestion('Q2','true');
 
   }
 </script>
 
 <form action="javascript:handleIt()">
-  <p>Please select your favorite Web language:</p>
-  <input type="radio" id="html" name="fav_language">
-  <label for="html">HTML</label><br>
+  <p>Does MongoDB run on Arm servers?</p>
+  <input type="radio" id="yes" name="arm_run">
+  <label for="yes">Yes</label><br>
 
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
+  <input type="radio" id="no" name="arm_run" value="no">
+  <label for="no">No</label><br>
 
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-
-  <div id="Q1_Correct_Answer" class="info_text correct" hidden><p>That's right! Your favorite language is that because it is great."</p></div>
-  <div id="Q1_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again."</p></div>
+  <div id="Q1_Correct_Answer" class="info_text correct" hidden><p>That's right! MongoDB is fully supported on 64-bit Arm servers running Linux.</p></div>
+  <div id="Q1_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again.</p></div>
 
 
  <br>  
 
 
 
- <p>Please select your age:</p>
-  <input type="radio" id="age1" name="age" value="30">
-  <label for="age1">0 - 30</label><br>
-  <input type="radio" id="age2" name="age" value="60">
-  <label for="age2">31 - 60</label><br>  
-  <input type="radio" id="age3" name="age" value="100">
-  <label for="age3">61 - 100</label><br><br>
+ <p>Can you test MongoDB performance by running multiple threads executing different operation types?</p>
+  <input type="radio" id="true" name="threads" value="true">
+  <label for="true">Yes</label><br>
+  <input type="radio" id="false" name="threads" value="false">
+  <label for="false">No</label><br>  
 
 
-  <div id="Q2_Correct_Answer" class="info_text correct" hidden><p>That's right! Your favorite language is that because it is great."</p></div>
-  <div id="Q2_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again."</p></div>
+  <div id="Q2_Correct_Answer" class="info_text correct" hidden><p>That's right! You can run multiple threads executing either all the same or different database operations</p></div>
+  <div id="Q2_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again.</p></div>
 
 
 
