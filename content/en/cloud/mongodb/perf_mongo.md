@@ -4,7 +4,6 @@ softwares: ["linux"]
 title: "Measure performance of MongoDB on Arm"
 linkTitle: "Measure performance of MongoDB on Arm"
 type: docs
-toc_hide: true
 hide_summary: true
 description: >
     This article shows you how to run different database operation tests and measure MongoDB performance, such as latency and throughput on your 64-bit Arm machine.
@@ -14,6 +13,9 @@ description: >
 
 * MongoDB installed and running on your 64-bit Arm Linux machine or AWS EC2 instance. Follow the steps outlined [here](/cloud/webservice/mongodb).
 * Java 1.8 or newer installed on your 64-bit Arm Linux machine or AWS EC2 instance.
+```console
+sudo apt install default-jre
+```
 
 ## Detailed Steps
 

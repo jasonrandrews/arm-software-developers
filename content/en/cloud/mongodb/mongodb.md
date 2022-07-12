@@ -4,7 +4,6 @@ softwares: ["linux"]
 title: "Running MongoDB on Arm"
 linkTitle: "Run MongoDB on Arm"
 type: docs
-toc_hide: true
 hide_summary: true
 description: >
     This article shows you how to install and run MongoDB Community Edition on differet flavors of AWS EC2 instances powered by Arm64 achitecture.

@@ -4,7 +4,6 @@ softwares: ["linux"]
 title: "Benchmark MongoDB on Arm with Yahoo Cloud Serving Benchmark (YCSB)"
 linkTitle: "Run YCSB to benchmark MongoDB performance on Arm"
 type: docs
-toc_hide: true
 hide_summary: true
 description: >
     This article shows you how to run the Yahoo Cloud Serving Benchmark on MongoDB to measure performance, such as latency and throughput.
@@ -14,8 +13,11 @@ description: >
 
 * MongoDB installed and running on your 64-bit Arm Linux machine or AWS EC2 instance. Follow the steps outlined [here](/cloud/webservice/mongodb).
 * Java 1.8 or newer installed on your 64-bit Arm Linux machine or AWS EC2 instance.
-* Maven 3 installed on your 64-bit Arm Linux machine or AWS EC2 instance. Run the following commands to install Maven 3
+```console
+sudo apt install default-jre
 ```
+* Maven 3 installed on your 64-bit Arm Linux machine or AWS EC2 instance. Run the following commands to install Maven 3
+```console
    wget http://ftp.heanet.ie/mirrors/www.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
    sudo tar xzf apache-maven-*-bin.tar.gz -C /usr/local
    cd /usr/local
