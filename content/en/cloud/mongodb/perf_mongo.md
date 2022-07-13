@@ -4,6 +4,7 @@ softwares: ["linux"]
 title: "Measure performance of MongoDB on Arm"
 linkTitle: "Measure performance of MongoDB on Arm"
 type: docs
+weight: 2
 hide_summary: true
 description: >
     This article shows you how to run different database operation tests and measure MongoDB performance, such as latency and throughput on your 64-bit Arm machine.

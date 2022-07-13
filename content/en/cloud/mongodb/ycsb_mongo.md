@@ -4,6 +4,7 @@ softwares: ["linux"]
 title: "Benchmark MongoDB on Arm with Yahoo Cloud Serving Benchmark (YCSB)"
 linkTitle: "Run YCSB to benchmark MongoDB performance on Arm"
 type: docs
+weight: 3
 hide_summary: true
 description: >
     This article shows you how to run the Yahoo Cloud Serving Benchmark on MongoDB to measure performance, such as latency and throughput.

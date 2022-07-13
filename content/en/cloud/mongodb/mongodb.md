@@ -1,12 +1,13 @@
 ---
 processors: ["Neoverse-N1"]
 softwares: ["linux"]
-title: "Running MongoDB on Arm"
+title: "Run MongoDB on Arm"
 linkTitle: "Run MongoDB on Arm"
 type: docs
+weight: 1
 hide_summary: true
 description: >
-    This article shows you how to install and run MongoDB Community Edition on differet flavors of AWS EC2 instances powered by Arm64 achitecture.
+    Learn how to install and run MongoDB Community Edition on differet flavors of AWS EC2 instances powered by Arm64 achitecture.
 ---
 
 ## Pre-requisites
