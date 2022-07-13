@@ -106,3 +106,5 @@ Refresh your browser and observe that your fork of the repository has been updat
 ## Next Steps
 
 Learn how to [configure GitHub Actions to automatically run tests](/iot/cicd/gh-mspeech)
+
+[<-- Return to Learning Path](/iot/cicd/#sections)

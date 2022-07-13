@@ -30,7 +30,7 @@ By the end of this learning path, you will be able to:
 | How-To        | [Investigate a pre-made example peripheral](/iot/peripherals/led) |
 | How-To        | [TO DO Virtual Streaming Interface (VSI)](#) |
 | How-To        | [TO DO Virtual Socket Interface (VSocket)](#) |
-| Check         | [TO DO Knowledge check and review](#) |
+| Check         | [TO DO Knowledge check and review](/iot/peripherals/knowledgecheck) |
 
 ## References and Documentation
 

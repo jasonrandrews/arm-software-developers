@@ -33,7 +33,7 @@ By the end of this learning path, you will be able to:
 | How-To        | [Integrate AVH into a CI/CD flow with GitHub Actions](/iot/cicd/gh-mspeech) |
 | How-To        | [Fully automate CI/CD flow with GitHub Actions](/iot/cicd/gh-actions) |
 | How-To        | [Fully automate CI/CD flow with Jenkins](/iot/cicd/jenkins) |
-| Check         | [Knowledge check and review](#) |
+| Check         | [Knowledge check and review](/iot/cicd/knowledgecheck) |
 
 ## References and Documentation
 

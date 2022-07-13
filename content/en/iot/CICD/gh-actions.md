@@ -72,3 +72,5 @@ Observe in the output that all tests are now successful.
 ## Next steps
 
 [Jenkins?](/iot/cicd/jenkins)
+
+[<-- Return to Learning Path](/iot/cicd/#sections)

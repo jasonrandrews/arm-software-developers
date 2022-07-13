@@ -25,7 +25,7 @@ By the end of this learning path, you will be able to:
 | ---           | ---           |
 | How-To        | [Build and run the examples from the Arm ML Evaluation Kit](/iot/total-solutions/ml-eval) |
 | How-To        | [Build and run Open-IoT-SDK examples](/iot/total-solutions/total-iot) |
-| Check         | [Knowledge check and review](#) |
+| Check         | [Knowledge check and review](/iot/total-solutions/knowledgecheck) |
 
 ## References and Documentation
 

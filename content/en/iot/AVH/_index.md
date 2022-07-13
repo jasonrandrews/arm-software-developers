@@ -30,7 +30,7 @@ By the end of this learning path, you will be able to:
 | How-To        | [Start Arm Virtual Hardware instance in cloud](/iot/avh/launch) |
 | How-To        | [Build and run an example project](/iot/avh/microspeech) |
 | How-To        | [Debug Virtual Hardware from local machine ](/iot/avh/arm-development-studio) |
-| Check         | [Knowledge check and review](#) |
+| Check         | [Knowledge check and review](/iot/avh/knowledgecheck) |
 
 
 ## References and Documentation

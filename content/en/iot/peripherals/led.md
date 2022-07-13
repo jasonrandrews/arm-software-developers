@@ -49,3 +49,5 @@ In the application, signals are passed via the [VIO API](https://arm-software.gi
 ## Next Steps
 
 Learn about using the [Virtual Streaming Interface](#)
+
+[<-- Return to Learning Path](/iot/peripherals/#sections)

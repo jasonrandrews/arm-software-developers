@@ -72,3 +72,5 @@ Workflows are defined in the `.github/workflows` folder of the repository. See t
 ## Next Steps
 
 You have learned the basics of how to automate the testing of your application. More advanced steps can include automation of launching the AVH instance itself, and reporting success and failure of your testing based on your output. Learn about that [here](/iot/cicd/gh-actions).
+
+[<-- Return to Learning Path](/iot/cicd/#sections)

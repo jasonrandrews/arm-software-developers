@@ -14,8 +14,8 @@ As you adapt code base for your own needs, there is a requirement for additional
 
 ## Prerequisites
 
-* [An Arm Virtual Hardware instance running in the cloud](/iot/aws/launch)\
-* [Imported microspeech example to your Virtual Hardware Instance](/iot/aws/microspeech)\
+* [An Arm Virtual Hardware instance running in the cloud](/iot/aws/launch)
+* [Imported microspeech example to your Virtual Hardware Instance](/iot/aws/microspeech)
 * Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio) installed on local machine
   - See [Getting Started with Arm DS](/ide/armds/) for installation instructions if necessary
 
@@ -44,31 +44,26 @@ Launching with the debug server will also disable certain other options, such as
 ```
 Running the example with these options result in output similar to:
 ```
-Fast Models [11.16.14 (Sep 29 2021)]
-Copyright 2000-2021 ARM Limited.
-All Rights Reserved.
-
 Iris server started listening to port 7100
-VHT-Corstone-300: command line option --cyclelimit ignored because
---iris-server option specified
+VHT_Corstone_SSE-300_Ethos-U55: command line option --simlimit ignored because --iris-server option specified
 
 telnetterminal0: Listening for serial connection on port 5000
 telnetterminal1: Listening for serial connection on port 5001
 telnetterminal2: Listening for serial connection on port 5002
 telnetterminal5: Listening for serial connection on port 5003
 
-Ethos-U rev afc78a99 --- Aug 31 2021 22:30:42
-(C) COPYRIGHT 2019-2021 Arm Limited
-ALL RIGHTS RESERVED
+    Ethos-U rev 136b7d75 --- Nov 25 2021 12:44:08
+    (C) COPYRIGHT 2019-2021 Arm Limited
+    ALL RIGHTS RESERVED
 
-**Heard yes (146) @1000ms**
-**Heard no (145) @5600ms**
+The word was yes (146) @1000ms
+The word was no (145) @5600ms
+...
 ```
 
 ### Provide SSH tunnel {#sshtunnel}
 
-Accessing the cloud instance from a remote machine generally requires the use of a key pair.\
-To work around this, you can use port forwarding to tunnel accesses from a given port to your local machine (`7100` in this example).
+Accessing the cloud instance from a remote machine generally requires the use of a key pair. To work around this, you can use port forwarding to tunnel accesses from a given port to your local machine (`7100` in this example).
 ```console
 ssh -i <key.pem> -N -L 7100:localhost:7100 ubuntu@<AMI_IP_addr>
 ```
@@ -99,3 +94,5 @@ These substitutions are stored by this debug connection, and so subsequent debug
 ## Next steps
 
 Learn about [Arm Total Solutions for IoT](/iot/total-solutions)
+
+[<-- Return to Learning Path](/iot/avh/#sections)

@@ -95,3 +95,5 @@ Connect your VNC client to port `5901`. You will be prompted for the VNC passwor
 ## Next Steps
 
 You are now ready to [build and run your first example](/iot/avh/microspeech)
+
+[<-- Return to Learning Path](/iot/avh/#sections)

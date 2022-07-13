@@ -77,3 +77,5 @@ Full details are given in the supplied `README.md`.
 ## Next Steps
 
 Learn how to use [Arm Virtual Hardware in a CI/CD environment](/iot/cicd).
+
+[<-- Return to Learning Path](/iot/total-solutions/#sections)
