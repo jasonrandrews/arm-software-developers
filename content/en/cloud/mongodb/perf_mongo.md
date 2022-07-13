@@ -1,6 +1,6 @@
 ---
 processors: ["Neoverse-N1"]
-softwares: ["linux"]
+software: ["linux"]
 title: "Measure performance of MongoDB on Arm"
 linkTitle: "Measure performance of MongoDB on Arm"
 type: docs

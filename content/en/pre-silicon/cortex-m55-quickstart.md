@@ -1,7 +1,7 @@
 ---
 processors: ["Cortex-M55"]
 tools: ["RTL-simulator"]
-softwares: ["bare-metal"]
+software: ["bare-metal"]
 title: "Cortex-M55 Quick Start"
 linkTitle: "Cortex-M55 Quick Start"
 type: docs

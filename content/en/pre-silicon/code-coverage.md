@@ -1,6 +1,6 @@
 ---
 processors: ["Cortex-M"]
-softwares: ["bare-metal"]
+software: ["bare-metal"]
 tools: ["RTL-simulator"]
 
 title: "Collect Code Coverage from RTL simulation"

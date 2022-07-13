@@ -4,7 +4,7 @@ title: "Developing bare-metal software for Arm devices without hardware"
 type: docs
 tools: ["Fastmodels"]
 processors: ["Cortex-A73", "Cortex-A53"]
-softwares: ["bare-metal"]
+software: ["bare-metal"]
 toc_hide: true
 hide_summary: true
 weight: 2

@@ -1,6 +1,6 @@
 ---
 processors: ["Neoverse-N1"]
-softwares: ["linux"]
+software: ["linux"]
 title: "Benchmark MongoDB on Arm with Yahoo Cloud Serving Benchmark (YCSB)"
 linkTitle: "Run YCSB to benchmark MongoDB performance on Arm"
 type: docs

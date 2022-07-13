@@ -1,6 +1,6 @@
 ---
 processors: ["Neoverse-N1"]
-softwares: ["linux"]
+software: ["linux"]
 title: "Run MongoDB on Arm"
 linkTitle: "Run MongoDB on Arm"
 type: docs

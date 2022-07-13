@@ -1,7 +1,7 @@
 ---
 processors: ["Cortex-A73", "Cortex-A53"]
 tools: ["Fastmodels"] 
-softwares: ["bare-metal"]
+software: ["bare-metal"]
 title: "Modifying your first bare-metal embedded program to use the UART as the output mechanism"
 linkTitle: "Modify your first embedded image to use the UART for printf output"
 type: docs
