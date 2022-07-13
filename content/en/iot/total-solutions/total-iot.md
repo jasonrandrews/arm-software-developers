@@ -1,10 +1,10 @@
 ---
-title: "Get started with Arm Total Solutions for IoT and Arm Virtual Hardware"
-linkTitle: "Get started with Arm Total Solutions for IoT"
+title: "Get started with Open-IoT-SDK and Arm Virtual Hardware"
+linkTitle: "Get started with Open-IoT-SDK"
 type: docs
 weight: 30
 description: >
-    Learn about how to build and run the example software stacks provided as Arm Total Solutions for the Internet of Things
+    Learn about how to build and run the example software stacks provided as the Open-IoT-SDK.
 ---
 ## Overview
 Developing IoT systems is incredibly complex. To fulfil the potential of IoT, we need to simplify and accelerate development for the entire value chain. [Arm Total Solutions for IoT](https://www.arm.com/solutions/iot/total-solutions-iot) is an industry first, bringing together specialized processing capabilities with standardized, secure software, and innovative approaches to tooling and development.
@@ -36,19 +36,16 @@ You must first synchronize git submodules, and apply required patches, which you
 ```console
 ./ats.sh bootstrap
 ```
-
 Then install additional python dependencies required to run tests and sign binaries:
 ```console
 sudo apt install python3.8-venv
 python3.8 -m pip install imgtool cbor2
 python3.9 -m pip install imgtool cffi intelhex cbor2 cbor pytest click
 ```
-
 To make python user packages visible in the shell:
 ```console
 export PATH=$PATH:/home/ubuntu/.local/bin
 ```
-
 You are now ready to build the examples.
 
 ### Build an example
@@ -73,6 +70,7 @@ INFO - For timestamp: 0.500000 (inference #: 1); label: on, score: 0.996094; thr
 INFO - For timestamp: 1.000000 (inference #: 2); label: on, score: 0.917969; threshold: 0.900000
 ML_HEARD_OFF
 INFO - For timestamp: 1.500000 (inference #: 3); label: off, score: 0.996094; threshold: 0.900000
+...
 ```
 Full details are given in the supplied `README.md`.
 

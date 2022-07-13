@@ -6,7 +6,7 @@ description: >
     Learn how to prepare a repository for a CI/CD development flow with Arm Virtual Hardware.
 ---
 ## Overview
-in this section you will learn how to prepare a GitHub repository for a CI/CD development flow. An [example project](https://github.com/ARM-software/AVH-GetStarted) is provided to enable you to quickly get started.
+in this section you will learn how to prepare a GitHub repository for a CI/CD development flow.
 
 Full instructions are given in the Arm Virtual Hardware [documentation](https://arm-software.github.io/AVH/main/examples/html/GetStarted.html)
 
@@ -19,98 +19,90 @@ Full instructions are given in the Arm Virtual Hardware [documentation](https://
 
 ### Fork or copy the example repository
 
-As we shall be making modifications to the reference example, you must make your own copy of the repository. In a web browser, navigate to the repository at:
+As we shall be making modifications to the reference example, you must make your own copy (`fork`) of the repository.\
+In a web browser, navigate to the repository at:
 ```console
-https://github.com/ARM-software/AVH-GetStarted
+https://github.com/ARM-software/AVH-TFLmicrospeech/fork
 ```
-Click either `Use this template` or `Fork` to create a copy in your own personal repository store. It is assumed below that you have used the same repository name (`AVH-GetStarted`) for your copy.
+and create a copy in your own personal repository store (you must be logged into GitHub).\
+It is assumed below that you have used the same repository name (`AVH-TFLmicrospeech`) for your fork.
 
 ### Personal Access Token
 
-GitHub requires that a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) be set. If you do not have this on your account, navigate to `Settings` > `Developer Settings` > `Personal Access Tokens`, and click on `Generate new token`.
-
+GitHub requires that a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) be set. If you do not have this on your account already, navigate to `Settings` > `Developer Settings` > `Personal Access Tokens`, click on `Generate new token`, and save the token locally.
 
 ### Clone this repository
 
-In your Arm Virtual Hardware terminal, clone the COPY of the repository, and navigate into its directory.
+In your Arm Virtual Hardware terminal, clone the FORK of the repository, and navigate into its directory.
 ```console
-git clone https://github.com/<YourGitHubName>/AVH-GetStarted
-cd AVH-GetStarted
+git clone https://github.com/<GitHub_Username>/AVH-TFLmicrospeech
+cd AVH-TFLmicrospeech/Platform_FVP_Corstone_SSE-300_Ethos-U55
 ```
-### Build the basic example
+### Build the example
 
-In your Arm Virtual Hardware terminal, navigate into the `basic` directory, and build the example.
+Rebuild the project:
 ```console
-cd basic
-cbuild.sh basic.debug.cprj
+cbuild.sh microspeech.Example.cprj
 ```
+The build will take some time to complete.
+
 ### Run the example
 
 Run the example on `Arm Virtual Hardware for Corstone-300`.
 ```console
- VHT_Corstone_SSE-300_Ethos-U55 -a Objects/basic.axf -f vht_config.txt
+ ./run_example.sh
  ```
- Observe in the output that one of the tests failed.
+ Observe the output.
  ```
----[ UNITY BEGIN ]---
-/home/ubuntu/AVH-GetStarted/basic/main.c:57:test_my_sum_pos:PASS
-/home/ubuntu/AVH-GetStarted/basic/main.c:58:test_my_sum_neg:PASS
-/home/ubuntu/AVH-GetStarted/basic/main.c:48:test_my_sum_fail:FAIL: Expected 2 Was 0
-/home/ubuntu/AVH-GetStarted/basic/main.c:60:test_my_sum_zero:PASS
------------------------
-4 Tests 1 Failures 0 Ignored
-FAIL
----[ UNITY END ]---
+Heard yes (146) @1000ms
+Heard no (145) @5600ms
+Heard yes (143) @9100ms
+Heard no (145) @13600ms
+...
 ```
-### Fix the example
+### Change the example
 
-Edit `main.c` to fix the failing test. For example, change the `TEST_ASSERT_EQUAL_INT` value from `2` to `0`.
-```C
-/* Failing test with incorrect summation value */
-static void test_my_sum_fail(void) {
-  const int sum = my_sum(1, -1);
-  TEST_ASSERT_EQUAL_INT(0, sum);
-}
+Edit `command_responder.cc` source file, which defines the output message.
+```console
+nano ../micro_speech/src/command_responder.cc
 ```
+For example, change `Heard` to `The word was` in the `TF_LITE_REPORT_ERROR()` function.
+
 ### Rebuild and rerun
 
-Rebuid and rerun the example.
+Rebuild and rerun the example.
 ```console
-cbuild.sh basic.debug.cprj
-VHT_Corstone_SSE-300_Ethos-U55 -a Objects/basic.axf -f vht_config.txt
+cbuild.sh microspeech.Example.cprj
+./run_example.sh
 ```
-Observe in the output that all tests passed.
+Observe that the output has changed as expected.
 ```
----[ UNITY BEGIN ]---
-/home/ubuntu/AVH-GetStarted/basic/main.c:57:test_my_sum_pos:PASS
-/home/ubuntu/AVH-GetStarted/basic/main.c:58:test_my_sum_neg:PASS
-/home/ubuntu/AVH-GetStarted/basic/main.c:59:test_my_sum_fail:PASS
-/home/ubuntu/AVH-GetStarted/basic/main.c:60:test_my_sum_zero:PASS
------------------------
-4 Tests 0 Failures 0 Ignored
-OK
----[ UNITY END ]---
+The word was yes (146) @1000ms
+The word was no (145) @5600ms
+The word was yes (143) @9100ms
+The word was no (145) @13600ms
+...
 ```
 ### Update the GitHub repository
 
 Set your GitHub login details in your Virtual Hardware instance
 ```console
-git config --global user.name "<Username>"
+git config --global user.name "<GitHub_Username>"
 git config --global user.email <Email>
 ```
-Verify that the COPY of the repository is referenced
+Verify that the fork of the repository is referenced
 ```console
 git remote -v
 ```
 Commit and push changed file(s) to the repository
 ```
-git add .
-git commit -m "fixed test 3"
+git add ../micro_speech/src/command_responder.cc
+git commit -m "changed output message"
 git push
 ```
 You will be prompted for your GitHub username and Personal Access Token.
 
-Refresh your browser and observe that your copy of the repository has been updated appropriately.
+Refresh your browser and observe that your fork of the repository has been updated appropriately.
 ## Next Steps
 
-Learn how to [configure GitHub Actions to automatically run tests](/iot/cicd/gh-actions)
+Learn how to [configure GitHub Actions to automatically run tests](/iot/cicd/gh-mspeech)

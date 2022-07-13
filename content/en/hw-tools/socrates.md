@@ -19,8 +19,7 @@ Arm Socrates tooling requires a Linux host machine. Full specifications are give
 
 ## Download installer packages {#download}
 
-Socrates is available through Arm Flexible Access(AFA), which gives access to IP, relevant tools and models, and support. The tool is pacakged within [Arm Success Kits](https://www.arm.com/products/development-tools/success-kits). 
-All AFA downloads are provided via the [Arm Product Download Hub](https://developer.arm.com/downloads). You will need to set up an account for this system to be able to download. It may be that only certain contacts within your organization have such access. If you are unsure, please contact your Arm account manager for assistance.
+Socrates is a component of [Arm Hardware Success Kits](https://www.arm.com/products/development-tools/success-kits). It is available to download via the [Arm Product Download Hub](https://developer.arm.com/downloads). You will need to set up an account for this system to be able to download. It may be that only certain contacts within your organization have such access. If you are unsure, please contact your Arm account manager for assistance.
 
 You can download Socrates as an individual standalone component, or you can download the complete success kits. The installer is available for Linux only.
 

@@ -61,6 +61,36 @@ In your SSH terminal, run the `tool-inventory.sh` script to verify the instance 
 ```console
 ./tool-inventory.sh
 ```
+## Other connections {#other}
+
+SSH connection creates a terminal to interact with the AVH instance. You can also interact through [other methods](https://arm-software.github.io/AVH/main/infrastructure/html/run_ami_local.html#other).
+
+### Enable Code Server (Visual Studio Code)  {#vscode}
+To enabling access to Visual Studio Code with a web browser, you will need to start a SSH tunnel to the instance and forward port `8080`.
+
+```console
+ssh -i <key.pem> -N -L 8080:localhost:8080 ubuntu@<AMI_IP_addr>
+```
+You can then access the IDE via a web browser on your local machine at:
+```console
+http://localhost:8080
+```
+
+### Enable Virtual Network Computing (VNC) {#vnc}
+
+In the AVH terminal, enable and set VNC password (You do not need to enter a view-only password when prompted):
+```console
+vncpasswd
+```
+Start the VNC server for the session:
+```console
+sudo systemctl start vncserver@1.service
+```
+On your local machine, forward port `5901`.
+```console
+ssh -I <key.pem> -N –L 5901:localhost:5901 ubuntu@<AMI_IP_addr>
+```
+Connect your VNC client to port `5901`. You will be prompted for the VNC password.
 
 ## Next Steps
 

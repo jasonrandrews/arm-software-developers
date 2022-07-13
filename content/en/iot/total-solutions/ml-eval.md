@@ -90,4 +90,4 @@ VHT_Corstone_SSE-300_Ethos-U55 -a ethos-u-kws.axf -f options.txt
 
 ## Next Steps
 
-The ML Evaluation Kit provides some stand alone ML examples. These building blocks have been integrated into a complete software stack, in [Arm Total Solutions for IoT](/iot/total-solutions/total-iot).
+The ML Evaluation Kit provides some stand alone ML examples. These building blocks have been integrated into complete software stacks in the [Open-IoT-SDK](/iot/total-solutions/total-iot).

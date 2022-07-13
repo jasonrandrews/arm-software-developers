@@ -2,20 +2,22 @@
 title: "Get started with CI/CD and Arm Virtual Hardware"
 linkTitle: "CI/CD and Arm Virtual Hardware"
 type: docs
+toc_hide: true
 weight: 30
 description: >
-    Learn about how to get started integrating Arm Virtual Hardware into a Ci/CD development flow.
+    Learn about how to get started integrating Arm Virtual Hardware into a CI/CD development flow.
 ---
 ## Overview
 
-Arm Virtual Hardware (AVH) is a valuable asset for CI/CD etc etc...
+Arm Virtual Hardware (AVH) is a valuable asset for CI/CD development flow, providing a test environment ideal for automation.
 
 ## Learning Objectives 
 
 By the end of this learning path, you will be able to:
-https://arm-software.github.io/AVH/main/examples/html/GetStarted.html
 * Prepare a GitHub repository
 * Integrate AVH into a CI/CD flow with GitHub Actions
+* Fully automate CI/CD flow with GitHub Actions
+* Fully automate CI/CD flow with Jenkins
 
 
 ## Pre-requisites
@@ -28,7 +30,9 @@ https://arm-software.github.io/AVH/main/examples/html/GetStarted.html
 |          Type | Content       |
 | ---           | ---           |
 | How-To        | [Prepare a GitHub repository](/iot/cicd/gh-prep) |
-| How-To        | [Integrate AVH into a CI/CD flow with GitHub Actions](/iot/cicd/gh-actions) |
+| How-To        | [Integrate AVH into a CI/CD flow with GitHub Actions](/iot/cicd/gh-mspeech) |
+| How-To        | [Fully automate CI/CD flow with GitHub Actions](/iot/cicd/gh-actions) |
+| How-To        | [Fully automate CI/CD flow with Jenkins](/iot/cicd/jenkins) |
 | Check         | [Knowledge check and review](#) |
 
 ## References and Documentation
@@ -41,4 +45,4 @@ https://arm-software.github.io/AVH/main/examples/html/GetStarted.html
 
 ## Next Steps
 
-Learn about [Arm in IoT](https://www.arm.com/solutions/iot)
+Learn about [Arm in IoT](https://www.arm.com/solutions/iot).

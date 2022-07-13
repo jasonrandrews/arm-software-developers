@@ -1,9 +1,9 @@
 ---
-title: "IoT Software"
-Title: "IoT Software"
+title: "IoT Endpoint Software"
+Title: "IoT Endpoint Software"
 type: docs
 description: >
-    Learn about how get started developing IoT software with Arm
+    Learn about how get started developing IoT Endpoint software with Arm Total Solutions for IoT and Arm Virtual Hardware.
 weight: 10
 ---
 
@@ -28,11 +28,11 @@ Arm Virtual Hardware provides a step change in the evolution of Arm’s modeling
 ## Reference examples
 {{< cardpane >}}
 {{< card header="**[Open-IoT-SDK](https://github.com/ARM-software/open-iot-sdk)**" >}}
-Arm's Open-IoT-SDKgives you have access to a wide variety of IoT targeted software applications and components ready to run on Arm based platforms. This software framework accelerates intelligent, connected IoT product design by allowing developers to focus on what really matters – innovation and differentiation.
+Arm's Open-IoT-SDK gives you have access to a wide variety of IoT targeted software applications and components ready to run on Arm based platforms. This software framework accelerates intelligent, connected IoT product design by allowing developers to focus on what really matters – innovation and differentiation.
 {{< /card >}}
 
 {{< card header="**[Arm ML embedded evaluation kit](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit/)**" >}}
-This repository is for building and deploying Machine Learning (ML) applications targeted for Arm® Cortex®-M and Arm® Ethos™-U NPU. Use the [Quick Start Guide](https://review.mlplatform.org/plugins/gitiles/ml/ethos-u/ml-embedded-evaluation-kit/+/HEAD/docs/quick_start.md) to learn how to run the application on [Arm Virtual Hardware](https://avh.arm.com/).
+This repository is for building and deploying Machine Learning (ML) applications targeted for Arm® Cortex®-M and Arm® Ethos™-U NPU.
 {{< /card >}}
 {{< /cardpane >}}
 
@@ -57,6 +57,25 @@ This repository is for building and deploying Machine Learning (ML) applications
 </div>
 
 <div class="card text-center">
+  <div class="card-header" style="background-color:#ffc700;">Intermediate</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b> Get started with Virtual Peripherals </b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul>
+      <li>Create a peripheral using Virtual Input/Output (VIO)</li>
+      <li>Virtual Streaming Interface (VSI)</li>
+      <li>Virtual Socket Interface (VSocket)</li>
+   </ul>
+   </div>
+    </p>
+    <a href="/iot/peripherals" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated July 13th, 2022</div>
+</div>
+{{< /cardpane >}}
+
+<div class="card text-center">
   <div class="card-header" style="background-color:#95d600;">Introductory</div>
   <div class="card-body">
     <h5 class="card-title"> <b> Get started with Arm Total Solutions for IoT </b> </h5>
@@ -64,15 +83,14 @@ This repository is for building and deploying Machine Learning (ML) applications
     <div style="text-align:left">
      <ul>
       <li>Get started with ML Evaluation Kit</li>
-      <li>Build and run example IoT Solution</li>
+      <li>Build and run example from Open-IoT-SDK</li>
    </ul>
    </div>
     </p>
     <a href="/iot/total-solutions" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated July 12th, 2022</div>
+  <div class="card-footer text-muted">Updated July 13th, 2022</div>
 </div>
-{{< /cardpane >}}
 
 {{< cardpane >}}
 <div class="card text-center">
@@ -82,14 +100,16 @@ This repository is for building and deploying Machine Learning (ML) applications
     <p class="card-text">
     <div style="text-align:left">
      <ul>
-      <li>Learn how to launch a self-hosted runner with GitHub Actions</li>
-      <li>TO DO</li>
+      <li>Prepare a GitHub Repository</li>
+      <li>Integrate AVH into a CI/CD flow with GitHub Actions</li>
+      <li>Fully automate CI/CD flow with GitHub Actions</li>
+      <li>Fully automate CI/CD flow with Jenkins</li>
    </ul>
    </div>
     </p>
     <a href="/iot/cicd" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated July 12th, 2022</div>
+  <div class="card-footer text-muted">Updated July 13th, 2022</div>
 </div>
 {{< /cardpane >}}
 
