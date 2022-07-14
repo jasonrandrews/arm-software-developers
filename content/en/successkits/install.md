@@ -89,6 +89,10 @@ export ARMLMD_LICENSE_FILE=port@server
 {{< /tab >}}
 {{< /tabpane >}}
 
+## Other resources
+
+For more information on generating and setting up your license, see [this article](https://developer.arm.com/documentation/ka004854/latest).
+
 ## Next Steps
 
 [Get Started with Success Kits](/getstarted/)

@@ -33,7 +33,7 @@ Hardware Success Kits are a super-set of Software Success Kits, adding tools for
 - [Arm Fast Models](https://developer.arm.com/Tools%20and%20Software/Fast%20Models)
 - Plus all SSK components
 
-[Arm Flexible Access](/afa) is another way to obtain Arm Success Kits. AFA provides s a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
+[Arm Flexible Access](/afa) is another way to obtain Arm Success Kits. AFA provides a number of HSK and SSK licenses, depending on your membership tier. Additional licenses can also be purchased as needed.
 
 ## Software development tools {#SDT}
 
