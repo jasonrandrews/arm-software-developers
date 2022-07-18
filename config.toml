@@ -114,7 +114,7 @@ section = ["HTML", "print", "RSS"]
 
 [params]
 copyright = "Arm Limited (or its affiliates). All rights reserved."
-privacy_policy = "https://www.arm.com/company/policies/privacy"
+#privacy_policy = "https://www.arm.com/company/policies/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -190,6 +190,10 @@ sidebar_search_disable = false
     name = "Learn"
     weight = 30
     url = "#learn"
+[[menu.main]]
+    name = "About"
+    weight = 110
+    url = "about"
 
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
