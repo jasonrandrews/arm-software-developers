@@ -69,9 +69,12 @@ Performance index                       : 5.63
 cpu_core.cpu0                           : 102.31 MIPS (   394585852 Inst)
 -------------------------------------------------------------------------------
 ```
+## Other resources
+
+Further [software examples](https://arm-software.github.io/AVH/main/examples/html/index.html) for use with Arm Virtual Hardware are being developed.
 
 ## Next Steps
 
-* (Optional) You can learn how to [connect Arm Development Studio debugger to your AVH instance in the cloud](/iot/avh/arm-development-studio)
+* (Optional) You can learn how to [connect Arm Development Studio debugger to your AVH instance in the cloud](/iot/avh/arm-development-studio).
 
 [<-- Return to Learning Path](/iot/avh/#sections)

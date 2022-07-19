@@ -50,3 +50,7 @@ To verify everything is working OK, you can build one of the many example projec
  - Click `Build` in the upper toolbar to build the virtual platform.
  - Once built, click `Run` and select `ISIM system` before launching the virtual platform.\
    - If a suitable program image is available (such as the `startup_Cortex-M3_AC6.axf` example from [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio)), you can load this with the `-a` option.
+
+## Further Reading
+
+   [Common tasks: Get started with Arm Fast Models](https://developer.arm.com/documentation/102441)
