@@ -99,7 +99,7 @@ Below is a table with the results on AWS EC2 Arm 64-bit C6g instance, with Ubunt
 | ../silesia/mr |	373 |	787 |	26649 |	12658 |	5440451 |	54.57 |
 | ../silesia/dickens |	244 |	548 |	41656 |	18563 |	6340267 |	62.21 |
 | ../silesia/ooffice |	292 |	820 |	21028 |	7509 |	4311901 | 	70.09 |
-| ./silesia/sao	313 |	829 |	23175 |	8715 |	6469352 |	89.21 |
+| ./silesia/sao |	313 |	829 |	23175 |	8715 |	6469352 |	89.21 |
 | ../silesia/x-ray |	6626 |	11654 |	1270 |	698 |	8459794 |	99.83 |
 
 
