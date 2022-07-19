@@ -83,7 +83,7 @@ To benchmark the standalone performance of zstd with lzbench, using one of the f
 
 ### View Resuls
 
-The Compression, Decompression Throughput and Compression ratio for the files is printed at the end of each of these commands
+The Compression, Decompression Bandwidth, Latency and Compression ratio for the files is printed at the end of each of these commands
 
 Below is a table with the results on AWS EC2 Arm 64-bit C6g instance, with Ubuntu 20.04 and gcc 9.3 running with snappy.
 
