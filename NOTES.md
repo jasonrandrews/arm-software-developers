@@ -37,7 +37,7 @@ assets/scss/_variables_project.scss
 ```
 $primary: #002B49;   Arm dark blue
 $primary: #333E48;    Arm black
-$primary: #0091BD;    Arm blue
+$primary: #11809f;    Arm blue web safe
 ```
 
 ### Fonts
