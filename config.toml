@@ -114,7 +114,7 @@ section = ["HTML", "print", "RSS"]
 
 [params]
 copyright = "Arm Limited (or its affiliates)."
-#privacy_policy = "https://www.arm.com/company/policies/privacy"
+privacy_policy = "https://www.arm.com/company/policies/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -239,22 +239,28 @@ enable = true
   url = "https://stackoverflow.com/questions/tagged/arm"
   icon = "fab fa-stack-overflow"
   desc = "Practical questions and curated answers"
+
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-#[[params.links.developer]]
-#  name = "GitHub"
-#  url = "https://github.com/google/docsy"
-#  icon = "fab fa-github"
-#  desc = "Development takes place here!"
-#[[params.links.developer]]
-#  name = "Slack"
-#  url = "https://example.org/slack"
-#  icon = "fab fa-slack"
-#  desc = "Chat with other project developers"
-#[[params.links.developer]]
-#  name = "Developer mailing list"
-#  url = "https://example.org/mail"
-#  icon = "fa fa-envelope"
-#  desc = "Discuss development issues around the project"
+[[params.links.developer]]
+  name = "Trademarks"
+  url = "https://www.arm.com/company/policies/trademarks"
+  icon = "fa fa-trademark"
+  desc = "Arm Trademarks"
+[[params.links.developer]]
+  name = "Accessibility"
+  url = "https://www.arm.com/company/policies/accessibility"
+  icon = "fab fa-accessible-icon"
+  desc = "Arm Accessibility"
+[[params.links.developer]]
+  name = "Terms of Use"
+  url = "https://www.arm.com/company/policies/terms-and-conditions"
+  icon = "fas fa-file-contract"
+  desc = "Arm Terms of Use"
+[[params.links.developer]]
+  name = "Cookie Policy"
+  url = "https://www.arm.com/company/policies/cookies"
+  icon = "fa fa-cookie"
+  desc = "Arm Cookie Policy"
 
 # hugo module configuration
 
