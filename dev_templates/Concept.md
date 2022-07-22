@@ -1,7 +1,7 @@
 ---
 processors: []
 software: []
-title: ",,,Youre title here. Should start with a verb (Create, Develop) and be succinct.,,,"
+title: ",,,Youre title here. Should start with a verb (Understand, Learn) and be succinct.,,,"
 linkTitle: ""
 type: docs
 weight: 1
@@ -24,26 +24,26 @@ By the end of this guide, you will be able to:
 * ,,,Tools working (if so, link to the tool's Getting Started page).,,,
 * ,,,Accounts (to cloud providers for example).,,,
 
-## Detailed Steps
+## Details
 
-,,,Some intro, 1-2 paragraphs long, about the overall process. Set developer's expectations on what they will do in these steps, what they will be doing, any helpful context.,,,
+,,,Some intro, 1-2 paragraphs long, about the overall concept. Set developer's expectations on what they will learn in these steps, what they will be doing, any helpful context.,,,
 
-### ,,,Step 1,,,
+### ,,,Section 1,,,
 
-,,,Fill in step 1. Use code snippets to enable easy copy/paste where possible using this format:
+,,,Fill in section 1. Use code snippets to enable easy copy/paste where possible using this format:
 ```console
 sudo echo "This code snippet is really helpful"
 ```
-Finish step 1 info.,,,
+Finish section 1 info.,,,
 
-### ,,,Step 2,,,
+### ,,,Section 2,,,
 
-,,,Fill in step 2.,,,
+,,,Fill in section 2.,,,
 
 
-### ,,,Step N,,,
+### ,,,Section N,,,
 
-,,,Fill in step N. If you exceed 8-10 steps, consider splitting into 2 guides.,,,
+,,,Fill in section N. If you exceed 8-10 sections, consider splitting into 2 guides.,,,
 
 
 
