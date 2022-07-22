@@ -95,4 +95,4 @@ For more information on generating and setting up your license, see [this articl
 
 ## Next Steps
 
-[Get Started with Success Kits](/getstarted/)
+[Get Started with Success Kits](/successkits/getstarted/)

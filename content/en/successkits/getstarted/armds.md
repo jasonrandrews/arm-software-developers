@@ -77,8 +77,8 @@ Full details of available command line options are given in the [documentation](
 
 ## Next steps
 
-Using Arm Development Studio with a custom [Fast Model](https://developer.arm.com/Tools%20and%20Software/Fast%20Models) platform? See [this article](/getstarted/ds_fm) to learn how to connect the Arm Debugger to your platform.
+Using Arm Development Studio with a custom [Fast Model](https://developer.arm.com/Tools%20and%20Software/Fast%20Models) platform? See [this article](/successkits/getstarted/ds_fm) to learn how to connect the Arm Debugger to your platform.
 
-Using Arm Development Studio with a [DSTREAM](https://developer.arm.com/Tools%20and%20Software/DSTREAM-ST#Editions) debug adapter to connect to a hardware (FPGA or Silicon) platform? See [this article](/getstarted/dstream) to learn how to connect the Arm Debugger to your platform.
+Using Arm Development Studio with a [DSTREAM](https://developer.arm.com/Tools%20and%20Software/DSTREAM-ST#Editions) debug adapter to connect to a hardware (FPGA or Silicon) platform? See [this article](/successkits/getstarted/dstream) to learn how to connect the Arm Debugger to your platform.
 
-Looking to use the Arm Streamline profiler? See [this article](/getstarted/streamline).
+Looking to use the Arm Streamline profiler? See [this article](/successkits/getstarted/streamline).
