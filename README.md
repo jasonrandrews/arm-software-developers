@@ -1,4 +1,4 @@
-# Prototyping site for Arm Software Deverlopers
+# Prototyping site for Arm Software Developers
 
 This prototype uses [Docsy](https://www.docsy.dev/), a [Hugo](https://gohugo.io/) theme module for technical documentation sites, providing easy
 site navigation, structure, and more. This **Project** uses the Docsy
