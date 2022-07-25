@@ -75,7 +75,7 @@ id = "G-TXL1TTPQKW"
 #[languages]
 [languages.en]
 title = "Arm Software Developers"
-description = "Great Arm software developer content"
+description = "Arm software developer content"
 languageName ="English"
 contentDir = "content/en"
 # Weight used for sorting.
@@ -87,14 +87,6 @@ weight = 1
 #contentDir = "content/no"
 #time_format_default = "02.01.2006"
 #time_format_blog = "02.01.2006"
-
-#[languages.fa]
-#title = "اسناد گلدی"
-#description = "یک نمونه برای پوسته داکسی"
-#languageName ="فارسی"
-#contentDir = "content/fa"
-#time_format_default = "2006.01.02"
-#time_format_blog = "2006.01.02"
 
 [markup]
   [markup.goldmark]
@@ -185,11 +177,11 @@ sidebar_search_disable = false
 [[menu.main]]
     name = "Tools"
     weight = 40
-    url = "#sw-tools"
+    url = "getting-started"
 [[menu.main]]
     name = "Learn"
     weight = 30
-    url = "#learn"
+    url = "#"
 [[menu.main]]
     name = "About"
     weight = 110
