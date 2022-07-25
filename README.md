@@ -37,6 +37,14 @@ Once you've made your working copy of the site repo, from the repo root folder, 
 hugo server
 ```
 
+## Develop in [Gitpod](https://www.gitpod.io/)
+
+Instead of installing tools on your local machine, you can develop content directly in Gitpod. 
+
+Install the [Gitpod Chrome Extension](https://chrome.google.com/webstore/detail/gitpod-always-ready-to-co/dodmmooeoklaejobgleioelladacbeki) which installs a Gitpod button in the GitHub project. You can also prefix the URL for the GitHub project (or your fork of the project) with gitpod.io/# 
+
+[Open this repository in Gitpod](https://gitpod.io/#github.com/jasonrandrews/arm-software-developers)
+
 ## Building the website 
 
 To build run hugo, it will generate the public/ directory of files to copy to a static webiste hosting service such as AWS S3 bucket setup for static hosting.
