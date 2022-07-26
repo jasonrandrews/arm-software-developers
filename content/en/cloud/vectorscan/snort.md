@@ -119,7 +119,7 @@ mkdir hyperscan-build
 cd hyperscan-build/ 
 ```
 
-Make a fix in source (tools/hscollider/sig.cpp) that has not been merged yet. See the changes to me made [here](https://github.com/intel/hyperscan/pull/358/commits/eac1e5e0354f3ead2c832e798d89f86082b77d75)
+Make a fix in source (tools/hscollider/sig.cpp) that has not been merged yet. See the changes to be made [here](https://github.com/intel/hyperscan/pull/358/commits/eac1e5e0354f3ead2c832e798d89f86082b77d75)
 
 Configure and build vectorscan
 
