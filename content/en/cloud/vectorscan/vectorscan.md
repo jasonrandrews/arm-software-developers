@@ -57,7 +57,7 @@ Start by cloning the git repository for Vectorscan.
 
 ```console
 git clone https://github.com/VectorCamp/vectorscan.git
-cd vectoscan
+cd vectorscan
 ```
 
 ### Edit environment variables and fix PCRE download location
@@ -101,7 +101,7 @@ source cmake/setenv-arm64-cross.sh
 
 There is a current issue where builds fail with glibc >=2.34 and a pending [PR](https://github.com/intel/hyperscan/issues/359)
 
-For now workaround this issue by making the changes to STACK_SIZE mentioned in the pull request.
+For now workaround this issue by making the changes to STACK_SIZE as mentioned in the [pull request](https://github.com/intel/hyperscan/pull/358/files/eac1e5e0354f3ead2c832e798d89f86082b77d75).
 
 ### Configure Vectorscan with cmake
 
@@ -142,7 +142,7 @@ The executables from the build are created in the bin/ directory.
 Run a sanity check to validate Vectorscan is built and running correctly
 
 ```console
-./bin/unit-vectorscan
+./bin/unit-hyperscan
 ```
 
 All the unit tests should run successfully. At the end of execution you will output that looks like this
