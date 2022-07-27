@@ -37,7 +37,7 @@ By the end of this learning path, you will be able to:
 | Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
 | Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
 | Documentation | [Snort Documentation](https://www.snort.org/documents) |
-| Blog          | [Accelerate Deep Packet Inspection with Neon on Arm] (https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog/posts/accelerating-deep-packet-inspection-with-neon-on-arm-neoverse)|
+| Blog          | [Accelerate Deep Packet Inspection with Neon on Arm](https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog/posts/accelerating-deep-packet-inspection-with-neon-on-arm-neoverse) |
 
 
 

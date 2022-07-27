@@ -153,6 +153,7 @@ All the unit tests should run successfully. At the end of execution you will out
 [  PASSED  ] 3746 tests.
 ```
 
+[<-- Return to Learning Path](/cloud/vectorscan/#sections)
 
 
 
