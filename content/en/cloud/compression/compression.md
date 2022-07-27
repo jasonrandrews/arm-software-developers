@@ -14,7 +14,7 @@ description: >
 
 * Amazon Web Services (AWS) Account 
 * AWS EC2 64-bit Arm instance 
-* GCC for your Arm Linux distribution. Install using the steps [here](content/en/compilers/install_ngcc)
+* GCC for your Arm Linux distribution. Install using the steps [here](compilers/install_ngcc)
 * Unzip utility 
 ```console
 sudo apt install unzip

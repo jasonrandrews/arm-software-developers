@@ -19,7 +19,7 @@ description: >
 
 The instructions provided below have been tested on an Ubuntu 22.04 AWS 64-bit Arm EC2 instance (C6g.xlarge) 
 
-* GCC for your Arm Linux distribution. Install using the steps [here](content/en/compilers/install_ngcc)
+* GCC for your Arm Linux distribution. Install using the steps [here](compilers/install_ngcc)
 * cmake - used here as the build system
 ```console
 sudo apt install cmake
