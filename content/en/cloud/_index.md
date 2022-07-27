@@ -53,6 +53,24 @@ The learning paths below are applicable if you are a software engineer building,
   <div class="card-footer text-muted">Updated June 15th, 2022</div>
 </div>
 
+<div class="card text-center">
+  <div class="card-header" style="background-color:#95d600;">Introductory</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Use Hyperscan on Arm servers</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul >
+      <li>Learn how to install Vectorscan(Hyperscan for Arm achitecture)</li>
+      <li>Use Vectorscan with Snort3 on Arm servers</li>
+     </ul>
+    </div>
+    </p>
+    <a href="/cloud/vectorscan" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated July 11th, 2022</div>
+</div>
+
+
 {{< /cardpane >}}
 
 
