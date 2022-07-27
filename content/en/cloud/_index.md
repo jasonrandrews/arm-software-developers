@@ -67,7 +67,7 @@ The learning paths below are applicable if you are a software engineer building,
     </p>
     <a href="/cloud/vectorscan" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated July 11th, 2022</div>
+  <div class="card-footer text-muted">Updated July 27th, 2022</div>
 </div>
 
 
