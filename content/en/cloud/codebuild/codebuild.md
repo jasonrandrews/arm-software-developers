@@ -1,43 +1,45 @@
 ---
 processors : ["Neoverse-N1"]
 tools : ["docker"]
-title: "Build and share Docker images using AWS CodeBuild and Graviton2"
-linkTitle: "Build and share Docker images using AWS CodeBuild and Graviton2"
+software : ["linux"]
+title: "Build Docker images for Arm using AWS CodeBuild"
+linkTitle: "Build Docker images for Arm using AWS CodeBuild"
 type: docs
+weight: 2
 hide_summary: true
 description: >
-    Use AWS CodeBuild to automate build tasks
+    Learn how to use AWS CodeBuild to automate container build tasks from a GitHub project.
 ---
 
-AWS recently announced [CodeBuild now runs Arm workloads on Graviton2](https://aws.amazon.com/about-aws/whats-new/2021/02/aws-codebuild-supports-arm-based-workloads-using-aws-graviton2/). CodeBuild is a welcome addition as AWS continues to add Graviton2 support to cloud services. 
+[AWS CodeBuild supports Arm workloads on AWS Graviton processors](https://aws.amazon.com/about-aws/whats-new/2021/02/aws-codebuild-supports-arm-based-workloads-using-aws-graviton2/). 
 
-[CodeBuild](https://aws.amazon.com/codebuild/) automates software build and test, including building Docker images for software hosted on [GitHub](https://github.com/). This article explains how to build AArch64 Docker images using CodeBuild and share them in the [Amazon ECR Public Gallery](https://gallery.ecr.aws/) and on [Docker Hub](https://hub.docker.com/). 
+[CodeBuild](https://aws.amazon.com/codebuild/) automates software build and test, including building Docker images for software hosted on GitHub. This article explains how to build AArch64 Docker images using CodeBuild and share them in the [Amazon ECR Public Gallery](https://gallery.ecr.aws/) and on [Docker Hub](https://hub.docker.com/). 
 
-I assume you have experience with [Docker](https://www.docker.com/) already and are interested in how to automate image creation for Arm systems. Docker provides excellent support for the Arm architecture, but managed services like CodeBuild make image creation even easier.
+Readers should have experience with [Docker](https://www.docker.com/) and be interested in how to automate containers image creation for Arm systems. Docker provides excellent support for the Arm architecture, and managed services like CodeBuild make image creation even easier.
 
 ## Use an example GitHub Project
 
-Let’s start learning CodeBuild on Graviton2 using a small Docker image for Arm. The [GitHub repository](https://github.com/jasonrandrews/hello-arm) contains a simple collection of “hello world” applications which were featured in my [intro to AWS Graviton Processors](https://dev.to/aws-builders/aws-graviton-processors-3nk3). 
+Let’s start learning CodeBuild on AWS Graviton procesors using a small Docker image for Arm. The [GitHub repository](https://github.com/jasonrandrews/hello-arm) contains a simple collection of “hello world” applications.
 
-Let’s imagine hello.c is an actual software project which changes regularly, and the Docker image needs to be rebuilt when the source file changes. I’m not going to cover how to trigger automatic builds. Instead, let's focus on going from a button click in the AWS Console to new images in container repositories.
+Let’s imagine hello.c is an actual software project which changes regularly, and the Docker image needs to be rebuilt when the source file changes. This article does not cover GitHub Actions to trigger automatic builds, but actions can be easily added. The goal is to go from a button click in the AWS Console to new images in container repositories.
 
 Head over to the [AWS Console](https://aws.amazon.com/console/) to get started with CodeBuild.
 
 ## Create a repository in ECR Public
 
-In the AWS Console navigate to Elastic Container Registry. Create an ECR Public repository by clicking on the Public tab and then using the “Create repository” button on the top right.  I won’t repeat all of the steps as the [getting started guide](https://docs.aws.amazon.com/AmazonECR/latest/public/public-getting-started.html) is excellent.
+In the AWS Console navigate to Elastic Container Registry. Create an ECR Public repository by clicking on the Public tab and then using the “Create repository” button on the top right. For more details refer to the [getting started guide](https://docs.aws.amazon.com/AmazonECR/latest/public/public-getting-started.html).
 
-I created a repository named [c-hello-world](https://gallery.ecr.aws/z9p7l6s8/c-hello-world) and tagged it for the ARM 64 architecture. If you do the same, your new repository should now be visible in the ECR Public Gallery. 
+Create a repository named c-hello-world and tagged it for the ARM 64 architecture. The new repository should now be visible in the ECR Public Gallery. 
  
-There is no need to push an image yet, CodeBuild will do that for us.
+There is no need to push an image yet, CodeBuild will do that automatically.
 
 ## Create a repository in Docker Hub
 
-Login to your [Docker Hub](https://hub.docker.com/) account and create a new repository. Use the Create Repository button near the top right, select a name, and mark the repository as public. I created a [c-hello-world repository](https://hub.docker.com/repository/docker/jasonrandrews/c-hello-world) and confirmed it is visible on Docker Hub.  
+Login to your [Docker Hub](https://hub.docker.com/) account and create a new repository. Use the Create Repository button near the top right, select a name, and mark the repository as public. Create a c-hello-world repository and confirm it is visible on Docker Hub.  
 
 For Docker Hub we also need to login to be able to push the image. AWS provides [Secrets Manager](https://aws.amazon.com/secrets-manager/) as a secure way to store Docker Hub credentials. The credentials can be retrieved and used during the build. Now is a good time to setup your Docker Hub credentials in Secrets Manager. Go to Secrets Manager in the AWS Console and click "Store a new secret". The main points are the name for the secret and the key/value pairs for the username and password. Make sure to disable automatic rotation. More information can be found in AWS documentation, look at the section [Store your DockerHub credentials with AWS Secrets Manager](https://aws.amazon.com/premiumsupport/knowledge-center/codebuild-docker-pull-image-error). 
 
-We now have two repositories ready to receive the Docker images created from CodeBuild. Let’s see how to use CodeBuild to populate ECR Public and Docker Hub with the docker image. 
+You should now have two repositories ready to receive the Docker images created from CodeBuild. Let’s see how to use CodeBuild to populate ECR Public and Docker Hub with the docker image. 
 
 ## Create a CodeBuild project
 
@@ -127,37 +129,6 @@ This addition allows CodeBuild to upload Docker images to Amazon ECR repositorie
 When everything is ready return to CodeBuild in the AWS Console, navigate to the project, and click the "Start build" button. 
 
 It's pretty clear from the logs what is happening and if all goes well new Docker images will appear in the repositories.
- 
-## Pull and Run
 
-The images are ready to pull and run. Both images are identical and the output from the uname is the same and shows the image was built on Amazon Linux 2.
+[<-- Return to Learning Path](/cloud/codebuild/#sections)
 
-```console
-jasand01@m1 ~ % docker pull jasonrandrews/c-hello-world
-Using default tag: latest
-latest: Pulling from jasonrandrews/c-hello-world
-069a56d6d07f: Already exists 
-026c8cc819e6: Pull complete 
-Digest: sha256:3f5a7db5b7433f70cdb1cdb29a0d30866c4afa547a666479a40055aca3680869
-Status: Downloaded newer image for jasonrandrews/c-hello-world:latest
-docker.io/jasonrandrews/c-hello-world:latest
-
-jasand01@m1 ~ % docker pull public.ecr.aws/z9p7l6s8/c-hello-world
-latest: Pulling from z9p7l6s8/c-hello-world
-Digest: sha256:3f5a7db5b7433f70cdb1cdb29a0d30866c4afa547a666479a40055aca3680869
-Status: Downloaded newer image for public.ecr.aws/z9p7l6s8/c-hello-world:latest
-public.ecr.aws/z9p7l6s8/c-hello-world:latest
-
-jasand01@m1 ~ % docker run --rm jasonrandrews/c-hello-world
-Hello, architecture from uname is Linux 39d131c8e64b 4.14.219-161.340.amzn2.aarch64 #1 SMP Thu Feb 4 05:54:27 UTC 2021 aarch64 Linux
-64-bit userspace
-
-jasand01@m1 ~ % docker run --rm public.ecr.aws/z9p7l6s8/c-hello-world
-Hello, architecture from uname is Linux 39d131c8e64b 4.14.219-161.340.amzn2.aarch64 #1 SMP Thu Feb 4 05:54:27 UTC 2021 aarch64 Linux
-64-bit userspace
-```
-
-## Summary
-
-CodeBuild makes it easy to automate Docker image creation on Graviton2. It's also possible to run local builds using CodeBuild agent and the same Docker images used by CodeBuild. This helps make sure everything works fine before moving it to AWS, but this is a topic for next time. Good luck with CodeBuild on Graviton2.
- 
