@@ -54,6 +54,7 @@ java -jar $jarfile -m insert -o 1000000 -t 10 -db test -c perf
 
 ```
 
+As the test runs, the count will be printed periodically. It will increase until it reaches 1 million and then the test will end. It takes about two minutes to complete.
 
 ### Update one document Test on MongoDB
 
