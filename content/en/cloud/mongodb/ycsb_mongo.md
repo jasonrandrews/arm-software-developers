@@ -45,6 +45,7 @@ To measure the performance of MongoDB running on Arm, we will run the [Yahoo Clo
 On your 64-bit Arm Linux EC2 Instance that is running MongoDB, download the latest released YCSB zip file and uncompress
 
 ```console
+mkdir ~/ycsb && cd ~/ycsb
 curl -O --location https://github.com/brianfrankcooper/YCSB/releases/download/0.17.0/ycsb-0.17.0.tar.gz
 tar xfvz ycsb-0.17.0.tar.gz
 
