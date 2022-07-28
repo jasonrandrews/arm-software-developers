@@ -23,11 +23,14 @@ sudo apt install default-jre
    sudo tar xzf apache-maven-*-bin.tar.gz -C /usr/local
    cd /usr/local
    sudo ln -s apache-maven-* maven
-   sudo vi /etc/profile.d/maven.sh
    export M2_HOME=/usr/local/maven
    export PATH=${M2_HOME}/bin:${PATH}
-   bash 
 
+```
+
+* Python 2.7
+```console
+sudo apt install python
 ```
 
 ## Detailed Steps
