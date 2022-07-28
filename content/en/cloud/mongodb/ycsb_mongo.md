@@ -30,6 +30,7 @@ sudo apt install default-jre
 
 * Python 2.7
 ```console
+sudo apt-get update
 sudo apt install python
 ```
 
