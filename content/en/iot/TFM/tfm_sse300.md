@@ -1,6 +1,6 @@
 ---
 processors: [Cortex-M55]
-software: [baremetal]
+software: [bare-metal]
 title: "Run Trusted Firmware-M(TF-M) on Corstone-300 AVH FVP"
 linkTitle: ""
 type: docs
