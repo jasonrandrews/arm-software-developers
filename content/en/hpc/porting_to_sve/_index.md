@@ -25,6 +25,8 @@ General knowledge about SIMD processing, vectorization or NEON.
 |          Type | Content                       |
 | ---           | ---                                 |
 | How-To        | [From NEON to SVE](/hpc/porting_to_sve/sve_basics)       |
+| How-To        | [Compile for SVE](/hpc/porting_to_sve/sve_compile)       |
+
 
 
 ## References and Documentation
