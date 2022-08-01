@@ -27,16 +27,18 @@ Here is a list of compilers for HPC supporting C/C++, Fortran and OpenMP for mul
     - [Install native Gfortan compiler on Linux](install_gfortran/)
 {{< /card >}}
 {{< card header="**MPI frameworks**" >}}
-Here is a list of message-passing interface (MPI) frameworks for distributed computing:
+MPI is a message-passing interface standard for distributed computing:
 - OpenMPI
 - MPICH
 {{< /card >}}
 {{< card header="**HPC libraries**" >}}
-Here is a list of libraries providing common math operation for HPC, with C and Fortran interfaces: 
+HPC applications often rely on libraries providing common math operations, with C and Fortran interfaces: 
 - OpenBLAS
 - FFTW
 - Arm Performance Libraries (includes BLAS, LAPACK and FFT interfaces)
 {{< /card >}}
-{{< card header="**HPC libraries**" >}}
+{{< card header="**Tools**" >}}
+Scalable tools are necessary to debug or profile parallel applications:
+- [Arm Forge](get_started_forge)
 {{< /card >}}
 {{< /cardpane >}}
