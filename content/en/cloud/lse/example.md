@@ -55,7 +55,12 @@ Let’s start on an AWS A1 instance. This is Cortex-A72, without LSE. This can a
 On Ubuntu 20.04 the default gcc version is 9.4.0:
 
 ```console
-$ gcc --version
+gcc --version
+```
+
+The output is:
+
+```console
 gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 Copyright (C) 2019 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
@@ -65,8 +70,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Save the above C program as atomic.c and compile the application:
 
 ```console
-$ gcc -g atomic.c -o a1 -march=armv8-a -lpthread
-$ objdump -S a1 > a1.dis
+gcc -g atomic.c -o a1 -march=armv8-a -lpthread
+objdump -S a1 > a1.dis
 ```
 
 Review the file a1.dis and check the instructions for incrementing acnt. The sequence is:
@@ -93,8 +98,8 @@ Now let’s move to a T4g instance with Graviton2.
 Compile the application. This is Neoverse-N1 with LSE. Similar machines with Neoverse-N1 can also be used.
  
 ```console
-$ gcc -g atomic.c -o t4g -march=armv8.2-a -lpthread
-$ objdump -S t4g > t4g.dis
+gcc -g atomic.c -o t4g -march=armv8.2-a -lpthread
+objdump -S t4g > t4g.dis
 ```
 
 Review the file t4g.dis and check the instructions for incrementing acnt. The sequence is:
@@ -111,8 +116,8 @@ Here is the disassembly:
 Staying on the T4g instance, let’s compile with outline-atomics:
 
 ```console
-$ gcc -g atomic.c -o t4g.outline  -moutline-atomics -lpthread
-$ objdump -S t4g.outline > outline.dis
+gcc -g atomic.c -o t4g.outline  -moutline-atomics -lpthread
+objdump -S t4g.outline > outline.dis
 ```
 
 Review the file outline.dis and see that the instruction to increment acnt is now a branch to something called __aarch64_ldadd4_acq_rel at address 0xb90:
@@ -142,8 +147,13 @@ The code for both the load exclusive sequence and the atomic instruction are pre
 As a final check, move back to the A1 instance and compile for armv8.2-a. The atomic instruction is illegal on the Cortex-A72 and fails.
 
 ```console
-$ gcc -g atomic.c -o a1 -march=armv8.2-a -lpthread
-ubuntu@ip-10-0-0-247:~$ ./a1
+gcc -g atomic.c -o a1 -march=armv8.2-a -lpthread
+./a1
+```
+
+The result is:
+
+```console
 Illegal instruction (core dumped)
 ```
 
@@ -152,7 +162,7 @@ Illegal instruction (core dumped)
 To check for atomic instructions in applications run objdump on the T4g executable:
 
 ```console
-$ objdump -d t4g | grep -i 'cas\|casp\|swp\|ldadd\|stadd\|ldclr\|stclr\|ldeor\|steor\|ldset\|stset\|ldsmax\|stsmax\|ldsmin\|stsmin\|ldumax\|stumax\|ldumin\|stumin' | wc -l
+objdump -d t4g | grep -i 'cas\|casp\|swp\|ldadd\|stadd\|ldclr\|stclr\|ldeor\|steor\|ldset\|stset\|ldsmax\|stsmax\|ldsmin\|stsmin\|ldumax\|stumax\|ldumin\|stumin' | wc -l
 ```
 
 The above command will report a count of 1 instruction, the ldaddal we looked at. 
@@ -160,14 +170,14 @@ The above command will report a count of 1 instruction, the ldaddal we looked at
 To check whether applications contain load exclusives and store exclusives run this command on the A1 executable. It will report a count of 2.
 
 ```console
-$ objdump -d a1 | grep -i 'ldxr\|ldaxr\|stxr\|stlxr' | wc -l
+objdump -d a1 | grep -i 'ldxr\|ldaxr\|stxr\|stlxr' | wc -l
 ```
 
 Running on the t4g.outline executable which supports both architectures will report both types of instructions. 
 
 Another way to confirm an executable supports both architectures is to run the command:
 ```console
-$ nm t4g.outline | grep __aarch64_have_lse_atomics | wc -l
+nm t4g.outline | grep __aarch64_have_lse_atomics | wc -l
 ```
 
 If it returns a 1 then it was compiled with outline-atomics.

@@ -63,7 +63,11 @@ Let’s look at how to make sure you get the best performance on Neoverse.
 There are a couple of ways to check. First, look in the kernel ring buffer messages to see if LSE is present.
 
 ```console
-$ sudo dmesg | grep LSE
+sudo dmesg | grep LSE
+```
+Look for output with an LSE message:
+
+```console
 [    0.001296] CPU features: detected: LSE atomic instructions
 ```
 
@@ -71,7 +75,11 @@ Another way is to use the lscpu command to print the processor information. Look
 
 Here is the output from an AWS A1 instance:
 ```console
-$ lscpu
+lscpu
+```
+
+The output is:
+```console
 Architecture:                    aarch64
 CPU op-mode(s):                  32-bit, 64-bit
 Byte Order:                      Little Endian
@@ -105,7 +113,12 @@ Flags:                           fp asimd evtstrm aes pmull sha1 sha2 crc32 cpui
 Here is the output from an AWS T4g instance.
 
 ```console
-$ lscpu
+lscpu
+```
+
+The output is:
+
+```console
 Architecture:                    aarch64
 CPU op-mode(s):                  32-bit, 64-bit
 Byte Order:                      Little Endian
