@@ -37,9 +37,8 @@ To run the tutorial, you will need to install the following tools. Badges indica
 
 |          Type | Content                                    | Test |
 | ---           | ---                                        | ---  |
-| Tutorial      | [Build for debugging and fix](/hpc/get_started_forge/debug)       | ![C](https://img.shields.io/badge/C-pass-green) ![Fortran](https://img.shields.io/badge/Fortran-pass-green) ![Python](https://img.shields.io/badge/Python-pass-green) |
-| Tutorial      | [Build for profiling and optimize](/hpc/get_started_forge/profile)  | ![C](https://img.shields.io/badge/C-pass-green) ![Fortran](https://img.shields.io/badge/Fortran-pass-green) ![Python](https://img.shields.io/badge/Python-fail-red) |
-
+| Tutorial      | [Build for debugging and fix](/hpc/get_started_forge/debug)       | ![c_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_dbg.svg) ![f_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_dbg.svg) ![py_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_dbg.svg) |
+| Tutorial      | [Build for profiling and optimize](/hpc/get_started_forge/profile)  | ![c_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_prof.svg) ![f_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_prof.svg) ![py_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_prof.svg) |
 
 ## Download Arm Forge
 
