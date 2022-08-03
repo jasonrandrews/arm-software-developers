@@ -2,8 +2,8 @@
 title: "Get started with Virtual Peripherals and Arm Virtual Hardware"
 linkTitle: "Virtual Peripherals"
 type: docs
-toc_hide: true
-weight: 30
+hide_summary: true
+weight: 4
 description: >
     Learn about how to get started integrating Arm Virtual Hardware into a CI/CD development flow.
 ---

@@ -36,24 +36,6 @@ The learning paths below are applicable if you are a software engineer building,
 </div>
 
 <div class="card text-center">
-  <div class="card-header" style="background-color:#0091bd;">Experienced</div>
-  <div class="card-body">
-    <h5 class="card-title"> <b>Create Docker images on Arm servers using AWS CodeBuild</b> </h5>
-    <p class="card-text">
-    <div style="text-align:left">
-     <ul>
-      <li>Learn how to use AWS Codebuild with AWS Graviton processors </li>
-      <li>Build docker images for Arm from GitHub projects</li>
-      <li>Store docker images in Docker Hub and AWS ECR</li>
-   </ul>
-   </div>
-    </p>
-    <a href="/cloud/codebuild" class="btn btn-primary">Learn More</a>
-  </div>
-  <div class="card-footer text-muted">Updated June 15th, 2022</div>
-</div>
-
-<div class="card text-center">
   <div class="card-header" style="background-color:#95d600;">Introductory</div>
   <div class="card-body">
     <h5 class="card-title"> <b>Use Hyperscan on Arm servers</b> </h5>
@@ -70,6 +52,45 @@ The learning paths below are applicable if you are a software engineer building,
   <div class="card-footer text-muted">Updated July 27th, 2022</div>
 </div>
 
+{{< /cardpane >}}
+
+{{< cardpane >}}
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#ffc700;">Intermediate</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Learn about Large System Extensions (LSE)</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul>
+      <li>Learn about Large System Extensions (LSE)</li>
+      <li>Itentify the right tools and check if applications use LSE</li>
+      <li>Run an example C program to see how compilers work with LSE</li>
+   </ul>
+   </div>
+    </p>
+    <a href="/cloud/lse" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated July 29th, 2022</div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#0091bd;">Experienced</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Create Docker images on Arm servers using AWS CodeBuild</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul>
+      <li>Learn how to use AWS Codebuild with AWS Graviton processors </li>
+      <li>Build docker images for Arm from GitHub projects</li>
+      <li>Store docker images in Docker Hub and AWS ECR</li>
+   </ul>
+   </div>
+    </p>
+    <a href="/cloud/codebuild" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated July 15th, 2022</div>
+</div>
 
 {{< /cardpane >}}
 

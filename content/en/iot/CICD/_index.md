@@ -2,8 +2,8 @@
 title: "Get started with CI/CD and Arm Virtual Hardware"
 linkTitle: "CI/CD and Arm Virtual Hardware"
 type: docs
-toc_hide: true
-weight: 30
+hide_summary: true
+weight: 2
 description: >
     Learn about how to get started integrating Arm Virtual Hardware into a CI/CD development flow.
 ---

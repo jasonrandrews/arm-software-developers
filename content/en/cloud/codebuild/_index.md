@@ -3,7 +3,7 @@ title: "Build and share Docker images using AWS CodeBuild and Graviton"
 linkTitle: "Build and share Docker images using AWS CodeBuild and Graviton"
 type: docs
 hide_summary: true
-weight: 3
+weight: 4
 description: >
     Learning path for using AWS CodeBuild to automate container build tasks.
 ---

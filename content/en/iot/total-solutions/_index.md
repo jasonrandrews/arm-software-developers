@@ -2,8 +2,8 @@
 title: "Get started with Arm Total Solutions for IoT"
 linkTitle: "Arm Total Solutions IoT"
 type: docs
-toc_hide: true
-weight: 30
+hide_summary: true
+weight: 3
 description: >
     Learn about how to get a head-start developing IoT applications for Arm.
 ---
