@@ -4,14 +4,13 @@ title: "Development Operations"
 linkTitle: "DevOps"
 type: docs
 description: >
-    This section is for DevOps and MLOps tasks, such as cloud based development and how to integrate CI/CD development flows
+    This section is for DevOps and MLOps tasks, such as containers and automated testing tools for CI/CD
 weight: 40
 ---
 
 {{% pageinfo %}}
-Arm is at the center of the world’s largest compute ecosystem. The vast community of software, tools, and partners support and enable the use of Arm technology across a variety applications.
+Software developers use numerous tools for automation, testing, and deployment. 
 
-Our goal is to help developers find and use the platforms, tools, software and technical content.
+This section provides installation and quick-start information on a variety of tools related to containers, CI/CD, remote access, build tools, and other automation tasks.
 
-We welcome community participation to continuously improve software development for the Arm architecture.
 {{% /pageinfo %}}
