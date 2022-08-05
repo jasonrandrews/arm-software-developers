@@ -3,7 +3,7 @@ title: "Port Code to Arm SVE"
 linkTitle: "Port Code to Arm SVE"
 type: docs
 hide_summary: true
-weight: 3
+weight: 10
 description: >
     Learning path for porting code from NEON to the Arm Scalable Vector Extension (SVE).
 ---
@@ -24,8 +24,8 @@ General knowledge about SIMD processing, vectorization or NEON.
 
 |          Type | Content                       |
 | ---           | ---                                 |
-| How-To        | [From NEON to SVE](/hpc/porting_to_sve/sve_basics)       |
-| How-To        | [Compile for SVE](/hpc/porting_to_sve/sve_compile)       |
+| How-To        | [From NEON to SVE](/hpc/port_to_sve/sve_basics)       |
+| How-To        | [Compile for SVE](/hpc/port_to_sve/sve_compile)       |
 
 
 

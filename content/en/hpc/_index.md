@@ -1,8 +1,6 @@
 ---
 title: "High performance computing"
 type: docs
-date: 2022-08-01T00:00:00+00:00
-lastmod: 2022-08-05T00:00:00+00:00
 description: >
     This section high performance computing on Arm.
 weight: 30
@@ -34,7 +32,7 @@ We welcome community participation to continuously improve software development 
     </p>
     <a href="/hpc/port_to_sve" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated {{ $.Page.Lastmod.Format "January 02, 2006" }}</div>
+  <div class="card-footer text-muted">Updated 5 August 2022</div>
 </div>
 
 <div class="card text-center">
@@ -52,7 +50,7 @@ We welcome community participation to continuously improve software development 
     </p>
     <a href="/hpc/get_started_forge" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated {{ $.Page.Lastmod.Format "January 02, 2006" }}</div>
+  <div class="card-footer text-muted">Updated 5 August 2022</div>
 </div>
 
 {{< /cardpane >}}
