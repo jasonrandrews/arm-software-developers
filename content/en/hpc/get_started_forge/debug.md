@@ -1,8 +1,8 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N1", "Neoverse-N2"]
 software: ["linux"]
-title: "Debugging with Arm DDT"
-linkTitle: "Debugging with Arm DDT"
+title: "Debug with Arm DDT"
+linkTitle: "Debug with Arm DDT"
 type: docs
 hide_summary: true
 description: >

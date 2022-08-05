@@ -1,6 +1,6 @@
 ---
-title: "Getting Started with Arm Forge"
-linkTitle: "Getting Started with Arm Forge"
+title: "Get Started with Arm Forge"
+linkTitle: "Get Started with Arm Forge"
 type: docs
 weight: 5
 hide_summary: true

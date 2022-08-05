@@ -1,6 +1,6 @@
 ---
-title: "Porting Code to Arm SVE"
-linkTitle: "Porting Code to Arm SVE"
+title: "Port Code to Arm SVE"
+linkTitle: "Port Code to Arm SVE"
 type: docs
 hide_summary: true
 weight: 3
