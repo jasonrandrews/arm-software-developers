@@ -87,7 +87,7 @@ The learning paths below are applicable if you are a software engineer building,
    </ul>
    </div>
     </p>
-    <a href="/cloud/lse" class="btn btn-primary">Learn More</a>
+    <a href="/cloud/intrinsics" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated August 5th, 2022</div>
 </div>
