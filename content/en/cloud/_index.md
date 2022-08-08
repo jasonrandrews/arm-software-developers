@@ -75,6 +75,28 @@ The learning paths below are applicable if you are a software engineer building,
 </div>
 
 <div class="card text-center">
+  <div class="card-header" style="background-color:#ffc700;">Intermediate</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Learn about Porting Architecture Specific Intrinsics</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul>
+      <li>Learn about architecture specific intrinsics</li>
+      <li>Understand options to port intrinsics to Arm Neoverse</li>
+      <li>Find intrinsics in project source code</li>
+   </ul>
+   </div>
+    </p>
+    <a href="/cloud/intrinsics" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated August 5th, 2022</div>
+</div>
+
+{{< /cardpane >}}
+
+{{< cardpane >}}
+
+<div class="card text-center">
   <div class="card-header" style="background-color:#0091bd;">Experienced</div>
   <div class="card-body">
     <h5 class="card-title"> <b>Create Docker images on Arm servers using AWS CodeBuild</b> </h5>
@@ -90,6 +112,24 @@ The learning paths below are applicable if you are a software engineer building,
     <a href="/cloud/codebuild" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated July 15th, 2022</div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#0091bd;">Experienced</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b></b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+   </div>
+    </p>
+    <a href="/cloud/codebuild" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated in the future</div>
 </div>
 
 {{< /cardpane >}}
