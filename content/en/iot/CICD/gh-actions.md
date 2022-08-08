@@ -2,6 +2,8 @@
 title: "Fully automate CI/CD development flow with GitHub Actions"
 linkTitle: "Fully automate CI/CD"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     Learn how to fully automate a CI/CD development flow with GitHub Actions and AWS.
 ---

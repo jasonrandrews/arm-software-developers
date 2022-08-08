@@ -2,6 +2,8 @@
 title: "Get started with Open-IoT-SDK and Arm Virtual Hardware"
 linkTitle: "Get started with Open-IoT-SDK"
 type: docs
+toc_hide: true
+hide_summary: true
 weight: 30
 description: >
     Learn about how to build and run the example software stacks provided as the Open-IoT-SDK.

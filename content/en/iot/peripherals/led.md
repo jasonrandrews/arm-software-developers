@@ -2,6 +2,8 @@
 title: "Investigate example Virtual Peripheral implementation"
 linkTitle: "Virtual Peripheral example"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     Explore an example Python implementation of a Virtual Peripheral with Arm Virtual Hardware and Virtual IO.
 ---

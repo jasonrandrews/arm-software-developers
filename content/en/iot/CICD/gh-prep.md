@@ -2,6 +2,8 @@
 title: "Prepare GitHub repository for CI/CD development"
 linkTitle: "Prepare GitHub repository"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     Learn how to prepare a repository for a CI/CD development flow with Arm Virtual Hardware.
 ---

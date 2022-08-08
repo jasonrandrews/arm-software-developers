@@ -4,6 +4,8 @@ softwares: ["bare-metal"]
 title: "Debugging Arm Virtual Hardware with Arm Development Studio"
 linkTitle: "Debug with Arm Development Studio"
 type: docs
+toc_hide: true
+hide_summary: true
 description: >
     How to debug Arm Virtual Hardware running on AWS in the cloud.
 ---

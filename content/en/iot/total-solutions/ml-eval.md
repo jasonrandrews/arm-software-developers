@@ -2,6 +2,8 @@
 title: "Using the Arm ML Evaluation Kit with Arm Virtual Hardware"
 linkTitle: "ML Evaluation Kit with AVH"
 type: docs
+toc_hide: true
+hide_summary: true
 weight: 30
 description: >
     Learn about the ML Evaluation Kit and how to use it with Corstone-300 and Arm Virtual Hardware
