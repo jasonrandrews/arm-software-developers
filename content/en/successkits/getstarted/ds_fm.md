@@ -19,7 +19,7 @@ It is assumed that you have Arm Development Studio and Fast Models installed and
 - [Get Started with Fast Models]({{< relref "models/start_fm.md" >}})
 - [Get Started with Arm Development Studio]({{< relref "successkits/getstarted/armds.md" >}})
 
-In this example we shall use the supplied `FVP_MPS2_Cortex-M3` Fast Models example, along with the `startup_Cortex-M3_AC6` software example as supplied with Arm Development Studio.
+In this example we shall use the supplied `FVP_MPS2_Cortex-M3` Fast Models example, along with the `startup_Cortex-M3_AC6` software example as supplied with Arm Development Studio.hugo ser
 
 In `System Canvas`, load the `FVP_MPS2_Cortex-M3` project and build.\
 In `Arm Development Studio IDE` import the example via `File` > `Import...` > `Arm Development Studio` > `Examples and Programming Libraries`, and browsing for `startup_Cortex-M3_AC6`.

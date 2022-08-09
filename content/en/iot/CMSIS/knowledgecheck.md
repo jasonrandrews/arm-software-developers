@@ -54,14 +54,14 @@ description: >
 </script>
 
 <form action="javascript:handleIt()">
-  <p>Can you run the combined secure and non-secure TF-M image on the AVH FVP?</p>
+  <p>Can you run the the CMSIS-DSP Tests with float 16 data type as an argument?</p>
   <input type="radio" id="yes" name="arm_run">
   <label for="yes">Yes</label><br>
 
   <input type="radio" id="no" name="arm_run" value="no">
   <label for="no">No</label><br>
 
-  <div id="Q1_Correct_Answer" class="info_text correct" hidden><p>That's right! You can run the single combined image on the FVP.</p></div>
+  <div id="Q1_Correct_Answer" class="info_text correct" hidden><p>That's right! You can run the tests with float16 data type.</p></div>
   <div id="Q1_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again.</p></div>
 
 
@@ -69,14 +69,14 @@ description: >
 
 
 
- <p>Do you have to run the whole set of TF-M sets (secure and non-secure)?</p>
+ <p>Do you have to build the whole suite of CMSIS-DSP tests?</p>
   <input type="radio" id="true" name="threads" value="false">
   <label for="false">Yes</label><br>
   <input type="radio" id="true" name="threads" value="true">
-  <label for="true">No</label><br>  
+  <label for="false">No</label><br>  
 
 
-  <div id="Q2_Correct_Answer" class="info_text correct" hidden><p>That's right you don't have to! You can select a sub-set of test to run when you configure the build</p></div>
+  <div id="Q2_Correct_Answer" class="info_text correct" hidden><p>That's right you don't have to! You can select a sub-set of tests for a particular datatype when you configure the build</p></div>
   <div id="Q2_Incorrect_Answer" class="info_text incorrect"  hidden><p>That's incorrect. Try again.</p></div>
 
 
@@ -87,7 +87,7 @@ description: >
 
 <br>
 
-[<-- Return to Learning Path](/cloud/tfm/#sections)
+[<-- Return to Learning Path](/iot/cmsis/#sections)
 
 
 
