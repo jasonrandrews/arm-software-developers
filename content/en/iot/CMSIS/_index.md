@@ -2,7 +2,7 @@
 title: "Learn how to build and run CMSIS-DSP tests on AVH Corstone-300" 
 type: docs
 hide_summary: true
-weight: 2
+weight: 5
 description: >
     A guide for software developers to build and run CMSIS-DSP tests on AVH Corstone-300 FVP
 ---

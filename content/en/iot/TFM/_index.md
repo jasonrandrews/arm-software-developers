@@ -2,7 +2,7 @@
 title: "Learn how to build and run TF-M on AVH Corstone-300" 
 type: docs
 hide_summary: true
-weight: 2
+weight: 7
 description: >
     A guide for software developers with a focus on security for Cortex-M. Use this guide to run TF-M tests on AVH Corstone-300 system
 ---
