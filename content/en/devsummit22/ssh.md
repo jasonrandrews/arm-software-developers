@@ -83,5 +83,5 @@ Select `CREATE DEVICE`, and create a `Raspberry Pi 4` instance with `Raspberry P
 When created, go to the `CONNECT` tab and copy the `SSH` command for your instance (this will be unique to your instance). Run this command on your host machine terminal.
 
 ## Next Steps
-
+[<-- Return to setup instructions](/devsummit22/setup)\
 [<-- Return to Workshop Home](/devsummit22/#sections)

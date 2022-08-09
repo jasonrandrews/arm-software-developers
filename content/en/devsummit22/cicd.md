@@ -99,5 +99,5 @@ timeout 60s ./out/debug/chip-lighting-app
 ```
 
 ## Next Steps
-
+[Proceed to next section -->](/devsummit22/knowledgecheck)
 [<-- Return to Workshop Home](/devsummit22/#sections)

@@ -89,7 +89,7 @@ Leave `chip-lighting-app` application running on this instance.
 
 ### Launch chip-tool
 
-On the other instance, launch `chip-tool` and pair with the other instance, using:
+On the other instance, pair `chip-tool` with `chip-lighting-app`, using:
 ```console
 ./out/debug/chip-tool pairing onnetwork-long 0x11 20202021 3840
 ```
@@ -123,4 +123,5 @@ And observe the `chip-lighting-app` log:
 
 Congratulations! You have successfully enabled two Virtual Hardware instances to communicate to each other via Matter messages.
 
+[Proceed to next section -->](/devsummit22/cicd)\
 [<-- Return to Workshop Home](/devsummit22/#sections)
