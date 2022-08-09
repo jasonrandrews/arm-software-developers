@@ -17,13 +17,13 @@ By the end of this learning path, you will be able to:
 ## Pre-requisites
 
 * AWS Account
-* AWS EC2 instance running AVH AMI. Use the instructions [here](iot/avh/launch)
+* AWS EC2 instance running AVH AMI. Use the instructions [here](/iot/avh/launch)
 
 ## Sections
 
 |          Type | Content               |
 | ---           | ---                   |
-| How-To        | [Run Trusted Firmware-M(TF-M) on Corstone-300 AVH](iot/TFM/tfm_sse300) |
+| How-To        | [Run Trusted Firmware-M(TF-M) on Corstone-300 AVH](/iot/TFM/tfm_sse300) |
 | Check         | [Knowledge check and review](/iot/TFM/knowledge-check)  |
 
 
