@@ -73,7 +73,7 @@ description: >
   <input type="radio" id="true" name="threads" value="false">
   <label for="false">Yes</label><br>
   <input type="radio" id="true" name="threads" value="true">
-  <label for="false">No</label><br>  
+  <label for="true">No</label><br>  
 
 
   <div id="Q2_Correct_Answer" class="info_text correct" hidden><p>That's right you don't have to! You can select a sub-set of test to run when you configure the build</p></div>

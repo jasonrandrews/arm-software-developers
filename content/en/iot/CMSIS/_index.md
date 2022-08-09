@@ -1,5 +1,5 @@
 ---
-title: "Learn how to build and run TF-M on AVH Corstone-300" 
+title: "Learn how to build and run CMSIS-DSP tests on AVH Corstone-300" 
 type: docs
 hide_summary: true
 weight: 2
