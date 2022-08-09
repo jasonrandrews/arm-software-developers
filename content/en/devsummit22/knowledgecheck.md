@@ -45,7 +45,7 @@ description: >
 
 
 <form action="javascript:handleIt()">
-  <p>Q1 about wortkshop?</p>
+  <p>Q1 about workshop?</p>
   <input type="radio" id="yes" name="arm_run">
   <label for="yes">Yes</label><br>
   <input type="radio" id="no" name="arm_run" value="no">
@@ -76,4 +76,4 @@ description: >
 
 <br>
 
-[<-- Return to Learning Path](/devsummit22/#sections)
+[<-- Return to Workshop Home](/devsummit22/#sections)

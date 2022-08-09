@@ -46,12 +46,16 @@ Password: `raspberry`
 
 Repeat for the other instance.
 
-Note that it is possible to use SSH instead to connect to the instance(s). See the `Connect` tab for instructions.\
-Depending on your network, you may need to use [OpenVPN Community](https://openvpn.net/community-downloads/) to connect remotely via SSH.
+### (Optional) Connect via SSH
 
-It is also possible to log in via the simulated LCD screen, however it is not recommended for this workshop, as it is not possible to copy and paste to this interface.
+To easily connect via SSH, you must download and install an appropriate [OpenVPN Community](https://openvpn.net/community-downloads/) version for your host.
 
-For this workshop, we shall use Console interface in the browser.
+In the Arm Virtual Hardware `CONNECT` tab, click on `DOWNLOAD OVPN FILE`.\
+In OpenVPN, select `Import` > `Import file...` and browse to the downloaded `OVPN FILE`. Click `Connect`.\
+On your host, open terminal(s), and connect to the virtual hardware instance(s) with the command shown in the `CONNECT` tab, or use your preferred terminal application.
+
+It is possible to connect via SSH without the use of VPN.\
+This requires some initial setup before launching the Virtual Hardware instance as described [here](/devsummit22/ssh).
 
 ### Install necessary software components
 
@@ -62,12 +66,8 @@ sudo apt-get install git gcc g++ python pkg-config libssl-dev libdbus-1-dev libg
 ```
 This will also help verify that your instances are working correctly.
 
-### Snapshots (optional)
-
-We have now successfully launched two Arm Virtual Hardware instances of Raspberry Pi 4. It is possible to create a `Snapshot` of an instance, such that you can automatically restore to that point if necessary (for example if you wish to undo changes you make later). This is particularly useful when using Arm Virtual Hardware in CI/CD flow.
-
-To create a Snapshot, you must power down the instance with the `Power` button. Click the `Snapshots` tab, and `Take New Snapshot`. If you ever wish to return your instance to this point in time, click `Restore` for that Snapshot.
-
 ## Next Steps
 
-[<-- Return to Workshop](/devsummit22/#sections)
+**TO DO ADD REFERENCE TO JASON'S BLOG COMPARING AVH TO REAL RPI4**
+
+[<-- Return to Workshop Home](/devsummit22/#sections)

@@ -65,7 +65,7 @@ cd examples/chip-tool
 gn gen out/debug
 ninja -C out/debug
 ```
-In the other instance we shall build the reference `lighting-app` for Linux, which will be controlled by the above `chip-tool`.
+In the other instance we shall build the reference `chip-lighting-app` for Linux, which will be controlled by the above `chip-tool`.
 ```console
 cd examples/lighting-app/linux
 gn gen out/debug
@@ -73,23 +73,23 @@ ninja -C out/debug
 ```
 These builds can be performed in parallel. Confirm that both builds complete.
 
-### Launch the lighting-app
+### Launch the chip-lighting-app
 
-In the instance where `lighting-app` was built, run that application.
+In the instance where `chip-lighting-app` was built, run that application.
 ```console
 ./out/debug/chip-lighting-app
 ```
 The application will initialize, and you will see boot log echoed in the console. After approximately 20 seconds you will see in the log:
 ```
-[timestamp][message_id] CHIP:DL: PlatformBlueZInit init success
+[TIMESTAMP][INSTANCEID] CHIP:DL: PlatformBlueZInit init success
 ```
-Confirming it is ready to use (other messages in the log can be ignored). Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/linux) for `lighting-app` is provided in the repository.
+Confirming it is ready to use (other messages in the log can be ignored). Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/linux) for `chip-lighting-app` is provided in the repository.
 
-Leave `lighting-app` application running on this instance.
+Leave `chip-lighting-app` application running on this instance.
 
 ### Launch chip-tool
 
-On the other instance, launch `chip-tool` and connect with the other instance, with:
+On the other instance, launch `chip-tool` and pair with the other instance, using:
 ```console
 ./out/debug/chip-tool pairing onnetwork-long 0x11 20202021 3840
 ```
@@ -97,30 +97,30 @@ You will see a long stream of messages echoed in console of both instances. Wait
 
 Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/chip-tool) for `chip-tool` is provided in the repository.
 
-### Control lighting-app with chip-tool
+### Control chip-lighting-app with chip-tool
 
-The `lighting-app` can now be controlled with `chip-tool`, simulating remote control of the application.
+The `chip-lighting-app` can now be controlled with `chip-tool`, simulating remote control of the application.
 
 In the chip-tool instance, to send a message to turn the light ON, enter the command:
 ```console
 ./out/debug/chip-tool onoff on 0x11 1
 ```
-Observe in the log of `lighting-app` that this state is reflected with:
+Observe in the log of `chip-lighting-app` that this state is reflected with:
 ```
-[timestamp][message_id] CHIP:ZCL: On/Off set value: 1 1
-[timestamp][message_id] CHIP:ZCL: Toggle on/off from 0 to 1
+[TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 1
+[TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 0 to 1
 ```
 Similarly to turn the light OFF, enter:
 ```console
 ./out/debug/chip-tool onoff off 0x11 1
 ```
-And observe the `lighting-app` log:
+And observe the `chip-lighting-app` log:
 ```
-[timestamp][message_id] CHIP:ZCL: On/Off set value: 1 0
-[timestamp][message_id] CHIP:ZCL: Toggle on/off from 1 to 0
+[TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 0
+[TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 1 to 0
 ```
 ## Next Steps
 
 Congratulations! You have successfully enabled two Virtual Hardware instances to communicate to each other via Matter messages.
 
-[<-- Return to Learning Path](/devsummit22/#sections)
+[<-- Return to Workshop Home](/devsummit22/#sections)

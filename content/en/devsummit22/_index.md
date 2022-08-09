@@ -13,7 +13,7 @@ Welcome to Arm DevSummit 2022. This workshop is to show you how to get started d
 
 **Attendees must provide their own laptop (with browser).**
 
-This session is a hands-on workshop connecting to Arm Virtual Hardware in the cloud. Arm Virtual Hardware has been thoroughly tested with Chrome, Edge, and Firefox browsers on a number of host platforms (Windows, Linux, and Mac OS).
+This session is a hands-on workshop connecting to Arm Virtual Hardware in the cloud. Arm Virtual Hardware has been thoroughly tested with Chrome, Firefox, and Safari browsers.
 
 ## Learning Objectives
 
@@ -34,12 +34,13 @@ To participate in the workshops, users must prepare **in advance** of the worksh
 
 ## Sections
 
-|          Type | Content       |
-| ---           | ---           |
-| How-To        | [Setup Arm Virtual Hardware (Raspberry Pi 4)](/devsummit22/setup) |
-| How-To        | [Build and run Matter examples on Arm Virtual Hardware](/devsummit22/build) |
-| How-To        | [Automate CI/CD workflow](/devsummit22/cicd) |
-| Check         | [Knowledge check and review](/devsummit22/knowledgecheck) |
+|          Type   | Content       |
+| ---             | ---           |
+| How-To          | [Setup Arm Virtual Hardware (Raspberry Pi 4)](/devsummit22/setup) |
+| How-To          | [Build and run Matter examples on Arm Virtual Hardware](/devsummit22/build) |
+| How-To          | [Automate CI/CD workflow](/devsummit22/cicd) |
+| Optional How-To | [Connect to instance via SSH](/devsummit22/ssh) |
+| Check           | [Knowledge check and review](/devsummit22/knowledgecheck) |
 
 ## References and Documentation
 
