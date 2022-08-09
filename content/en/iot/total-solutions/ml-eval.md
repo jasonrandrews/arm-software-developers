@@ -3,7 +3,6 @@ title: "Using the Arm ML Evaluation Kit with Arm Virtual Hardware"
 linkTitle: "ML Evaluation Kit with AVH"
 type: docs
 weight: 1
-toc_hide: true
 hide_summary: true
 weight: 30
 description: >

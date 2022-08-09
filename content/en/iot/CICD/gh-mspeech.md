@@ -2,7 +2,6 @@
 title: "Integrate Arm Virtual Hardware into CI/CD with GitHub Actions"
 linkTitle: "GitHub Actions"
 type: docs
-toc_hide: true
 hide_summary: true
 description: >
     Learn how to integrate Arm Virtual Hardware into an automated CI/CD development flow with GitHub Actions.

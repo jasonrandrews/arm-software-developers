@@ -5,7 +5,6 @@ title: "Run Trusted Firmware-M(TF-M) on Corstone-300 AVH FVP"
 linkTitle: ""
 type: docs
 weight: 1
-toc_hide: true
 hide_summary: true
 description: >
    Follow the instructions in this guide to build and run TF-M tests on Corstone-300 FVP included in AVH.
