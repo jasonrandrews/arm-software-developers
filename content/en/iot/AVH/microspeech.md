@@ -2,6 +2,7 @@
 title: "Build and run example project in an Arm Virtual Hardware session in the cloud"
 linkTitle: "Build example project"
 type: docs
+weight: 2
 toc_hide: true
 hide_summary: true
 description: >

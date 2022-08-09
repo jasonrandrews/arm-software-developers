@@ -2,6 +2,7 @@
 title: "Investigate example Virtual Peripheral implementation"
 linkTitle: "Virtual Peripheral example"
 type: docs
+weight: 1
 toc_hide: true
 hide_summary: true
 description: >
