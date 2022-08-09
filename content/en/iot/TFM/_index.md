@@ -23,8 +23,8 @@ By the end of this learning path, you will be able to:
 
 |          Type | Content               |
 | ---           | ---                   |
-| How-To        | [Run Trusted Firmware-M(TF-M) on Corstone-300 AVH](/iot/TFM/tfm_sse300) |
-| Check         | [Knowledge check and review](/iot/TFM/knowledgecheck)  |
+| How-To        | [Run Trusted Firmware-M(TF-M) on Corstone-300 AVH](/iot/tfm/tfm_sse300) |
+| Check         | [Knowledge check and review](/iot/tfm/knowledgecheck)  |
 
 
 ## References and Documentation
