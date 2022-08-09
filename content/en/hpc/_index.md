@@ -1,4 +1,5 @@
 ---
+date: 2018-10-06
 title: "High performance computing"
 type: docs
 description: >
@@ -48,7 +49,7 @@ We welcome community participation to continuously improve software development 
      </ul>
     </div>
     </p>
-    <a href="/hpc/get_started_forge" class="btn btn-primary">Learn More</a>
+    <a href="/hpc/get_started_mpi" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated 5 August 2022</div>
 </div>
