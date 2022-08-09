@@ -108,7 +108,7 @@ The information below helps developers learn how to use existing software and de
      </ul>
     </div>
     </p>
-    <a href="/iot/TFM" class="btn btn-primary">Learn More</a>
+    <a href="/iot/tfm" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated August 8th, 2022</div>
 </div>
@@ -125,7 +125,7 @@ The information below helps developers learn how to use existing software and de
    </ul>
    </div>
     </p>
-    <a href="/iot/CMSIS" class="btn btn-primary">Learn More</a>
+    <a href="/iot/cmsis" class="btn btn-primary">Learn More</a>
   </div>
   <div class="card-footer text-muted">Updated August 8th, 2022</div>
 </div>
