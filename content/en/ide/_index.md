@@ -42,6 +42,21 @@ Host machine support includes:
 
 {{< /card >}}
 
+{{< card header="**[Arm DDT](https://www.arm.com/products/development-tools/server-and-hpc/forge/ddt)**" >}}
+Arm DDT, part of [Arm Forge](https://developer.arm.com/downloads/-/arm-forge), is a commercial parallel debugger for HPC applications on Linux. It supports all Arm Neoverse processors.
+
+Supported languages:
+- C/C++,
+- Fortran,
+- Python
+
+Supported parallel programming standards:
+- MPI,
+- OpenMP,
+- CUDA 
+- OpenACC.
+{{< /card >}}
+
 {{< /cardpane>}}
 
 

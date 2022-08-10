@@ -38,6 +38,21 @@ sudo apt install linux-tools-common linux-tools-generic linux-tools-`uname -r`
 
 {{< /card >}}
 
+{{< card header="**[Arm MAP](https://www.arm.com/products/development-tools/server-and-hpc/forge/map)**" >}}
+Arm MAP, part of [Arm Forge](https://developer.arm.com/downloads/-/arm-forge), is a commercial parallel profiler for HPC applications on Linux. It supports all Arm Neoverse processors.
+
+Supported languages:
+- C/C++,
+- Fortran,
+- Python
+
+Supported parallel programming standards:
+- MPI,
+- OpenMP,
+- CUDA 
+- OpenACC.
+{{< /card >}}
+
 
 {{< /cardpane >}}
 
