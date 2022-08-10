@@ -51,7 +51,7 @@ We welcome community participation to continuously improve software development 
     </p>
     <a href="/hpc/get_started_mpi" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated 5 August 2022</div>
+  <div class="card-footer text-muted">Updated 10 August 2022</div>
 </div>
 
 {{< /cardpane >}}
@@ -70,17 +70,20 @@ Here is a list of compilers for HPC supporting C/C++, Fortran and OpenMP for mul
 {{< /card >}}
 {{< card header="**MPI frameworks**" >}}
 MPI is a message-passing interface standard for distributed computing:
-- OpenMPI
-- MPICH
+- [OpenMPI](https://docs.open-mpi.org/en/v5.0.x/quickstart.html)
+- [MPICH](https://www.mpich.org/)
 {{< /card >}}
 {{< card header="**HPC libraries**" >}}
 HPC applications often rely on libraries providing common math operations, with C and Fortran interfaces: 
-- OpenBLAS
-- FFTW
-- Arm Performance Libraries (includes BLAS, LAPACK and FFT interfaces)
+- [OpenBLAS](https://www.openblas.net/)
+- [FFTW](https://www.fftw.org/)
+- [Arm Performance Libraries](https://developer.arm.com/downloads/-/arm-performance-libraries) (includes BLAS, LAPACK and FFT interfaces)
 {{< /card >}}
 {{< card header="**Development tools**" >}}
-Scalable tools are necessary to debug or profile parallel applications:
-- [Arm Forge](get_started_forge)
+Scalable tools help fixing and optimizing HPC applications:
+- Parallel debugger: [Arm DDT](/ide/ddt)
+- Parallel profiler: [Arm MAP](/perf/map)
+
+Arm DDT and MAP are part of [Arm Forge](https://developer.arm.com/downloads/-/arm-forge).
 {{< /card >}}
 {{< /cardpane >}}

@@ -123,6 +123,6 @@ The graphs below summarize the optimizations on the C version of the application
 
 ## Next Steps
 
-We have optimized the compute kernel of this example and we have new bottlenecks. Optimized versions of the application don't scale as well as we increase the number of processes, this shows that other operations such as data transfers and IO between processes become dominant in the application.
+We have optimized the compute kernel of this example and we have new bottlenecks. Optimized versions of the application don't scale as we increase the number of processes. Because data transfers and IO are now dominant in the application, using more processors to compute the workload doesn't reduce the execution time linearly.
 
 [<-- Return to Learning Path](/hpc/get_started_mpi/#sections)
