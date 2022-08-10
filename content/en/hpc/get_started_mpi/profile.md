@@ -1,6 +1,7 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N1", "Neoverse-N2"]
 software: ["linux"]
+tools: ["GCC", "Gfortran", "Arm Compiler for Linux", "perf", "Arm MAP", "Arm Performance Libraries"]
 title: "Optimize your code"
 linkTitle: "Optimize your code"
 type: docs
@@ -63,9 +64,15 @@ This command will launch a GUI, and profiling result will be displayed as a time
 
 Edit the file in `src/make.def` to turn compiler optimizations on and report on vectorized loops: 
 
-```console
-CFLAGS = -Ofast -g -fopt-info-vec
-```
+{{< tabpane >}}
+  {{< tab header="GNU" >}}
+  CFLAGS = -Ofast -g -fopt-info-vec
+  {{< /tab >}}
+  {{< tab header="Arm Compiler for Linux" >}}
+  CFLAGS = -Ofast -g -Rpass=vector
+  {{< /tab >}}
+{{% /tabpane %}}
+
 
 Then, rebuild the application before profiling again:
 

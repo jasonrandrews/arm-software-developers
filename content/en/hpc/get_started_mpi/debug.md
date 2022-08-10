@@ -1,6 +1,7 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N1", "Neoverse-N2"]
 software: ["linux"]
+tools: ["GCC", "Gfortran", "Arm Compiler for Linux", "gdb", "Arm DDT"]
 title: "Debug your application"
 linkTitle: "Debug your application"
 type: docs

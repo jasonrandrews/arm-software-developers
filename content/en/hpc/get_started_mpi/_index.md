@@ -39,4 +39,5 @@ To run the tutorial, you will need to install the following tools. Badges indica
 | ---           | ---                                        | ---  |
 | Tutorial      | [Build for debugging and fix](/hpc/get_started_mpi/debug)       | ![c_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_dbg.svg) ![f_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_dbg.svg) ![py_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_dbg.svg) |
 | Tutorial      | [Build for profiling and optimize](/hpc/get_started_mpi/profile)  | ![c_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_prof.svg) ![f_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_prof.svg) ![py_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_prof.svg) |
+| Check      | [Knowledge check and review](knowledgecheck) |
 

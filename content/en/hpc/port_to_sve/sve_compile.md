@@ -78,7 +78,7 @@ With Arm Compiler for Linux autovectorization is enabled with the `-02` option a
 
 ### Compiler insights
 
-With GCC, the option `-Rpass=vector` and `-Rpass=sve-loop-vectorize` return what loops were vectorized. To return what loop failed to vectorize, use `-Rpass-missed=vector`.
+With Arm Compiler for Linux, the option `-Rpass=vector` and `-Rpass=sve-loop-vectorize` return what loops were vectorized. To return what loop failed to vectorize, use `-Rpass-missed=vector`.
 
 ### Use Arm Performance Libraries
 
