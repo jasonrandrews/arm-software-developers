@@ -70,6 +70,7 @@ This will also help verify that your instances are working correctly.
 
 ## Next Steps
 
-**TO DO ADD REFERENCE TO JASON'S BLOG COMPARING AVH TO REAL RPI4**
+If you wish to explore how closely the Virtual Hardware models real hardware, please see [this article](https://dev.to/aws-builders/welcome-to-the-virtual-raspberry-pi-4-running-on-aws-graviton-processors-2o8e).
+
 [Proceed to next section -->](/devsummit22/build)\
 [<-- Return to Workshop Home](/devsummit22/#sections)

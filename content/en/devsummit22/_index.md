@@ -38,7 +38,8 @@ To participate in the workshops, users must prepare **in advance** of the worksh
 | ---             | ---           |
 | How-To          | [Setup Arm Virtual Hardware (Raspberry Pi 4)](/devsummit22/setup) |
 | How-To          | [Build and run Matter examples on Arm Virtual Hardware](/devsummit22/build) |
-| How-To          | [Automate CI/CD workflow](/devsummit22/cicd) |
+| How-To          | [Automate CI/CD workflow with Self-Hosted Runner](/devsummit22/cicd_sh) |
+| How-To          | [Control Virtual Hardware with API](/devsummit22/cicd_api) |
 | Optional How-To | [Connect to instance via SSH](/devsummit22/ssh) |
 | Check           | [Knowledge check and review](/devsummit22/knowledgecheck) |
 
