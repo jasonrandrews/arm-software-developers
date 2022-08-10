@@ -66,7 +66,7 @@ Here is a list of compilers for HPC supporting C/C++, Fortran and OpenMP for mul
 - GNU GCC
     - [Install native GCC compiler on Linux](/compilers/install_ngcc/)
 - GNU Fortran
-    - [Install native Gfortan compiler on Linux](install_gfortran/)
+    - [Install native Gfortan compiler on Linux](/compilers/install_gfortran/)
 {{< /card >}}
 {{< card header="**MPI frameworks**" >}}
 MPI is a message-passing interface standard for distributed computing:
