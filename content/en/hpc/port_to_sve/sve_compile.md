@@ -1,9 +1,11 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N2"]
 software: ["linux"]
+tools: ["GCC", "gfortran", "Arm Compiler for Linux", "Arm Performance Libraries"]
 title: "Compile for SVE"
 linkTitle: "Compile for SVE"
 type: docs
+weight: 20
 hide_summary: true
 description: >
     How to build code for SVE and useful compiler options.

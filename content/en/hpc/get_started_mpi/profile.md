@@ -1,7 +1,7 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N1", "Neoverse-N2"]
 software: ["linux"]
-tools: ["GCC", "Gfortran", "Arm Compiler for Linux", "perf", "Arm MAP", "Arm Performance Libraries"]
+tools: ["GCC", "gfortran", "Arm Compiler for Linux", "perf", "Arm MAP", "Arm Performance Libraries"]
 title: "Optimize your code"
 linkTitle: "Optimize your code"
 type: docs
@@ -130,6 +130,6 @@ The graphs below summarize the optimizations on the C version of the application
 
 ## Next Steps
 
-We have optimized the compute kernel of this example and we have new bottlenecks. Optimized versions of the application don't scale as we increase the number of processes. Because data transfers and IO are now dominant in the application, using more processors to compute the workload doesn't reduce the execution time linearly.
+We have optimized the compute kernel of this example and we have new bottlenecks. Optimized versions of the application don't scale as we increase the number of processes. Data transfers and IO are now dominant in the application: using more processors to compute the workload doesn't reduce the execution time linearly. A [parallel profiler](https://youtu.be/zIITp7ZqZXI) can help optimize the code futher.
 
 [<-- Return to Learning Path](/hpc/get_started_mpi/#sections)

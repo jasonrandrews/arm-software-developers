@@ -4,6 +4,7 @@ software: ["linux"]
 title: "From NEON to SVE"
 linkTitle: "From NEON to SVE"
 type: docs
+weight: 10
 hide_summary: true
 description: >
     Introduction to the Arm Scalable Extension (SVE) and diffences with Arm NEON.

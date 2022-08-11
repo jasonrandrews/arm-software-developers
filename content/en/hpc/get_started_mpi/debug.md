@@ -1,7 +1,7 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N1", "Neoverse-N2"]
 software: ["linux"]
-tools: ["GCC", "Gfortran", "Arm Compiler for Linux", "gdb", "Arm DDT"]
+tools: ["GCC", "gfortran", "Arm Compiler for Linux", "gdb", "Arm DDT"]
 title: "Debug your application"
 linkTitle: "Debug your application"
 type: docs
@@ -65,7 +65,7 @@ If you have enabled the compiler's address sanitizer, a report will be output wh
 
 ### Use a parallel debugger
 
-To control the parallel execution and visualize the source code, a parallel debugger such as Arm DDT can help. 
+Parallelism can introduce specific bugs such as race conditions or deadlocks. To control the parallel execution and visualize the source code, a parallel debugger such as Arm DDT can help. 
 
 In the same folder previously selected, run the C/Fortran application in parallel with:
 
