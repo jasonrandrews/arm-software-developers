@@ -1,20 +1,20 @@
 ---
-title: "Getting Started with Arm Forge"
-linkTitle: "Getting Started with Arm Forge"
+title: "Get Started with parallel application development"
+linkTitle: "Get Started with parallel application development"
 type: docs
-weight: 5
+weight: 30
 hide_summary: true
 description: >-
-     This article describes how to install and use Arm Forge on a simple parallel application.
+     This article describes how to build and run parallel applications on Arm and tips to debug and optimize
 ---
 
 ## Learning Objectives
 
 By the end of this learning path, you will be able to:
 
-- Debug and fix a parallel application with Arm DDT
-- Profile and optimize with Arm MAP
-- Use optimized BLAS routines with Arm Performance Libraries
+- Debug and fix a parallel application
+- Profile and optimize your code
+- Use optimized routines for common math operations
 
 The tutorial is available on [github](https://github.com/armflorentlebeau/arm_hpc_tools_trial). You can clone the repository with:
 
@@ -37,10 +37,7 @@ To run the tutorial, you will need to install the following tools. Badges indica
 
 |          Type | Content                                    | Test |
 | ---           | ---                                        | ---  |
-| Tutorial      | [Build for debugging and fix](/hpc/get_started_forge/debug)       | ![C](https://img.shields.io/badge/C-pass-green) ![Fortran](https://img.shields.io/badge/Fortran-pass-green) ![Python](https://img.shields.io/badge/Python-pass-green) |
-| Tutorial      | [Build for profiling and optimize](/hpc/get_started_forge/profile)  | ![C](https://img.shields.io/badge/C-pass-green) ![Fortran](https://img.shields.io/badge/Fortran-pass-green) ![Python](https://img.shields.io/badge/Python-fail-red) |
+| Tutorial      | [Build for debugging and fix](/hpc/get_started_mpi/debug)       | ![c_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_dbg.svg) ![f_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_dbg.svg) ![py_debug](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_dbg.svg) |
+| Tutorial      | [Build for profiling and optimize](/hpc/get_started_mpi/profile)  | ![c_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/c_prof.svg) ![f_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/f_prof.svg) ![py_profile](https://raw.githubusercontent.com/armflorentlebeau/arm_hpc_tools_trial/master/.github/badges/py_prof.svg) |
+| Check      | [Knowledge check and review](knowledgecheck) |
 
-
-## Download Arm Forge
-
-## Installation {#install}

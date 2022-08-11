@@ -1,9 +1,11 @@
 ---
 processors : ["Neoverse-V1", "Neoverse-N2"]
 software: ["linux"]
+tools: ["GCC", "gfortran", "Arm Compiler for Linux", "Arm Performance Libraries"]
 title: "Compile for SVE"
 linkTitle: "Compile for SVE"
 type: docs
+weight: 20
 hide_summary: true
 description: >
     How to build code for SVE and useful compiler options.
@@ -78,7 +80,7 @@ With Arm Compiler for Linux autovectorization is enabled with the `-02` option a
 
 ### Compiler insights
 
-With GCC, the option `-Rpass=vector` and `-Rpass=sve-loop-vectorize` return what loops were vectorized. To return what loop failed to vectorize, use `-Rpass-missed=vector`.
+With Arm Compiler for Linux, the option `-Rpass=vector` and `-Rpass=sve-loop-vectorize` return what loops were vectorized. To return what loop failed to vectorize, use `-Rpass-missed=vector`.
 
 ### Use Arm Performance Libraries
 
@@ -87,3 +89,9 @@ Using the Arm Performance Libraries with Arm Compiler for Linux is straightforwa
 ```console
 armclang -O3 -march=armv8-a+sve -armpl=sve dgemm.c -o dgemm.out
 ```
+
+## Next Steps
+
+TODO
+
+[<-- Return to Learning Path](/hpc/port_to_sve/#sections)

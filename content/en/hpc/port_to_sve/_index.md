@@ -1,9 +1,9 @@
 ---
-title: "Porting Code to Arm SVE"
-linkTitle: "Porting Code to Arm SVE"
+title: "Port Code to Arm SVE"
+linkTitle: "Port Code to Arm SVE"
 type: docs
 hide_summary: true
-weight: 3
+weight: 10
 description: >
     Learning path for porting code from NEON to the Arm Scalable Vector Extension (SVE).
 ---
@@ -24,8 +24,10 @@ General knowledge about SIMD processing, vectorization or NEON.
 
 |          Type | Content                       |
 | ---           | ---                                 |
-| How-To        | [From NEON to SVE](/hpc/porting_to_sve/sve_basics)       |
-| How-To        | [Compile for SVE](/hpc/porting_to_sve/sve_compile)       |
+| How-To        | [From NEON to SVE](/hpc/port_to_sve/sve_basics)       |
+| How-To        | [Compile for SVE](/hpc/port_to_sve/sve_compile)       |
+| How-To        | [Run SVE without capable hardware](/hpc/port_to_sve/sve_armie)       |
+| Check         | [Knowledge check and review](knowledgecheck) |
 
 
 
@@ -34,7 +36,10 @@ General knowledge about SIMD processing, vectorization or NEON.
 | Type          | Content             |
 | ---           | ---                 |
 | Documentation | [Introduction to SVE](https://developer.arm.com/documentation/102476/latest/) |
+| Documentation | [Arm Instruction Emulator user guide](https://developer.arm.com/documentation/102190/22-0/Get-started/Get-started-with-Arm-Instruction-Emulator) |
+| Blog          | [Optimizing HPCG for Arm SVE](https://community.arm.com/arm-community-blogs/b/high-performance-computing-blog/posts/optimizing-hpcg-for-arm-sve) |
 
 ## Next Steps
 
+HPC developers may be interested in [debugging](/ide) and [profiling](/perf) tools for SVE.
 

@@ -94,6 +94,8 @@ GCC is available on all Linux distributions and can be installed using the packa
 
 [Install native GCC compiler on Linux](install_ngcc/)
 
+[Install native Gfortran compiler on Linux](install_gfortran/)
+
 {{< /card >}}
 
 {{< card header="**Clang for Windows on Arm**" >}}
