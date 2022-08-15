@@ -34,12 +34,44 @@ cd /home/pi/connectedhomeip/.github/workflows
 rm -rf *.yaml
 rm -rf *.yml
 ```
-Create a textfile `cicd_demo.yml` (the name is arbitrary, but .yml is necessary), containing the below
-```console
+Create a textfile `cicd_demo.yml` containing the below:
+```yml
+# example workflow to manage Arm Virtual Hardware with Self-Hosted Runner
+name: AVH_RPi4_Matter
 
-WILL COPY WHEN ALL FINISHED
-See  https://github.com/RonanSynnottArm/connectedhomeip/.github/workflows
+# When the workflow will run
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+#  pull_request:
+#    branches: [ main ]
 
+jobs:
+  rebuild_lighting_app:
+    runs-on: self-hosted
+    steps:
+     - uses: actions/checkout@v2
+     
+     - name: submodules
+       run: ./scripts/checkout_submodules.py --shallow --platform linux
+       
+     - name: bootstrap and build
+       run: |
+         ./scripts/build/gn_bootstrap.sh
+         source scripts/activate.sh
+         cd examples/lighting-app/linux
+         gn gen out/debug
+         ninja -C out/debug
+
+  run_lighting_app:
+    needs: rebuild_lighting_app
+    runs-on: self-hosted
+    steps:
+      - name: Run lighting-app for 1 minute
+        run: |
+          cd examples/lighting-app/linux
+          timeout 60s ./out/debug/chip-lighting-app || code=$?; if [[ $code -ne 124 && $code -ne 0 ]]; then exit $code; fi
 ```
 To push these changes, you will likely need to supply your GitHub credentials.
 ```console
@@ -83,28 +115,48 @@ TIMESTAMP: Listening for Jobs
 ```
 ### Make a code change
 
-Return to the `lighting-app/linux` folder:
+In the `lighting-app` console, make a code change, editing the output message when light is toggled. This is set in `on-off-server.cpp`.
 ```console 
-cd /home/pi/connectedhomeip/examples/lighting-app/linux
-```
-We will change the output message when light is toggled. This is set in `on-off-server.cpp`.\
-Using a text editor, such as `nano`:
-```console
-nano ../../../src/app/clusters/on-off-server/on-off-server.cpp
+cd /home/pi/connectedhomeip
+nano src/app/clusters/on-off-server/on-off-server.cpp
 ```
 Locate the `Toggle on/off` message (circa line 137), and edit to give a new output message, for example:
 ```C
-    emberAfOnOffClusterPrintln("HELLO WORLD Toggle on/off from %x to %x", currentValue, newValue);
+    emberAfOnOffClusterPrintln("HELLO WORLD! Toggle on/off from %x to %x", currentValue, newValue);
 ```
-Rebuild:
+Exit (`Ctrl+X`) and save your change.
+
+### Push change to GitHub and invoke workflow
+
+The `yml` code contains the below, which tells GitHub to invoke this workflow whenever there is a `push` to the repository. This means that any update will automatically trigger a new test of the code.
+```yml
+on:
+  push:
+    branches: [ main ]
+```
+In the `lighting-app` console, push the code change to GitHub:
 ```console
-gn gen out/debug
-ninja -C out/debug
+git add .
+git commit -m "Toggle output message changed"
+git push
 ```
-and re-run application:
-```console
-./out/debug/chip-lighting-app
+The workflow contains two `jobs`, which rebuild, and then run `chip-lighting-app`:
+```yml
+jobs:
+  rebuild_lighting_app:
+...
+  run_lighting_app:
 ```
+You can follow this in the Runner, which will output messages such as:
+```
+TIMESTAMP: Running job rebuild_lighting_app
+```
+Note that `rebuild_lighting_app` will take a few minutes to complete, as it must repeat all the initialization steps for the Matter build system.
+
+### Follow the workflow progress in GitHub Actions
+
+The workflow does not output on the target, but rather logs to GitHub. You can follow the workflow steps, and see the output logs in your GitHub repository, under the `Actions` tab.
+
 When `chip-lighting-app` is initialized, toggle the light with your `chip-tool` instance:
 ```console
 ./out/debug/chip-tool onoff on 0x11 1
@@ -112,16 +164,11 @@ When `chip-lighting-app` is initialized, toggle the light with your `chip-tool` 
 ```
 Observer your new message in the `chip-lighting-app` log:
 ```
-[TIMESTAMP][INSTANCEID] CHIP:ZCL: HELLO WORLD Toggle on/off from 1 to 0
+[TIMESTAMP][INSTANCEID] CHIP:ZCL: HELLO WORLD! Toggle on/off from 1 to 0
 ```
-When satisfied, kill `chip-lighting-app` with `Ctrl+C`.
-
-### To do
-
-Almost working... see workflows in my github
-https://github.com/RonanSynnottArm/connectedhomeip/.github/workflows
-
+The workflow will automatically terminate `chip-lighting-app` after 60 seconds.
 
 ## Next Steps
-[Proceed to next section -->](/devsummit22/cicd_api)
+
+[Proceed to next section -->](/devsummit22/cicd_api)\
 [<-- Return to Workshop Home](/devsummit22/#sections)

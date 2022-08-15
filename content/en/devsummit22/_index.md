@@ -9,7 +9,7 @@ description: >-
 ---
 ## Overview
 
-Welcome to Arm DevSummit 2022. This workshop is to show you how to get started developing with [Matter](https://csa-iot.org/all-solutions/matter/) and [Arm Virtual Hardware](https://www.arm.com/products/development-tools/simulation/virtual-hardware).
+Welcome to Arm DevSummit 2022. This workshop is to show you how to get started developing with [Matter](https://buildwithmatter.com) and [Arm Virtual Hardware](https://www.arm.com/products/development-tools/simulation/virtual-hardware).
 
 **Attendees must provide their own laptop (with browser).**
 
