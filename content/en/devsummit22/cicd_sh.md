@@ -88,7 +88,7 @@ git add .
 git commit -m "delete other workflows"
 git push
 ```
-You will be prompted for your GitHub login and `Personal Access Token`.
+You will be prompted for your GitHub username and `Personal Access Token` (password).
 
 ### Create GitHub self-hosted runner
 
@@ -104,7 +104,9 @@ cd /home/pi
 Copy and paste the download and configure commands for the `runner`.\
 It is OK to select the default options when prompted during configuration.
 
-After configuration, to keep the `CONSOLE` free, log into the Raspberry Pi 4 via the CLCD screen, and launch the runner from there:
+After configuration, to keep the `CONSOLE` free, log into the Raspberry Pi 4 via the CLCD screen interface, and launch the runner from there:\
+Username: `pi`\
+Password: `raspberry`
 ```console
 cd actions-runner
 ./run.sh
@@ -115,12 +117,16 @@ TIMESTAMP: Listening for Jobs
 ```
 ### Make a code change
 
-In the `lighting-app` console, make a code change, editing the output message when light is toggled. This is set in `on-off-server.cpp`.
+In the `lighting-app` console, make a code change, editing the output message when light is toggled. This is set in a source file named `on-off-server.cpp`.
 ```console 
 cd /home/pi/connectedhomeip
 nano src/app/clusters/on-off-server/on-off-server.cpp
 ```
-Locate the `Toggle on/off` message (circa line 137), and edit to give a new output message, for example:
+Locate the `Toggle on/off` message (circa line 137):
+```C
+    emberAfOnOffClusterPrintln("Toggle on/off from %x to %x", currentValue, newValue);
+```
+Edit to give a new output message, for example:
 ```C
     emberAfOnOffClusterPrintln("HELLO WORLD! Toggle on/off from %x to %x", currentValue, newValue);
 ```
@@ -147,7 +153,7 @@ jobs:
 ...
   run_lighting_app:
 ```
-You can follow this in the Runner, which will output messages such as:
+You can follow this in the `runner`, which will output messages such as:
 ```
 TIMESTAMP: Running job rebuild_lighting_app
 ```
@@ -162,7 +168,7 @@ When `chip-lighting-app` is initialized, toggle the light with your `chip-tool` 
 ./out/debug/chip-tool onoff on 0x11 1
 ./out/debug/chip-tool onoff off 0x11 1
 ```
-Observer your new message in the `chip-lighting-app` log:
+Observer your new message in the `run_lighting_app` log:
 ```
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: HELLO WORLD! Toggle on/off from 1 to 0
 ```

@@ -87,9 +87,9 @@ Confirming it is ready to use (other messages in the log can be ignored). Full [
 
 Leave `chip-lighting-app` application running on this instance.
 
-### Launch chip-tool
+### Pair chip-tool
 
-On the other instance, pair `chip-tool` with `chip-lighting-app`, using:
+On the other instance, pair `chip-tool` with the `lighting-app` instance, using:
 ```console
 ./out/debug/chip-tool pairing onnetwork-long 0x11 20202021 3840
 ```
@@ -101,7 +101,7 @@ Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master
 
 The `chip-lighting-app` can now be controlled with `chip-tool`, simulating remote control of the application.
 
-In the chip-tool instance, to send a message to turn the light ON, enter the command:
+In the `chip-tool` instance, send a message to turn the light ON, using the command:
 ```console
 ./out/debug/chip-tool onoff on 0x11 1
 ```
@@ -110,7 +110,7 @@ Observe in the log of `chip-lighting-app` that this state is reflected with:
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 1
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 0 to 1
 ```
-Similarly to turn the light OFF, enter:
+Similarly to turn the light OFF, use:
 ```console
 ./out/debug/chip-tool onoff off 0x11 1
 ```
@@ -119,9 +119,9 @@ And observe the `chip-lighting-app` log:
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 0
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 1 to 0
 ```
-## Next Steps
-
 Congratulations! You have successfully enabled two Virtual Hardware instances to communicate to each other via Matter messages.
 
-[Proceed to next section -->](/devsummit22/cicd)\
+## Next Steps
+
+[Proceed to next section -->](/devsummit22/cicd_sh)\
 [<-- Return to Workshop Home](/devsummit22/#sections)

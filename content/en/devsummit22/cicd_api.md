@@ -55,7 +55,7 @@ Edit `.github/workflows/cicd_demo.yml` to append this `job` to the workflow:
           API_TOKEN: ${{ secrets.API_TOKEN }}
         run: node .github/workflows/chip_tool.js
 ```
-Note how we makes use of the `API_TOKEN` secret. This job invokes the following `JavaScript` which will transmit the `on/off` commands to the `chip-tool` instance via the `Websocket` interface.
+This job invokes the following `JavaScript` which will transmit the `on/off` commands to the `chip-tool` instance via the `Websocket` interface.
 
 Create `.github/workflows/chip_tool.js`, with the below:
 ```js
@@ -127,7 +127,7 @@ which will trigger a new workflow run.
 
 ### Follow progress in GitHub Actions
 
-Navigate to the `Actions` tab of your GitHub repository, and open the current workflow to follow progress. Observe that there are now three `jobs`, with the jobs to run `chip-lighting-app` and `chip-tool` executing in parallel.
+Navigate to the `Actions` tab of your GitHub repository, and open the current workflow to follow progress. Observe that there are now three `jobs`, with the jobs to run `chip-lighting-app` and `chip-tool` executing in parallel. You can follow progress, and observe `chip-tool` toggling `chip-lighting-app` automatically.
 
 Congratulations! We have entirely automated the process to build and test our applications.
 
