@@ -4,6 +4,7 @@ title: "Docker"
 linkTitle: "Docker"
 type: docs
 weight: 1
+hide_summary: true
 description: >
     Learn how to install Docker on any computer and test it works
 ---
