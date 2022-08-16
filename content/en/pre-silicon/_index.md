@@ -37,7 +37,7 @@ Common tasks include:
     </p>
     <a href="/pre-silicon/bare-metal-lp" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated June 27th, 2022</div>
+  <div class="card-footer text-muted">Updated August 16th, 2022</div>
 </div>
 
 <div class="card text-center">

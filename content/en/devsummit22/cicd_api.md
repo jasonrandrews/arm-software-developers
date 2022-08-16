@@ -22,7 +22,7 @@ We shall extend the workflow from the previous section to automatically transmit
 
 ### Set up API Key
 
-In the `Arm Virtual Hardware` browser, navigate to `Profile` > `API`. Generate and copy your `API Key`. This is a unique key that enables remote access to your instance(s).
+In the `Arm Virtual Hardware` browser, navigate to `Profile` > `API`. Generate and copy your `API Token`. This is a unique key that enables remote access to your instance(s).
 
 In the `github` browser, go to your forked repository, and navigate to `Settings` > `Secrets` > `Actions`, and create a `New repository secret`.
 
@@ -30,7 +30,7 @@ Name the secret:
 ```console
 API_TOKEN
 ```
-and paste the above `API Key` as the secret value.
+and paste the above `API Token` as the secret value.
 
 The secret name must be exactly `API_TOKEN`, as this is used by the workflow later.
 
