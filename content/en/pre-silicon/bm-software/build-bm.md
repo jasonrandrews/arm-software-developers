@@ -15,48 +15,40 @@ description: >
 
 Tools: 
   * [Arm Compiler for Embedded](/compilers/install_armclang)
-
   * [Arm Fixed Virtual Platforms](https://developer.arm.com/Tools%20and%20Software/Fixed%20Virtual%20Platforms)
 
-## Detailed Steps
+These are both installed as components of [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio).
 
+## Detailed Steps
 
 ### Write and compile "Hello World!"
 
 Let's start with a simple C program, and use the armclang and armlink tools to compile and generate an executable image.
 
-1. In your command-line terminal, use your favorite editor, for example, vi, to create a new file called hello_world.c with the following contents:
-
-```
-
+1. In your command-line terminal, use your favorite editor, for example, `vi`, to create a new file called hello_world.c with the following contents:
+```C
 #include <stdio.h>
 
 int main(void) {
   printf("Hello World\n");
   return 0;
 }
-
 ```
-
 2. Compile the C code to object code with armclang:
 
+```console
+armclang -c -g --target=aarch64-arm-none-eabi hello_world.c
 ```
-
-$ armclang -c -g --target=aarch64-arm-none-eabi hello_world.c
-
-```
-This command tells the armclang compiler to compile hello_world.c for the Armv8-A architecture and generate an ELF object file `hello_world.o`. The options used in this command are:
+This command tells the armclang compiler to compile `hello_world.c` for the Armv8-A architecture and generate an ELF object file `hello_world.o`. The options used in this command are:
 
   `-c` tells the compiler to stop after compiling to object code. We will perform the link step to create the final executable in the next step.
   `-g` tells the compiler to include debug information in the image.
   `--target=aarch64-arm-none-eabi` tells the compiler to target the Armv8-A AArch64 ABI.
 
 3. Create an executable image by linking the object using armlink. This generates an ELF image file named `__image.axf`:
-
+```console
+armlink hello_world.o
 ```
-$ armlink hello_world.o
-```
-
 Because we have not specified an entry point, when you run this image the entry point defaults to` __main()` in the Arm libraries. These libraries perform a number of setup activities, including:
 
 * Copying all the code and data from the image into memory.
@@ -72,8 +64,7 @@ The memory map describes the different regions of target memory, and what they c
 Create a scatter file to tell the linker about the structure of the memory map:
 
 1. Create a new file scatter.txt in the same directory as hello_world.c with the following contents:
-
-```
+```console
 ROM_LOAD 0x00000000 0x00010000
   {
     ROM_EXEC +0x0
@@ -91,12 +82,10 @@ ROM_LOAD 0x00000000 0x00010000
 ```
 
 2. Rebuild the image using the scatter file
-
+```console
+armclang -c -g --target=aarch64-arm-none-eabi hello_world.c 
+armlink --scatter=scatter.txt hello_world.o
 ```
-$ armclang -c -g --target=aarch64-arm-none-eabi hello_world.c 
-$ armlink --scatter=scatter.txt hello_world.o
-```
-
 ### Understanding the scatter file
 
 The statements in the scatter file define the different regions of memory and their purpose.
@@ -130,7 +119,7 @@ RAM_EXEC 0x04000000 0x10000
     }
 ```
 
-RAM_EXEC contains any read-write (RW) or zero-initialised (ZI) data. Because this has been placed in SRAM, it is not a root region.
+`RAM_EXEC` contains any read-write (RW) or zero-initialised (ZI) data. Because this has been placed in SRAM, it is not a root region.
 
 This instruction specifies the placement of the heap and stack:
 
@@ -151,10 +140,9 @@ The `EMPTY` declaration reserves `0x10000` of uninitialized memory, starting at 
 
 You can now run the executable image `__image.axf` from the command line using the FVP_Base_Cortex-A73x2-A53x4 model:
 
+```console
+FVP_Base_Cortex-A73x2-A53x4 __image.axf -C pctl.startup=0.0.1.0
 ```
-$ FVP_Base_Cortex-A73x2-A53x4 __image.axf -C pctl.startup=0.0.1.0
-```
-
 When the model is running, the message "hello world" appears on your screen.
 
 By default, the model boots up multiple cores. This could lead to strange or inconsistent behaviors, such as multiple "hello world" prints. To avoid this type of result, we use the `-C pctl.startup=0.0.1.0` option to specify that only a single core should be used.
@@ -170,8 +158,7 @@ Typically, an embedded system needs some low-level initialization at startup.
 Often this initialization must occur before any other code is executed. This means that you must define and change the entry point for the system in a way that reflects the execution flow that is shown in the following diagram:
 
 1. Create a new file, `startup.s`, with the following contents:
-
-```
+```C
   .section  BOOT,"ax" // Define an executable ELF section, BOOT
   .align 3                     // Align to 2^3 byte boundary
 
@@ -199,17 +186,16 @@ boot:
   B        __main
 ```
 
-The MPIDR_EL1 register provides a CPU identification mechanism. The Aff0 and Aff1 bitfields let us check which numbered CPU in a cluster the code is running on. This startup code sends all but one CPU to sleep. The status of the Floating Point Unit (FPU) in the model is unknown. The Architectural Feature Trap Register, CPTR_EL3, has no defined reset value. Setting CPTR_EL3 to zero disables trapping of SIMD, FPU, and a few other instructions.
+The `MPIDR_EL1` register provides a CPU identification mechanism. The Aff0 and Aff1 bitfields let us check which numbered CPU in a cluster the code is running on. This startup code sends all but one CPU to sleep. The status of the Floating Point Unit (FPU) in the model is unknown. The Architectural Feature Trap Register, `CPTR_EL3`, has no defined reset value. Setting `CPTR_EL3` to zero disables trapping of SIMD, FPU, and a few other instructions.
 
 2. Compile the startup code:
 
-```
-$ armclang -c -g --target=aarch64-arm-none-eabi startup.s
+```console
+armclang -c -g --target=aarch64-arm-none-eabi startup.s
 ```
 
 3. Modify the scatter file so that the startup code goes into the root region `ROM_EXEC`:
-
-```
+```console
 ROM_EXEC +0x0
   {
     startup.o(BOOT, +FIRST)
@@ -220,17 +206,13 @@ ROM_EXEC +0x0
 Adding the line `startup.o(BOOT, +FIRST)` ensures that the BOOT section of our startup file is placed first in the `ROM_EXEC` region.
 
 4. Link the objects, specifying an entry label for the linker. Execution branches to this entry label on reset:
-
-```
-$ armlink --scatter=scatter.txt --entry=start64 hello_world.o startup.o
+```console
+armlink --scatter=scatter.txt --entry=start64 hello_world.o startup.o
 ```
 
 5. Run the executable image `__image.axf` from the command-line:
-
-```
-$ FVP_Base_Cortex-A73x2-A53x4 __image.axf
+```console
+FVP_Base_Cortex-A73x2-A53x4 __image.axf
 ```
 
 The message "hello world" appears on your screen.
-
-

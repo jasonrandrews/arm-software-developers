@@ -18,11 +18,10 @@ In [Build and run your first embedded image](/pre-silicon/bm-software/build-bm.m
 
 Tools: 
   * [Arm Compiler for Embedded](/compilers/install_armclang)
-
   * [Arm Fixed Virtual Platforms](https://developer.arm.com/Tools%20and%20Software/Fixed%20Virtual%20Platforms)
 
+These are both installed as components of [Arm Development Studio](https://developer.arm.com/Tools%20and%20Software/Arm%20Development%20Studio).
 ## Detailed Steps
-
 
 ### Understanding Semihosting
 
@@ -30,8 +29,8 @@ Semihosting enables code running on a target system, the model, to interface wit
 
 In [Build and run your first embedded image](/pre-silicon/bm-software/build-bm.md), we used a `printf()` call in the code to display the "Hello World" message. This printf() call triggers a request to a connected debugger through the library function `_sys_write.` To see how this works, you can use fromelf to inspect the compiled code, as shown in the following instruction:
 
-```
-$ fromelf --text -c __image.axf --output=disasm.txt
+```console
+fromelf --text -c __image.axf --output=disasm.txt
 ```
 
 This command generates a disassembly of `__image.axf` in the file disasm.txt. Within the disassembly, look at `_sys_write`, which contains a `HLT` instruction:
@@ -58,8 +57,7 @@ Real embedded systems operate without sophisticated debuggers, but many library 
 To retarget `printf()` to use the PL011 UART of the model:
 
 1. Write a driver for the UART. Copy and paste the following code into a new file with the filename `pl011_uart.c`:
-
-```
+```C
 struct pl011_uart {
     volatile unsigned int UARTDR;        // +0x00
     volatile unsigned int UARTECR;       // +0x04
@@ -111,12 +109,11 @@ int fputc(int c, FILE *f) {
     }
    return 0;
 }
-
 ```
     
 2 Modify `hello_world.c` to use the UART driver, so that the updated file contains:
 
-```
+```C
 #include <stdio.h>
 #include "pl011_uart.h"
 
@@ -131,18 +128,17 @@ By redefining `fputc()` to use the UART you have retargeted `printf()`. This is 
 
 3. Rebuild the image:
 
-```
-$ armclang -c -g --target=aarch64-arm-none-eabi startup.s
-$ armclang -c -g --target=aarch64-arm-none-eabi hello_world.c
-$ armclang -c -g --target=aarch64-arm-none-eabi pl011_uart.c
-$ armlink --scatter=scatter.txt --entry=start64 startup.o pl011_uart.o hello_world.o
+```console
+armclang -c -g --target=aarch64-arm-none-eabi startup.s
+armclang -c -g --target=aarch64-arm-none-eabi hello_world.c
+armclang -c -g --target=aarch64-arm-none-eabi pl011_uart.c
+armlink --scatter=scatter.txt --entry=start64 startup.o pl011_uart.o hello_world.o
 
 ```
 4. Disassemble the image:
 
-```
-$ fromelf --text -c __image.axf --output=disasm.txt
-
+```console
+fromelf --text -c __image.axf --output=disasm.txt
 ```
 
 The disassembly in disasm.txt now shows no calls to `_sys_write` (although other semihosting functions such as _sys_exit will be present).
@@ -155,11 +151,8 @@ To see this output, we are going to use a Telnet Terminal to connect to the UART
 
 We will now launch the simulation model with the newly compiled image. 
 
-```
-$ FVP_Base_Cortex_A73x2_A53x4 -a __image.axf
-
+```console
+FVP_Base_Cortex_A73x2_A53x4 -a __image.axf
 ```
 
 You will see a telnet terminal pop-up with you run the simulation model with the output "hello world"
-
-```

@@ -41,25 +41,21 @@ Common tasks include:
 </div>
 
 <div class="card text-center">
-  <div class="card-header" style="background-color:#0091bd;">Experienced</div>
+  <div class="card-header" style="background-color:#ffc700;">Intermediate</div>
   <div class="card-body">
-    <h5 class="card-title"> <b> Benchmark software performance </b> </h5>
+    <h5 class="card-title"> <b> Benchmark Cortex-M software </b> </h5>
     <p class="card-text">
     <div style="text-align:left">
      <ul>
-      <li>Learn about Performance Monitoring Unit (PMU) and Systick Timer</li>
-      <li>Modify boot code to use PMU counters</li>
-      <li>Measure performance of custom software using PMU counters</li>
+      <li>High level benchmarking with Systick Timer</li>
+      <li>CPU level benchmarking with DWT counters</li>
+      <li>Detailed benchmarking with PMU events</li>
    </ul>
    </div>
     </p>
-    <a href="#" class="btn btn-primary">Learn More</a>
+    <a href="/pre-silicon/bm_cortexm" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated June 15th, 2022</div>
+  <div class="card-footer text-muted">Updated August 16th, 2022</div>
 </div>
 
 {{< /cardpane >}}
-
-
-
-
