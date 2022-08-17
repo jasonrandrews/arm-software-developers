@@ -1,15 +1,15 @@
 ---
-title: "Control Arm Virtual Hardware with Javascript/Python/C API"
+title: "Control Arm Virtual Hardware with API"
 linkTitle: "CI/CD workflow API"
 type: docs
 toc_hide: true
 hide_summary: true
 description: >
-    Control Arm Virtual Hardware with Javascript/Python/C API.
+    Control Arm Virtual Hardware with API.
 ---
 ## Overview
 
-In this section we will learn how to control Arm Virtual Hardware via the [API](https://app.avh.arm.com/api/docs). This can be used stand-alone, or as part of your overall CI/CD workflow. Applications to interface with the API can be written in JavaScript, Python, or C. This example uses JavaScript.
+In this section we will learn how to control Arm Virtual Hardware via the [AVH API](https://app.avh.arm.com/api/docs). This can be used stand-alone, or as part of your overall CI/CD workflow. Applications to interface with the API can be written in JavaScript, Python, or C. This example uses JavaScript.
 
 ## Pre-requisites
 
@@ -20,7 +20,7 @@ In this section we will learn how to control Arm Virtual Hardware via the [API](
 
 We shall extend the workflow from the previous section to automatically transmit the `chip-tool` commands.
 
-### Set up API Key
+### Set up API Token
 
 In the `Arm Virtual Hardware` browser, navigate to `Profile` > `API`. Generate and copy your `API Token`. This is a unique key that enables remote access to your instance(s).
 
@@ -49,7 +49,7 @@ Edit `.github/workflows/cicd_demo.yml` to append this `job` to the workflow:
           node-version: 14.17.2
 
       - name: Install  API
-        run: npm install @arm-avh/avh-api --save
+        run: npm install @arm-avh/avh-api websocket --save
       - name: Run script
         env:
           API_TOKEN: ${{ secrets.API_TOKEN }}
@@ -61,62 +61,74 @@ Create `.github/workflows/chip_tool.js`, with the below:
 ```js
 const readline = require('readline')
 const { ArmApi, ApiClient } = require('@arm-avh/avh-api');
+const W3CWebSocket = require('websocket').w3cwebsocket;
 
 const BearerAuth = ApiClient.instance.authentications['BearerAuth']
 const api = new ArmApi()
 
-const path = require("path");
-const fs = require("fs");
+function delay(time) {
+	return new Promise(resolve => setTimeout(resolve, time));
+}
 
 async function main() {
-    const apiToken = process.env.API_TOKEN
-    
-    console.log('Logging in...');
-    const authInfo = await api.v1AuthLogin({ apiToken });
-    BearerAuth.accessToken = authInfo.token
-    
-    console.log('Listing projects...');
-    let projects = await api.v1GetProjects();
-    let project = projects[0];
-    
-    console.log("Getting Chip Tool instance...");
-    let instances = await api.v1GetInstances()
-    let instance = instances[0];
-    
-    console.log("Get Websocket...");
-    let url = await api.instance.v1console();
-    mySocket = new WebSocket(url);
+	const apiToken = process.env.API_TOKEN
+	
+	console.log('Logging in...');
+	const authInfo = await api.v1AuthLogin({ apiToken });
+	BearerAuth.accessToken = authInfo.token
+	
+	console.log("Verify instance...");
+	let instances = await api.v1GetInstances()
+	let instance = instances[0];
+	console.log(`Instance: %s`, instance.name);
+	
+	console.log("Wait 20s for chip-lighting-app to initialize...");
+	await delay(20000);
+	
+	console.log("Open Websocket...");
+	let url = await api.v1GetInstanceConsole(instance.id);
+	var mySocket = await new W3CWebSocket(url.url);
+	console.log(`UEL: %s`, url.url);
+	
+	mySocket.onopen = function() {
+		console.log(`WebSocket open...`);};
+	mySocket.onerror = function() {
+		console.log('Connection Error')};
 
-    console.log("Wait for chip-lighting-app to initialize...");
-    await delay(10000);
-    
-    for(let loop=0; loop<5; loop++>){
-        console.log("Turn light on...");
-        mySocket.send("./out/debug/chip-tool onoff on 0x11 1");
-        
-        console.log("Wait 3 seconds...");
-        await delay(3000);
+	console.log("Wait 1 second...");
+	await delay(1000);
 
-        console.log("Turn light off...");
-        mySocket.send("./out/debug/chip-tool onoff off 0x11 1");
+	console.log("Turn light on...");
+	mySocket.send("./out/debug/chip-tool onoff on 0x11 1\n");
+	
+	console.log("Wait 3 seconds...");
+	await delay(3000);
 
-        console.log("Wait 3 seconds...");
-        await delay(3000);
-    }
-    
-    console.log('Run completed');
-    return;
+	console.log("Turn light off...");
+	mySocket.send("./out/debug/chip-tool onoff off 0x11 1\n");
+
+	console.log("Wait 3 seconds...");
+	await delay(3000);
+
+	console.log("Turn light on again...");
+	mySocket.send("./out/debug/chip-tool onoff on 0x11 1\n");
+
+	console.log("Wait 3 seconds...");
+	await delay(3000);
+
+	console.log("Turn light off again...");
+	mySocket.send("./out/debug/chip-tool onoff off 0x11 1\n");
+
+	console.log('Close WebSocket...');
+	mySocket.close();
+	
+	return;
 }
 
 main().catch((err) => {
     console.error(err);
 });
 ```
-**TO DO**
-See api.yml in my github
-How to use websocket to sent commands to the Chip Tool RP4?
-**TO DO**
-
 Push these changes to your repository:
 ```console
 git add .
@@ -127,11 +139,13 @@ which will trigger a new workflow run.
 
 ### Follow progress in GitHub Actions
 
-Navigate to the `Actions` tab of your GitHub repository, and open the current workflow to follow progress. Observe that there are now three `jobs`, with the jobs to run `chip-lighting-app` and `chip-tool` executing in parallel. You can follow progress, and observe `chip-tool` toggling `chip-lighting-app` automatically.
+Navigate to the `Actions` tab of your GitHub repository, and open the current workflow to follow progress. Observe that there are now three `jobs`, with the jobs to run `lighting-app` and `chip-tool` executing in parallel. You can follow progress in GitHub Actions log, and observe `chip-tool` toggling `lighting-app` automatically. You will also see the commands appear in the `chip-tool` console.
 
 Congratulations! We have entirely automated the process to build and test our applications.
 
 ## Next Steps
+
+We have built up a rudimentary CI/CD environment to start Matter development. Through the powerful AVH API and workflow methodology of GitHub Actions and other similar technologies, it is possible to construct an intelligent and always available CI/CD scheme, instantiating (and terminating) Virtual Hardware targets as required for your unit tests in a highly scalable way.
 
 [Proceed to next section -->](/devsummit22/knowledgecheck)\
 [<-- Return to Workshop Home](/devsummit22/#sections)

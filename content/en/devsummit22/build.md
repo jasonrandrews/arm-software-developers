@@ -33,14 +33,14 @@ Click `Fork` in upper-right of screen, and create a fork in your own repository 
 
 Return to the `Console` tab of each of your Virtual Hardware instances, and clone your fork of the repository.
 ```console
-git clone https://github.com/YOUR_GITHUB_USER_NAME/connectedhomeip.git
+git clone https://github.com/YOUR_GITHUB_USER_NAME/connectedhomeip
 cd connectedhomeip
 ```
 A number of submodules must also be cloned, which can be done with a provided script:
 ```console
 ./scripts/checkout_submodules.py --shallow --platform linux
 ```
-Repeat on other Virtual Hardware instance.
+Repeat on other Virtual Hardware instance. Don't forget you can set up each instance in parallel.
 
 ### Prepare Matter Development Environment
 
@@ -73,9 +73,9 @@ ninja -C out/debug
 ```
 These builds can be performed in parallel. Confirm that both builds complete.
 
-### Launch the chip-lighting-app
+### Launch the lighting-app
 
-In the instance where `chip-lighting-app` was built, run that application.
+In the instance where the `lighting-app` was built, run that application.
 ```console
 ./out/debug/chip-lighting-app
 ```
@@ -83,9 +83,9 @@ The application will initialize, and you will see boot log echoed in the console
 ```
 [TIMESTAMP][INSTANCEID] CHIP:DL: PlatformBlueZInit init success
 ```
-Confirming it is ready to use (other messages in the log can be ignored). Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/linux) for `chip-lighting-app` is provided in the repository.
+Confirming it is ready to use (other messages in the log can be ignored). Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/lighting-app/linux) for `lighting-app` is provided in the repository.
 
-Leave `chip-lighting-app` application running on this instance.
+Leave `lighting-app` application running on this instance.
 
 ### Pair chip-tool
 
@@ -97,15 +97,15 @@ You will see a long stream of messages echoed in console of both instances. Wait
 
 Full [documentation](https://github.com/project-chip/connectedhomeip/tree/master/examples/chip-tool) for `chip-tool` is provided in the repository.
 
-### Control chip-lighting-app with chip-tool
+### Control lighting-app with chip-tool
 
-The `chip-lighting-app` can now be controlled with `chip-tool`, simulating remote control of the application.
+The `lighting-app` can now be controlled with `chip-tool`, simulating remote control of the application.
 
 In the `chip-tool` instance, send a message to turn the light ON, using the command:
 ```console
 ./out/debug/chip-tool onoff on 0x11 1
 ```
-Observe in the log of `chip-lighting-app` that this state is reflected with:
+Observe in the log (you will need to scroll back about a page) of the `lighting-app` that this state is reflected with:
 ```
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 1
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 0 to 1
@@ -114,7 +114,7 @@ Similarly to turn the light OFF, use:
 ```console
 ./out/debug/chip-tool onoff off 0x11 1
 ```
-And observe the `chip-lighting-app` log:
+And observe the `lighting-app` log:
 ```
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: On/Off set value: 1 0
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: Toggle on/off from 1 to 0

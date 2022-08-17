@@ -37,7 +37,7 @@ rm -rf *.yml
 Create a textfile `cicd_demo.yml` containing the below:
 ```yml
 # example workflow to manage Arm Virtual Hardware with Self-Hosted Runner
-name: AVH_RPi4_Matter
+name: Matter_CICD_Demo
 
 # When the workflow will run
 on:
@@ -146,7 +146,7 @@ git add .
 git commit -m "Toggle output message changed"
 git push
 ```
-The workflow contains two `jobs`, which rebuild, and then run `chip-lighting-app`:
+The workflow contains two `jobs`, which rebuild, and then run `lighting-app`:
 ```yml
 jobs:
   rebuild_lighting_app:
@@ -155,7 +155,7 @@ jobs:
 ```
 You can follow this in the `runner`, which will output messages such as:
 ```
-TIMESTAMP: Running job rebuild_lighting_app
+TIMESTAMP: Running job: rebuild_lighting_app
 ```
 Note that `rebuild_lighting_app` will take a few minutes to complete, as it must repeat all the initialization steps for the Matter build system.
 
@@ -163,7 +163,7 @@ Note that `rebuild_lighting_app` will take a few minutes to complete, as it must
 
 The workflow does not output on the target, but rather logs to GitHub. You can follow the workflow steps, and see the output logs in your GitHub repository, under the `Actions` tab.
 
-When `chip-lighting-app` is initialized, toggle the light with your `chip-tool` instance:
+When `lighting-app` is initialized, you can toggle the light with your `chip-tool` instance as before:
 ```console
 ./out/debug/chip-tool onoff on 0x11 1
 ./out/debug/chip-tool onoff off 0x11 1
@@ -172,7 +172,7 @@ Observer your new message in the `run_lighting_app` log:
 ```
 [TIMESTAMP][INSTANCEID] CHIP:ZCL: HELLO WORLD! Toggle on/off from 1 to 0
 ```
-The workflow will automatically terminate `chip-lighting-app` after 60 seconds.
+Note that the workflow will cleanly terminate `lighting-app` after 60 seconds.
 
 ## Next Steps
 
