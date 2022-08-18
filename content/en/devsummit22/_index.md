@@ -11,7 +11,7 @@ description: >-
 
 Welcome to Arm DevSummit 2022. This workshop is to show you how to get started developing with [Matter](https://buildwithmatter.com) and [Arm Virtual Hardware](https://www.arm.com/products/development-tools/simulation/virtual-hardware).
 
-**Attendees must provide their own laptop (with browser).**
+**Attendees must provide their own laptop (recommended) or tablet.**
 
 This session is a hands-on workshop connecting to Arm Virtual Hardware in the cloud. Arm Virtual Hardware has been thoroughly tested with Chrome, Firefox, and Safari browsers.
 
@@ -29,8 +29,21 @@ By the end of this workshop, you will be able to:
 To participate in the workshops, users must prepare **in advance** of the workshop:
 
  - User account for [Arm Virtual Hardware](https://avh.arm.com/)
-   - **OPEN ACTION** Will demonstration accounts be available on-site?
- - User account for [GitHub](https://github.com/) for CI/CD component.
+ - User account for [GitHub](https://github.com/)
+
+GitHub now requires a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) when pushing remote updates.
+
+If you do not know your token, you can create a new one via `Settings` > `Developer Settings` > `Personal access tokens`.
+
+Ensure you have enabled the token to `Update GitHub Action workflows`.
+
+You may wish to create a local scratchpad text file containing the below details (which will be unique to you), so that you can easily copy-and-paste from. These will be used frequently during this workshop.
+```
+YOUR_GITHUB_USERNAME
+YOUR_PERSONAL_ACCESS_TOKEN
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email YOUR_EMAIL_ADDRESS
+```
 
 ## Sections
 
