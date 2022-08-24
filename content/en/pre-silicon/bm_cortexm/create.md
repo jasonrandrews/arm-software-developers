@@ -34,8 +34,9 @@ We shall compare:
  * [Cortex-M3](https://developer.arm.com/Processors/Cortex-M3), a general purpose processor.
  * [Cortex-M55](https://developer.arm.com/Processors/Cortex-M55), the first Armv8.1M processor, supporting the Helium instruction set.
   
-### Create a sumple source file
+### Create a simple source file
 
-To do
+To do\
+(note to self... see DS-Workspaces\bm_cortexm)
 
 [<-- Return to Learning Path](pre-silicon/bm_cortexm)
