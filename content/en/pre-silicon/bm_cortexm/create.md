@@ -31,12 +31,14 @@ We will create a non-trivial application, making use of some key features of dif
 
 We shall compare:
  * [Cortex-M0+](https://developer.arm.com/Processors/Cortex-M0-Plus), the most energy efficient Arm processor.
- * [Cortex-M3](https://developer.arm.com/Processors/Cortex-M3), a general purpose processor.
+ * [Cortex-M7](https://developer.arm.com/Processors/Cortex-M7), a general purpose processor with Hardware floating point implemented.
  * [Cortex-M55](https://developer.arm.com/Processors/Cortex-M55), the first Armv8.1M processor, supporting the Helium instruction set.
   
 ### Create a simple source file
 
 To do\
-(note to self... see DS-Workspaces\bm_cortexm)
+(note to self... see work\bench_m)
+PMU stuff here:
+https://developer.arm.com/documentation/arm051-799564642-251/latest
 
 [<-- Return to Learning Path](pre-silicon/bm_cortexm)

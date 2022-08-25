@@ -79,7 +79,7 @@ AMBA Viz is a visualization application for viewing and interacting with hardwar
 
 [Success Kit Setup](install/)
 
-[Get Started with Success Kits](/getstarted/)
+[Get Started with Success Kits](getstarted/)
 
 &nbsp;
 &nbsp;
