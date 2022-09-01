@@ -18,8 +18,10 @@ The architecture can be x86_64 or Arm, including a cloud server and a Raspberry 
 
 The commands can also be used in the Windows Subsystem for Linux (WSL) and on a Chromebook.
 
+For information about starting the docker daemon on WSL refer to [Install Docker on Windows on Arm](/devops/docker/docker-woa).
+
 ```console
-curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
+curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 sudo usermod -aG docker $USER ; newgrp docker
 ```
 
@@ -70,6 +72,35 @@ The Test channel (test.docker.com) installs pre-releases that are for testing be
 
 Replace get.docker.com with test.docker.com to use the test version.
 
+### Linux distributions where [get.docker.com](https://get.docker.com) doesn't work
+
+Some Linux distributions are not supported by get.docker.com
+
+Generally, the supported list is:
+* Ubuntu
+* Debian
+* SUSE Linux Enterprise Server
+* Red Hat Enterprise Linux
+* Fedora
+* CentOS
+
+An example of a distribution which is not supported and popular on Arm is [Manjaro](https://manjaro.org).
+
+On Manjaro, install docker using pacman.
+
+```console
+sudo pacman -Syu 
+sudo pacman -S docker
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo usermod -aG docker $USER ; newgrp docker
+```
+
+To confirm the installation is successful run the same hello-world as above.
+
+```console
+docker run hello-world
+```
 
 ### More information
 
