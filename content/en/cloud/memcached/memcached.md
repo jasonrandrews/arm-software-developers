@@ -14,7 +14,7 @@ description: >
 
 * Amazon Web Services (AWS) Account 
 * AWS EC2 64-bit Arm instance running Ubuntu 20.04
-* Install gcc on the running EC2 instance following the steps [here]()
+* Install gcc on the running EC2 instance following the steps [here](compilers/install_ngcc)
 * Install libevent
 ```console
 sudo apt install libevent-dev -y

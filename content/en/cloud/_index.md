@@ -161,7 +161,7 @@ The learning paths below are applicable if you are a software engineer building,
     <div style="text-align:left">
      <ul >
       <li>Install lzbench to benchmark performance of compression libraries</li>
-      <li>Use lzbench with snappy and zstd/li>
+      <li>Use lzbench with snappy and zstd</li>
      </ul>
     </div>
     </p>
