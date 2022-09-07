@@ -2,7 +2,7 @@
 title: "Installing memcached on Arm servers and measuring its performance" 
 type: docs
 hide_summary: true
-weight: 2
+weight: 1
 description: >
     Learning path for software developers using memcached as their in-memory key-value store for mobile, web, gaming or e-Commerce applications running on Arm servers.  
 ---

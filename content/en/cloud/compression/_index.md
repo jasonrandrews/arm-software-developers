@@ -2,7 +2,7 @@
 title: "Measure performance of compression libraries on Arm servers" 
 type: docs
 hide_summary: true
-weight: 2
+weight: 6
 description: >
     Learning path for software developers using compression libraries running on Arm servers.  
 ---
