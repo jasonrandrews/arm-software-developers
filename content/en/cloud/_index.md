@@ -134,6 +134,43 @@ The learning paths below are applicable if you are a software engineer building,
 
 {{< /cardpane >}}
 
+{{< cardpane >}}
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#95d600;">Introductory</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Run x265 on Arm servers</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul >
+      <li>Learn how to install x265</li>
+      <li>See how to measure x265 performance</li>
+     </ul>
+    </div>
+    </p>
+    <a href="/cloud/codec" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated Sept 7th, 2022</div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#95d600;">Introductory</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Measure performance of compression libraries on Arm servers</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul >
+      <li>Install lzbench to benchmark performance of compression libraries</li>
+      <li>Use lzbench with snappy and zstd/li>
+     </ul>
+    </div>
+    </p>
+    <a href="/cloud/compression" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated Sept 7th, 2022</div>
+</div>
+
+{{< /cardpane >}}
 
 
 
