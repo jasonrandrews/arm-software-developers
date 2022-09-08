@@ -117,19 +117,21 @@ The learning paths below are applicable if you are a software engineer building,
 <div class="card text-center">
   <div class="card-header" style="background-color:#0091bd;">Experienced</div>
   <div class="card-body">
-    <h5 class="card-title"> <b></b> </h5>
+    <h5 class="card-title"> <b>Learn how to use Docker</b> </h5>
     <p class="card-text">
     <div style="text-align:left">
      <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Warm up with a simple docker build for any machine</li>
+      <li>Use Docker buildx for multi-architecture builds</li>
+      <li>Install binfmt to use buildx sucessfully on Linux without Docker Desktop</li>
+      <li>Perform a docker build on a remote machine of a different architecture</li>
+      <li>Learn to use Docker manifest for multi-architecture builds</li>
     </ul>
    </div>
     </p>
-    <a href="/cloud/codebuild" class="btn btn-primary">Learn More</a>
+    <a href="/cloud/docker" class="btn btn-primary">Learn More</a>
   </div>
-  <div class="card-footer text-muted">Updated in the future</div>
+  <div class="card-footer text-muted">September 7, 2022</div>
 </div>
 
 {{< /cardpane >}}

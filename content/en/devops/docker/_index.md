@@ -1,7 +1,7 @@
 
 ---
-title: "Docker"
-linkTitle: "Docker"
+title: "Installing Docker"
+linkTitle: "Installing Docker"
 type: docs
 weight: 1
 hide_summary: true
