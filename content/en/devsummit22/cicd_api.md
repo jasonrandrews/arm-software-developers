@@ -16,6 +16,20 @@ In this section we will learn how to control Arm Virtual Hardware via the [AVH A
 * Arm Virtual Hardware instances managed by GitHub Actions as per [previous section](/devsummit22/cicd_sh).
 * Active GitHub account to host repository
 
+GitHub now requires a [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) when pushing remote updates.
+
+If you do not know your token, you can create a new one via `Settings` > `Developer Settings` > `Personal access tokens`.
+
+Ensure you have enabled the token to `Update GitHub Action workflows`.
+
+You may wish to create a local scratchpad text file containing the below details (which will be unique to you), so that you can easily copy-and-paste from. These will be used frequently during this workshop.
+```
+YOUR_GITHUB_USERNAME
+YOUR_PERSONAL_ACCESS_TOKEN
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email YOUR_EMAIL_ADDRESS
+```
+
 ## Detailed Instructions
 
 We shall extend the workflow from the previous section to automatically transmit the `chip-tool` commands.

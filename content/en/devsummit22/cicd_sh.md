@@ -22,6 +22,14 @@ If you do not know your token, you can create a new one via `Settings` > `Develo
 
 Ensure you have enabled the token to `Update GitHub Action workflows`.
 
+You may wish to create a local scratchpad text file containing the below details (which will be unique to you), so that you can easily copy-and-paste from. These will be used frequently during this workshop.
+```
+YOUR_GITHUB_USERNAME
+YOUR_PERSONAL_ACCESS_TOKEN
+git config --global user.name "YOUR_GITHUB_USERNAME"
+git config --global user.email YOUR_EMAIL_ADDRESS
+```
+
 ## Detailed Instructions
 
 In the `lighting-app` console, stop the app (`Ctrl+C`) if still running.
@@ -96,7 +104,7 @@ cd /home/pi
 Copy and paste the `Download` and `Configure` commands (from GitHub) for your `self-hosted runner`.\
 It is OK to select the default options when prompted during configuration.
 
-To keep the console available for later use, run the `self-hosted runner agent` as a background service:
+To keep the console available for later use, run the `self-hosted runner agent` as a background service (if started, first stop with `Ctrl+C`):
 ```console
 sudo ./svc.sh install pi
 sudo ./svc.sh start
@@ -159,7 +167,9 @@ Note that `rebuild_lighting_app` will take a few minutes to complete, as it must
 
 ### Follow the workflow progress in GitHub Actions
 
-The workflow does not output on the target, but rather logs to GitHub. You can follow the workflow steps, and see the output logs in your GitHub repository, under the `Actions` tab.
+The workflow does not output on the target, but rather logs to GitHub.
+
+You can follow the workflow steps, and see the output logs in your GitHub repository, under the `Actions` tab.
 
 After `lighting-app` is initialized, you can toggle the light with your `chip-tool` instance as before:
 ```console
