@@ -72,7 +72,7 @@ The Test channel (test.docker.com) installs pre-releases that are for testing be
 
 Replace get.docker.com with test.docker.com to use the test version.
 
-### Linux distributions where [get.docker.com](https://get.docker.com) doesn't work
+### Linux distributions where [get.docker.com](https://get.docker.com) isn't supported
 
 Some Linux distributions are not supported by get.docker.com
 
@@ -100,6 +100,31 @@ To confirm the installation is successful run the same hello-world as above.
 
 ```console
 docker run hello-world
+```
+
+### Start and Stop the Docker daemon on Linux distributions with systemd
+
+To start the docker daemon.
+
+```console
+sudo systemctl start docker
+```
+
+To stop the docker daemon.
+
+```console
+sudo systemctl stop docker
+```
+
+If a message is displayed:
+```console
+Warning: Stopping docker.service, but it can still be activated by:
+  docker.socket
+```
+
+Then stop docker.socket also.
+```console
+sudo systemctl stop docker.socket
 ```
 
 ### More information
