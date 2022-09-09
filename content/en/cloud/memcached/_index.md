@@ -11,14 +11,15 @@ description: >
 
 By the end of this learning path, you will be able to:
 
-* Install and run memcached on your 64-bit Arm AWS EC2 instance
-* Use an open-sourced benchmark to test memcached performance on 64-bit Arm AWS EC2 instance
+* Install and run memcached on your [Arm-based platform](/cloud/platforms)
+* Use an open-sourced benchmark to test memcached performance on your instance
 
 
 ## Pre-requisites
 
-* An Amazon Web Services(AWS) account. 
-* Some familiarity with launching and running EC2 instances in AWS is helpful but not necessary.
+* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+
+This learning path has been verified on AWS EC2 and Oracle cloud services.
 
 ## Sections
 

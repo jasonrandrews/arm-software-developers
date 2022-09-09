@@ -10,13 +10,12 @@ description: >
 {{% pageinfo %}}
 Learn how to build and run applications on Arm servers and Arm-based cloud services.
 
-Utilize Arm-based cloud services for software development.
+Utilize Arm-based [cloud services](platforms) for software development.
 
 The learning paths below are applicable if you are a software engineer building, migrating or deploying cloud applications on Arm servers.
 {{% /pageinfo %}}
 
 {{< cardpane >}}
-
 <div class="card text-center">
   <div class="card-header" style="background-color:#95d600;">Introductory</div>
   <div class="card-body">
@@ -174,5 +173,9 @@ The learning paths below are applicable if you are a software engineer building,
 
 {{< /cardpane >}}
 
+## References
 
-
+| Type          | Content             |
+| ---           | ---                 |
+| Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
+| Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) |

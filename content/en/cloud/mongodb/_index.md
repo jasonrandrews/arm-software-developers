@@ -11,32 +11,30 @@ description: >
 
 By the end of this learning path, you will be able to:
 
-* Install and run MongoDB on your 64-bit Arm AWS EC2 instance
-* Use an open-sourced java application to test MongoDB performance on 64-bit Arm AWS EC2 instance
+* Install and run MongoDB on your Arm-based instance
+* Use an open-sourced java application to test MongoDB performance on 64-bit Arm-based instance
 * Run Yahoo Cloud Serving Benchmark(YCSB) to measure and compare the performance of MongoDB on Arm versus other architectures.
-
 
 ## Pre-requisites
 
-* An Amazon Web Services(AWS) account. 
-* Some familiarity with launching and running EC2 instances in AWS is helpful but not necessary.
+* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+
+This learning path has been verified on AWS EC2 and Oracle cloud services.
 
 ## Sections
 
 |          Type | Content                       |
-| ---           | ---                                 |
-| How-To        | [Running MongoDB on Arm](/cloud/mongodb/mongodb)       |
-| How-To        | [Measure performance of MongoDB operations on Arm](/cloud/mongodb/perf_mongo) |
-| How-To        | [Benchmark MongoDB on Arm with YCSB](/cloud/mongodb/ycsb_mongo) |
-| Check         | [Knowledge check and review](/cloud/mongodb/knowledgecheck)                        |
+| ---           | --- |
+| How-To        | [Install and run MongoDB on Arm-based server](install) |
+| How-To        | [Measure performance of MongoDB operations on Arm](perf_mongo) |
+| How-To        | [Benchmark MongoDB on Arm with YCSB](ycsb_mongo) |
+| Check         | [Knowledge check and review](knowledgecheck) |
 
 
 ## References and Documentation
 
 | Type          | Content             |
 | ---           | ---                 |
-| Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
-| Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
 | Documentation | [MongoDB Manual](https://www.mongodb.com/docs/manual/) |
 | Blog          | [Compare performance of MongoDB on Arm vs Intel](https://community.arm.com/arm-community-blogs/b/operating-systems-blog/posts/mongodb-performance-on-aws-with-the-arm-graviton2)|
 

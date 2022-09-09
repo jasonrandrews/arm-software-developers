@@ -12,11 +12,19 @@ description: >
 
 ## Pre-requisites
 
-* MongoDB installed and running on your 64-bit Arm Linux machine or AWS EC2 instance. Follow the steps outlined [here](/cloud/mongodb/mongodb).
-* Java 1.8 or newer installed on your 64-bit Arm Linux machine or AWS EC2 instance.
-```console
+* MongoDB installed and running on your [Arm based instance](/cloud/platforms). Follow the steps outlined [here](/cloud/mongodb/mongodb).
+* Java 1.8 or newer installed on your instance. To install use:
+{{< tabpane code=true >}}
+  {{< tab header="Ubuntu" >}}
+sudo apt-get update
 sudo apt install default-jre
-```
+{{< /tab >}}
+{{< tab header="RedHat" >}}
+yum check-update
+sudo yum install java-1.8.0-openjdk
+{{< /tab >}}
+{{< /tabpane >}}
+
 
 ## Detailed Steps
 
@@ -26,14 +34,14 @@ This is an open sourced java application that tests the MongoDB performance, suc
 
 ### Setup the MongoDB performance test tool
 
-On your 64-bit Arm Linux EC2 Instance that is running MongoDB, clone the project
+On your instance running MongoDB (you may need to start a new terminal), clone the `MongoDB performance test tool` project:
 
 ```console
 git clone https://github.com/idealo/mongodb-performance-test.git
 
 ```
 
-Now cd into project folder and execute the jar file
+Now `cd` into project folder and execute the `jar` file
 
 ```console
 cd mongodb-performance-test
@@ -42,23 +50,19 @@ java -jar ./latest-version/mongodb-performance-test.jar
 ```
 This will print a description of how to use the java application
 
+### Run `INSERT` test on MongoDB
 
-### Insert Test on MongoDB
-
-To insert 1 million documents on localhost:27017 (default) where MongoDB is running by 10 threads into database `test`, collection `perf` run the following commands:
+To insert a million (10^6) documents (`-o`) on `localhost:27017` (default) where MongoDB is running by 10 threads (`-t`) into database `test`, collection `perf` run the following commands:
 
 ```console
 jarfile=./latest-version/mongodb-performance-test.jar
-
 java -jar $jarfile -m insert -o 1000000 -t 10 -db test -c perf
-
 ```
-
 As the test runs, the count will be printed periodically. It will increase until it reaches 1 million and then the test will end. It takes about two minutes to complete.
 
-### Update one document Test on MongoDB
+### Run `UPDATE_ONE` document test on MongoDB
 
-To test the performance of updating one document per query using 10, 20 and finally 30 threads for 1 hour each run (3 hours in total) run the following command:
+To test the performance of updating one document per query using 10, 20 and finally 30 threads (`-t`) for 1 hour (3600 seconds, `-d 3600`) each run (3 hours in total) run the following command:
 
 ```console
 java -jar $jarfile -m update_one -d 3600 -t 10 20 30 -db test -c perf
@@ -66,8 +70,7 @@ java -jar $jarfile -m update_one -d 3600 -t 10 20 30 -db test -c perf
 
 ### View the results
 
-During each test, statistics over the last second are printed every second in the console. Shown below is the output from the end of running Insert test
-
+During each test, statistics over the last second are printed every second in the console. Shown below is an example output from the end of running `INSERT` test.
 ```
 -- Timers ----------------------------------------------------------------------
 stats-per-run-INSERT
@@ -89,7 +92,9 @@ stats-per-run-INSERT
             99.9% <= 15.59 milliseconds
 ```
 
-The metrics are also output to the `stats-per-second-[mode].csv` which is located in the same folder as the jar file. `[mode]` is  the executed mode(s), i.e. either `INSERT`, `UPDATE_ONE`, `UPDATE_MANY`, `COUNT_ONE`, `COUNT_MANY`, `ITERATE_ONE`, `ITERATE_MANY`, `DELETE_ONE` or `DELETE_MANY`.
+The metrics are also output to the `stats-per-second-[mode].csv` which is located in the same folder as the jar file.
+
+`[mode]` is the executed mode(s), i.e. one of `INSERT`, `UPDATE_ONE`, `UPDATE_MANY`, `COUNT_ONE`, `COUNT_MANY`, `ITERATE_ONE`, `ITERATE_MANY`, `DELETE_ONE` or `DELETE_MANY`.
 
 ### Further Reading
 

@@ -16,8 +16,7 @@ By the end of this learning path, you will be able to:
 
 ## Pre-requisites
 
-* AWS Account
-* AWS 64-bit Arm EC2 instance running Ubuntu 20.04
+* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider running `Ubuntu 20.04.`
 
 ## Sections
 
@@ -33,6 +32,6 @@ By the end of this learning path, you will be able to:
 | ---           | ---                 |
 | Documentation     | [x265 Documentation](https://x265.readthedocs.io/en/master/)  |
 | Blog              | [Comparing the performance of x265 on Arm vs Intel Servers](https://community.arm.com/arm-community-blogs/b/infrastructure-solutions-blog/posts/reduce-h-265-high-res-encoding-costs-by-over-80-with-aws-graviton2-1207706725) |
-
-
+| Blog              | [Ampere Altra Max Delivers Sustainable High-Resolution H.265 Encoding](https://community.arm.com/arm-community-blogs/b/infrastructure-solutions-blog/posts/ampere-altra-max-delivers-sustainable-high-resolution-h-265-video-encoding-without-compromise) |
+| Blog              | [OCI Ampere A1 Compute instances can significantly reduce video encoding costs versus modern CPUs](https://community.arm.com/arm-community-blogs/b/operating-systems-blog/posts/oracle-cloud-infrastructure-arm-based-a1) |
 

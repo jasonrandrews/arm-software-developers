@@ -12,33 +12,32 @@ description: >
 
 ## Pre-requisites
 
-* Amazon Web Services (AWS) Account 
-* AWS EC2 64-bit Arm instance running Ubuntu 20.04
-* Install gcc on the running EC2 instance following the steps [here](compilers/install_ngcc)
-* Install libevent
-```console
-sudo apt install libevent-dev -y
-```
-* Install the packages required by memtier_benchmark
-```console
-sudo apt install build-essential autoconf automake libpcre3-dev libevent-dev pkg-config zlib1g-dev libssl-dev -y
-```
+* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider running Ubuntu 20.04.
+
+This learning path has been tested on AWS and Oracle platforms.
 
 ## Detailed Steps
 
-The latest released version of MongoDB Community Edition (5.0) is supported on the following Linux distributions:
+### Install necessary software and packages
 
-* Amazon Linux 2
-* RHEL/CentOS 8
-* Ubuntu Versions - 20.04, 18.04
+Launch an Arm-based instance running `Ubuntu 20.04`.
 
-Refer to this [page](https://www.mongodb.com/docs/manual/administration/production-notes/#platform-support-matrix) for the complete platform support matrix 
+Install `gcc` on your instance following the steps [here](/compilers/install_ngcc).
+
+Install [libevent](https://libevent.org/):
+```console
+sudo apt install libevent-dev -y
+```
+
+Install the necessary packages required by `memtier_benchmark`:
+```console
+sudo apt-get update
+sudo apt install build-essential autoconf automake libpcre3-dev libevent-dev pkg-config zlib1g-dev libssl-dev -y
+```
 
 ### Install memcached from source on Arm servers
 
-Using your AWS Account, launch an Arm 64-bit EC2 instance running Ubuntu 20.04.
-
-Then run through the steps below to install memcached on your EC2 instance.
+Install `memcached` on your instance.
 
 ```console
 wget http://memcached.org/files/memcached-1.6.17.tar.gz
@@ -48,16 +47,13 @@ cd memcached-1.6.17
 ```
 
 ### Run memcached on Arm server
-
-Now run the following command to run memcached
-
 ```console
 /usr/local/bin/memcached
 ```
 
 ### Install memtier_benchmark
 
-memtier_benchmark is a command line utility developed by Redis Labs for load generation and bechmarking NoSQL key-value databases. We will use this to benchmark the performance of memcached running on your 64-bit Arm AWS EC2 instance
+[memtier_benchmark](https://github.com/RedisLabs/memtier_benchmark) is a command line utility developed by Redis Labs for load generation and bechmarking NoSQL key-value databases. We will use this to benchmark the performance of memcached.
 
 ```console
 git clone https://github.com/RedisLabs/memtier_benchmark
@@ -70,22 +66,18 @@ sudo make install
 
 ### Measure memcached performance by running memtier_benchmark
 
-Use the following command to run memtier_benchmark and measure the performance of memcached
-
 ```console
 memtier_benchmark -s localhost -p 11211 --protocol=memcache_text --clients=100 --threads=5 --ratio=1:1 --key-pattern=R:R --key-minimum=16 --key-maximum=16 --data-size=128 --requests=10000 --run-count=20
 ```
 
-To understand what each of the command line options do, run the following command
-
+To understand what each of the command line options do, see the help output:
 ```console
 memtier_benchmark --help
 ```
 
 ### View Results
 
-At the end of the benchmark run, the aggrerated performance results are printed on the console. For example, using the command above the output is as follows
-
+At the end of the benchmark run, the aggrerated performance results are printed on the console. For example, using the command above, the output will be similar to:
 ```
 AGGREGATED AVERAGE RESULTS (20 runs)
 ============================================================================================================================
@@ -99,6 +91,3 @@ Totals     375029.89    187514.94         0.00         1.33595         1.12700  
 
 
 [<-- Return to Learning Path](/cloud/memcached/#sections)
-
-
-

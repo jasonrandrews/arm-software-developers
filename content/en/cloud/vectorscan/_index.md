@@ -11,23 +11,22 @@ description: >
 
 By the end of this learning path, you will be able to:
 
-* Install and run Vectorscan on your 64-bit Arm AWS EC2 instance
-* Install and run Snort3 on your 64-bit Arm AWS EC2 instance
-* Run Snort3 with Vectorscan on capture files and and measure performance
-
+* Install and run Vectorscan on an Arm-based instance
+* Install and run Snort3 on your instance
+* Run Snort3 with Vectorscan on capture files and and measure performance.
 
 ## Pre-requisites
 
-* An Amazon Web Services(AWS) account. 
-* Some familiarity with launching and running EC2 instances in AWS is helpful but not necessary.
+* An appropriate cloud service account. 
+* Some familiarity with launching and running instances is helpful but not necessary.
 
 ## Sections
 
 |          Type | Content                       |
 | ---           | ---                                 |
-| How-To        | [Build Vectorscan on Arm](/cloud/vectorscan/vectorscan)       |
-| How-To        | [Install and run Snort with Vectorscan on Arm](/cloud/vectorscan/snort) |
-| Check         | [Knowledge check and review](/cloud/vectorscan/knowledgecheck)                        |
+| How-To        | [Install and build Vectorscan on Arm](install)       |
+| How-To        | [Install and run Snort with Vectorscan on Arm](snort) |
+| Check         | [Knowledge check and review](knowledgecheck)                        |
 
 
 ## References and Documentation
