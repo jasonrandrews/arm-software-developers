@@ -173,6 +173,27 @@ The learning paths below are applicable if you are a software engineer building,
 
 {{< /cardpane >}}
 
+{{< cardpane >}}
+
+<div class="card text-center">
+  <div class="card-header" style="background-color:#95d600;">Introductory</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Run memcached on Arm servers</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul >
+      <li>Learn how to install memcached</li>
+      <li>See how to measure memcached performance</li>
+     </ul>
+    </div>
+    </p>
+    <a href="/cloud/memcached" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated Sept 12th, 2022</div>
+</div>
+
+{{< /cardpane >}}
+
 ## References
 
 | Type          | Content             |
