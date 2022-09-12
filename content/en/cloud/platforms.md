@@ -4,6 +4,7 @@ linkTitle: "Example Arm based platforms"
 type: docs
 weight: 1
 hide_summary: true
+toc_hide: true
 description: >
     Example Arm based cloud service platforms
 ---
