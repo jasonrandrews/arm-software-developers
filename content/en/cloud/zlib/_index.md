@@ -17,7 +17,7 @@ By the end of this learning path, you will be able to:
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider running `Ubuntu 20.04` or `Ubuntu 22.04`.
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider running `Ubuntu 20.04` or `Ubuntu 22.04`.
 
 ## Sections
 

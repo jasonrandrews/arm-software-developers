@@ -130,6 +130,23 @@ The learning paths below are applicable if you are a software engineer building,
   </div>
   <div class="card-footer text-muted">Updated Sept 12th, 2022</div>
 </div>
+<div class="card text-center">
+  <div class="card-header" style="background-color:#95d600;">Introductory</div>
+  <div class="card-body">
+    <h5 class="card-title"> <b>Build and use Cloudflare zlib on Arm servers</b> </h5>
+    <p class="card-text">
+    <div style="text-align:left">
+     <ul >
+      <li>Build and install Cloudflare zlib</li>
+      <li>Run a Python appplication with improved performance</li>
+      <li>Use Linux perf to analyze performance</li>
+     </ul>
+    </div>
+    </p>
+    <a href="/cloud/zlib" class="btn btn-primary">Learn More</a>
+  </div>
+  <div class="card-footer text-muted">Updated Sept 13th, 2022</div>
+</div>
 {{< /cardpane >}}
 
 
