@@ -17,8 +17,9 @@ By the end of this learning path, you will be able to:
 
 ## Pre-requisites
 
-* An appropriate cloud service account. 
-* Some familiarity with launching and running instances is helpful but not necessary.
+* An appropriate [cloud service](/cloud/providers) account.
+
+This learning path has been validated on AWS and Oracle cloud services.
 
 ## Sections
 
@@ -33,12 +34,7 @@ By the end of this learning path, you will be able to:
 
 | Type          | Content             |
 | ---           | ---                 |
-| Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
-| Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
 | Documentation | [Snort Documentation](https://www.snort.org/documents) |
 | Blog          | [Accelerate Deep Packet Inspection with Neon on Arm](https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog/posts/accelerating-deep-packet-inspection-with-neon-on-arm-neoverse) |
 
-
-
-
-
+[<-- Return to Server and Cloud software development on Arm](/cloud)

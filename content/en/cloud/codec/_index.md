@@ -16,7 +16,7 @@ By the end of this learning path, you will be able to:
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider running `Ubuntu 20.04.`
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider running `Ubuntu 20.04.`
 
 ## Sections
 
@@ -35,3 +35,4 @@ By the end of this learning path, you will be able to:
 | Blog              | [Ampere Altra Max Delivers Sustainable High-Resolution H.265 Encoding](https://community.arm.com/arm-community-blogs/b/infrastructure-solutions-blog/posts/ampere-altra-max-delivers-sustainable-high-resolution-h-265-video-encoding-without-compromise) |
 | Blog              | [OCI Ampere A1 Compute instances can significantly reduce video encoding costs versus modern CPUs](https://community.arm.com/arm-community-blogs/b/operating-systems-blog/posts/oracle-cloud-infrastructure-arm-based-a1) |
 
+[<-- Return to Server and Cloud software development on Arm](/cloud)

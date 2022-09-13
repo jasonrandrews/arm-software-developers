@@ -12,7 +12,7 @@ description: >
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider running Ubuntu 20.04.
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider running `Ubuntu Linux 20.04`.
 
 This learning path has been tested on AWS and Oracle platforms.
 
@@ -36,8 +36,6 @@ sudo apt install build-essential autoconf automake libpcre3-dev libevent-dev pkg
 ```
 
 ### Install memcached from source on Arm servers
-
-Install `memcached` on your instance.
 
 ```console
 wget http://memcached.org/files/memcached-1.6.17.tar.gz
@@ -69,7 +67,6 @@ sudo make install
 ```console
 memtier_benchmark -s localhost -p 11211 --protocol=memcache_text --clients=100 --threads=5 --ratio=1:1 --key-pattern=R:R --key-minimum=16 --key-maximum=16 --data-size=128 --requests=10000 --run-count=20
 ```
-
 To understand what each of the command line options do, see the help output:
 ```console
 memtier_benchmark --help
@@ -88,6 +85,5 @@ Gets       187514.94    187514.94         0.00         1.33374         1.12700  
 Waits           0.00          ---          ---             ---             ---             ---             ---          ---
 Totals     375029.89    187514.94         0.00         1.33595         1.12700         2.84700         7.42300     61711.46
 ```
-
 
 [<-- Return to Learning Path](/cloud/memcached/#sections)

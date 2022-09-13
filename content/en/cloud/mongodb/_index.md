@@ -17,7 +17,7 @@ By the end of this learning path, you will be able to:
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider.
 
 This learning path has been verified on AWS EC2 and Oracle cloud services.
 
@@ -42,7 +42,6 @@ This learning path has been verified on AWS EC2 and Oracle cloud services.
 
 For developers looking to compress data between the client and server using MongoDB on Arm, view the following Learning Path:
 
-* MongoDB Network Compression using Snappy and Zstd on Arm servers
+* [MongoDB Network Compression using Snappy and Zstd on Arm servers](/cloud/compression/)
 
-
-
+[<-- Return to Server and Cloud software development on Arm](/cloud)

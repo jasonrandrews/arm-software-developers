@@ -12,7 +12,7 @@ description: >
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider
 * Vectorscan is known to work on the following Linux distributions. 
    * RHEL/CentOS 8
    * Ubuntu Versions - 22.04, 20.04, 18.04

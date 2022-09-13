@@ -12,7 +12,7 @@ description: >
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider.
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider.
 
 This learning path has been verified on AWS EC2 and Oracle cloud services.
 

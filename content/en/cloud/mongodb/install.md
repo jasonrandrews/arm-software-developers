@@ -12,15 +12,15 @@ description: >
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+* An [Arm based instance](/cloud/providers) from an appropriate cloud service provider.
 
 ## Detailed Steps
 
-The latest released version of MongoDB Community Edition (5.0) is supported on the following Linux distributions:
+The latest (at time of writing) released version of MongoDB Community Edition (5.0) is supported on the following Linux distributions:
 
 * Amazon Linux 2
 * RHEL/CentOS 8
-* Ubuntu Versions - 20.04, 18.04
+* Ubuntu 20.04, 18.04
 
 Refer to this [page](https://www.mongodb.com/docs/manual/administration/production-notes/#platform-support-matrix) for the complete platform support matrix.
 

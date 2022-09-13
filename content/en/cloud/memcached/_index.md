@@ -11,13 +11,13 @@ description: >
 
 By the end of this learning path, you will be able to:
 
-* Install and run memcached on your [Arm-based platform](/cloud/platforms)
+* Install and run memcached on your Arm-based cloud server
 * Use an open-sourced benchmark to test memcached performance on your instance
 
 
 ## Pre-requisites
 
-* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider
+* An [Arm based instance](/cloud/platforms) from an appropriate cloud service provider.
 
 This learning path has been verified on AWS EC2 and Oracle cloud services.
 
@@ -33,11 +33,8 @@ This learning path has been verified on AWS EC2 and Oracle cloud services.
 
 | Type          | Content             |
 | ---           | ---                 |
-| Documentation | [Creating an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-creating.html) |
-| Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)      |
 | Documentation | [Memcached Wiki](https://github.com/memcached/memcached/wiki) |
 | Blog          | [Benchmarking memcached performance on AWS Graviton2 servers](https://community.arm.com/arm-community-blogs/b/tools-software-ides-blog/posts/memcached-benchmarking-aws-graviton2-50-p-p-gains)|
 
-
-
+[<-- Return to Server and Cloud software development on Arm](/cloud)
 

@@ -12,80 +12,77 @@ description: >
 
 ## Pre-requisites
 
-* Amazon Web Services (AWS) Account 
-* AWS EC2 64-bit Arm instance 
-* GCC for your Arm Linux distribution. Install using the steps [here](compilers/install_ngcc)
-* Unzip utility 
+* An Arm-based instance from your preferred cloud service [provider](/cloud/providers). See the supported operating systems below.
+* GCC for your Arm Linux distribution. Install using the steps [here](/compilers/install_ngcc).
+* Unzip and make utilities
 ```console
-sudo apt install unzip
-```
-* Make
-```console
-sudo apt install make
+sudo apt install -y unzip make
 ```
 
 ## Detailed Steps
 
-The latest released version of Snappy and Zstandard data compression algorithms are supported on the following Linux distributions:
+The latest released version of [Snappy](http://google.github.io/snappy/) and [Zstandard](http://facebook.github.io/zstd/) data compression algorithms are supported on the following Linux distributions:
 
 * Amazon Linux 2
 * RHEL/CentOS 8
 * Ubuntu Versions - 20.04, 18.04
 
-The detailed steps are provided for an AWS EC2 64-bit Arm instance running Ubuntu.
+The detailed steps below have been tested on `AWS EC2` and `Oracle OCI` Arm-based servers running `Ubuntu 20.04`.
 
 ### Install lzbench
 
-lzbench is an in-memory benchmark of open-source compression algorithms. We will use this benchmark to measure stand-alone performance of the compression algorithms on Arm servers. 
+[lzbench](https://github.com/inikep/lzbench) is an in-memory benchmark of open-source compression algorithms. We will use this benchmark to measure stand-alone performance of the compression algorithms on Arm servers. 
 
 This benchmark also contains the source files for the snappy and zstd compression algorithms among others. They are built as part of the lzbench build process.
 
 On your running EC2 instance, run the following command
 
 ```console
-git clone https://github.com/inikep/lzbench
+git clone https://github.com/inikep/lzbench && cd lzbench
 make
 ```
 
-### Install a Dataset to benchmark the compression algorithms
+### Download a data set to benchmark the compression algorithms
 
-To benchmark the data compression algorithms, you will need a data set to run the compression and decompression algorithms on. In this how-to guide we will use the Silesia corpus data set.
+To benchmark the data compression algorithms, you will need a data set to run the compression and decompression algorithms on. In this how-to guide we will use the [Silesia corpus](https://sun.aei.polsl.pl//~sdeor/index.php?page=silesia) data set, which is a data set of files that covers the typical data types used nowadays.
 
-Silesia corpus is a data set of files that covers the typical data types used nowadays. To learn more about this data set and the file contents follow the link [here](https://sun.aei.polsl.pl//~sdeor/index.php?page=silesia)
-
+Download and unpack the data set:
 ```console
+cd ..
 wget https://sun.aei.polsl.pl//~sdeor/corpus/silesia.zip
 mkdir silesia && cd silesia
 unzip ../silesia.zip
+cd ../lzbench
 ```
 
 ### Run lzbench with snappy and zstd
 
-To benchmark the standalone performance of snappy with lzbench, using one of the files(dickens) in the Silesiacorpus data set we installed run the following command
+To benchmark the standalone performance of `snappy` with `lzbench`, using one of the files(`dickens`) from the Silesia corpus data set we installed run the following command:
 
 ```console
 ./lzbench -esnappy ../silesia/dickens
 ```
 
-The value passed to -e in the command above is the compression algorithm
+To benchmark the standalone performance of `zstd` with `lzbench`, using one of the files(`dickens`) from the Silesia corpus data set we installed run the following command:
+
+```console
+./lzbench -ezstd ../silesia/dickens
+```
+
+The value passed to `-e` in the command above is the compression algorithm.
 
 For full usage and viewing all the arguments you can pass to lzbench run the command below
 
 ```console
 ./lzbench --help
 ```
+You can repeat with other file
 
-To benchmark the standalone performance of zstd with lzbench, using one of the files(dickens) in the Silesiacorpus data set we installed run the following command
-
-```console
-./lzbench -ezstd ../silesia/dickens
-```
-
-### View Resuls
+### View Results
 
 The Compression, Decompression Bandwidth, Latency and Compression ratio for the files is printed at the end of each of these commands
 
-Below is a table with the results on AWS EC2 Arm 64-bit C6g instance, with Ubuntu 20.04 and gcc 9.3 running with snappy.
+Below is a table with the results on `AWS EC2 Arm 64-bit C6g` instance, with `Ubuntu 20.04` and `gcc 9.3` running with `snappy`.
 
 | File name | Compression Bandwidth (MB/s) | Decompression Bandwidth(MB/s) | Compression Latency (us) | Decompression Latency(us) | Compr Size | Ratio  (%) |
 | ---       | ---                          | ---                           | ---                      | ---                       | ---        | ---        |
@@ -101,7 +98,3 @@ Below is a table with the results on AWS EC2 Arm 64-bit C6g instance, with Ubunt
 | ../silesia/ooffice |	292 |	820 |	21028 |	7509 |	4311901 | 	70.09 |
 | ./silesia/sao |	313 |	829 |	23175 |	8715 |	6469352 |	89.21 |
 | ../silesia/x-ray |	6626 |	11654 |	1270 |	698 |	8459794 |	99.83 |
-
-
-
-

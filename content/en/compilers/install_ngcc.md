@@ -35,13 +35,13 @@ Use the `apt` command to install software packages on any Debian based Linux dis
 
 ```console
 sudo apt update
-sudo apt install gcc g++
+sudo apt install -y gcc g++
 ```
 
 Another meta-package on Ubuntu is ``build-essential``. This will install the most common tools libraries with a single command.
 
 ```console
-sudo apt install build-essential
+sudo apt install -y build-essential
 ```
 
 ### Installing on Red Hat / Fedora / Amazon Linux

@@ -12,7 +12,7 @@ description: >
 
 ## Pre-requisites
 
-* MongoDB installed and running on your [Arm-based instance](/cloud/platforms). Follow the steps outlined [here](/cloud/mongodb/install).
+* MongoDB installed and running on your Arm-based cloud service. Follow the steps outlined [here](/cloud/mongodb/install).
 * Java 1.8 and Python 2.7 (or later) installed on your instance.
 {{< tabpane code=true >}}
   {{< tab header="Ubuntu" >}}
