@@ -19,6 +19,6 @@ New to cloud services? See the appropriate getting started guide for your provid
 | [Oracle OCI](oci)        | https://www.oracle.com/cloud/compute/arm/
 | [Google Cloud](google)   | https://cloud.google.com/tau-vm
 | [Microsoft Azure](msft)  | https://azure.microsoft.com/en-us/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available
-| [Tencent Cloud](tencent) | https://intl.cloud.tencent.com/document/product/213/11518#SR1
+| [Alibaba Cloud](alibaba) | https://www.alibabacloud.com/product/ecs/g8m
 
 [<-- Return to Server and Cloud software development on Arm](/cloud)

@@ -11,7 +11,7 @@ description: >
 
 ## What is Oracle OCI?
 
-[Oracle Cloud Infrastructure (OCI)](https://oracle.com/cloud/) is a mature cloud computing platform. An overview of their services is described [here](https://www.oracle.com/cloud/why-oci/). As with most cloud service providers, AWS offers a pay-as-you-use [pricing policy](https://www.oracle.com/cloud/pricing/), including a number of [free](https://www.oracle.com/cloud/free/) services.
+[Oracle Cloud Infrastructure (OCI)](https://oracle.com/cloud/) is a mature cloud computing platform. An overview of their services is described [here](https://www.oracle.com/cloud/why-oci/). As with most cloud service providers, OCI offers a pay-as-you-use [pricing policy](https://www.oracle.com/cloud/pricing/), including a number of [free](https://www.oracle.com/cloud/free/) services.
 
 This guide is to help you get started with [compute services](https://www.oracle.com/cloud/compute/), using Arm-based [Ampere](https://www.oracle.com/cloud/compute/arm/) processors. This is a general purpose compute platform, essentially your own personal computer in the cloud.
 
@@ -86,15 +86,38 @@ Detailed instructions are given in the Oracle [documentation](https://docs.oracl
 
 ## Explore your instance
 
+### uname
+
 Use the [uname](https://en.wikipedia.org/wiki/Uname) utility to verify that you are using an Arm-based server. For example:
 ```console
-uname -p
+uname -m
 ```
-will identify the host processor as `aarch64`.
+will identify the host machine as `aarch64`.
 
-You are now ready to get started with any of the learning paths [here](/cloud).
+### hello world
 
-See also the Developer Resource Center from Oracle [here](https://developer.oracle.com/arm/).
+Install the `gcc` compiler. Assuming you are using `Ubuntu`, use the following, else see [here](/compilers/install_ngcc/):
+```console
+sudo apt-get update
+sudo apt install -y gcc
+```
+Create a simple source file:
+```console
+nano hello.c
+```
+```C
+#include <stdio.h>
+int main(){
+    printf("hello world\n");
+    return 0;
+}
+```
+Build and run the application:
+```console
+gcc hello.c -o hello
+./hello
+```
+You are now ready to get started with any of the learning paths [here](/cloud/#application-specific-learning-paths).
 
 ## Other resources
 
@@ -106,4 +129,3 @@ See also the Developer Resource Center from Oracle [here](https://developer.orac
 | Misc          | [Oracle Developer Resource Center](https://developer.oracle.com/arm/) |
 
 [<-- Return to Server and Cloud software development on Arm](/cloud)
-

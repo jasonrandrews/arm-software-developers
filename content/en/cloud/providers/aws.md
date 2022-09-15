@@ -83,21 +83,53 @@ Full documentation available [here](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
 You can connect to the instance with your preferred SSH client. In the `Instance summary` view, click `Connect`, and select the `SSH client` tab to see the command line to launch the native SSH client.
 
-Alternatively terminal applications such as [PuTTY](https://www.putty.org/), [MobaXterm](https://mobaxterm.mobatek.net/) and similar can be used. The `Public IP` can be seen in the `Instance summary` view. Default user names for standard AMIs are listed [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html).
+For example if using `ubuntu` image:
+```
+ssh -i <private_key> ubuntu@<public_ip_address>
+```
+Terminal applications such as [PuTTY](https://www.putty.org/), [MobaXterm](https://mobaxterm.mobatek.net/) and similar can be used.
 
-## Explore your EC2 instance
+Default user names for standard AMIs are listed [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html).
+
+## Explore your instance
+
+### uname
 
 Use the [uname](https://en.wikipedia.org/wiki/Uname) utility to verify that you are using an Arm-based server. For example:
 ```console
-uname -p
+uname -m
 ```
-will identify the host processor as `aarch64`.
+will identify the host machine as `aarch64`.
 
-You are now ready to get started with any of the learning paths [here](/cloud).
+### hello world
+
+Install the `gcc` compiler. Assuming you are using `Ubuntu`, use the following, else see [here](/compilers/install_ngcc/):
+```console
+sudo apt-get update
+sudo apt install -y gcc
+```
+Create a simple source file:
+```console
+nano hello.c
+```
+```C
+#include <stdio.h>
+int main(){
+    printf("hello world\n");
+    return 0;
+}
+```
+Build and run the application:
+```console
+gcc hello.c -o hello
+./hello
+```
+You are now ready to get started with any of the learning paths [here](/cloud/#application-specific-learning-paths).
 
 ## Other resources
 
-| ---      | --- 
+| Type          | Content             |
+| ---           | ---                 |
 | Documentation | [Getting Started with AWS](https://aws.amazon.com/getting-started) |
 | Documentation | [What is cloud computing?](https://aws.amazon.com/what-is-cloud-computing) |
 | Documentation | [Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html) |
