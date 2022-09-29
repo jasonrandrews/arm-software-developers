@@ -28,5 +28,3 @@ Arm IP Explorer does not require any licenses to be setup for use.
 ## Get started {#start}
 
 There are several [Tutorials and an FAQ section](https://ipexplorer.arm.com/support) available to help you get started quickly with the Arm IP Explorer tool.
-
-

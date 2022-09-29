@@ -68,8 +68,12 @@ Edit `command_responder.cc` source file, which defines the output message.
 nano ../micro_speech/src/command_responder.cc
 ```
 For example, change `Heard` to `The word was` in the `TF_LITE_REPORT_ERROR()` function.
+```C
+    TF_LITE_REPORT_ERROR(error_reporter, "The word was %s (%d) @%dms", found_command,
+                         score, current_time);
+```
 
-### Rebuild and rerun
+## Rebuild and rerun
 
 Rebuild and rerun the example.
 ```console
