@@ -1,3 +1,7 @@
+# PROJECT UPDATE
+
+This project has migrated to a new hugo template and [new repository](https://github.com/zachlas/arm-software-developers-ads). Please use the new repo for content contributions and see then on the [new URL](https://www.armswdev.tk/)
+
 # Prototyping site for Arm Software Developers
 
 This prototype uses [Docsy](https://www.docsy.dev/), a [Hugo](https://gohugo.io/) theme module for technical documentation sites, providing easy
